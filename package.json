@@ -4,5 +4,6 @@
   "main": "index.js",
   "repository": "git@github.com:maurice-35/portfolio-1.git",
   "author": "Mauricekollewe <kollewem.35@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }

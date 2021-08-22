@@ -1,7 +1,7 @@
 import React from 'react'
-import Link from 'react-router-dom'
+// import Link from 'react-router-dom'
 import NavDropdown from 'react-bootstrap/NavDropdown'
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Nav, Form } from 'react-bootstrap'
 
 
  const Home = () => {
@@ -20,25 +20,22 @@ import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
             navbarScroll
          >
             <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+            <Nav.Link href="#action2">About Me</Nav.Link>
+            <NavDropdown title="Projects" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">Project 1</NavDropdown.Item>
+                <NavDropdown.Item href="#action4">Project 2</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
+                <NavDropdown.Item href="#action5">Project 3</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">Project 4</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#" disabled>
-              Link
+              Experience
             </Nav.Link>                   
         </Nav>
         <Form className="d-flex">
-          <FormControl
-            type="search"
-            placeholder="Search"
-            className="mr-2" 
-            aria-label="Search"
-          />
-          <Button variant="outline-success">Search</Button>
+        <Nav.Link href="#action3">Interest</Nav.Link>
+        <Nav.Link href="#action4">Contact</Nav.Link>
          </Form>
         </Navbar.Collapse>
        </Navbar>
