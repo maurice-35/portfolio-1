@@ -11,7 +11,7 @@ import { Navbar, Nav, Form } from 'react-bootstrap'
     return (
 
      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>            
+        <Navbar.Brand href="#">♻︎</Navbar.Brand>            
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
