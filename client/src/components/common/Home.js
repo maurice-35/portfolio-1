@@ -87,7 +87,6 @@ import { Navbar, Nav, Form, Card, CardGroup } from 'react-bootstrap'
     <Card className="walk">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
         </Card>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   </div>
   <div id="project3" className="container-fluid">
     <h1>Project 3</h1>
@@ -103,11 +102,10 @@ import { Navbar, Nav, Form, Card, CardGroup } from 'react-bootstrap'
   </div>
   <div id="interests" className="container-fluid">
     <h1>Interests</h1>
-    
+
     <Card className="walk">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
         </Card>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   </div>
   <div id="contact" className="container-fluid">
 
