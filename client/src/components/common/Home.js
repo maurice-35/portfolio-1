@@ -42,7 +42,7 @@ import { Navbar, Nav, Form, Card, CardGroup, Popover, OverlayTrigger, Button } f
   
   <div id="home" className="container-fluid">
     <h1>Home</h1>
-    <Card className="walk">
+    <Card className="d-block w-100">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
         </Card>
   </div>
@@ -50,15 +50,15 @@ import { Navbar, Nav, Form, Card, CardGroup, Popover, OverlayTrigger, Button } f
     <h1>About Me</h1>
     <CardGroup>
 
-        <Card className="walk">
+        <Card className="d-block w-100">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
         </Card>
-
-        <Card className="walk">
+        <br></br>
+        <Card className="d-block w-100">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
         </Card>
-
-        <Card className="Others">
+        <br></br>
+        <Card className="d-block w-100">
           <img className="image-border animate__animated animate__zoomIn others-img" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456970/Project%204/walk_e1u8s5.jpg" />
           <h3>Others</h3>
           <p>
@@ -72,31 +72,31 @@ import { Navbar, Nav, Form, Card, CardGroup, Popover, OverlayTrigger, Button } f
   </div>
   <div id="experience" className="container-fluid">
     <h1>Experience</h1>
-    <Card className="walk">
+    <Card className="d-block w-100">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
         </Card>
   </div>
   <div id="project1" className="container-fluid">
     <h1>Project 1</h1>
-    <Card className="walk">
+    <Card className="d-block w-100">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
         </Card>
   </div>
   <div id="project2" className="container-fluid">
     <h1>Project 2</h1>
-    <Card className="walk">
+    <Card className="d-block w-100">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
         </Card>
   </div>
   <div id="project3" className="container-fluid">
     <h1>Project 3</h1>
-    <Card className="walk">
+    <Card className="d-block w-100">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
         </Card>
   </div>
   <div id="project4" className="container-fluid">
     <h1>Project 4</h1>
-    <Card className="walk">
+    <Card className="d-block w-100">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
         </Card>
   </div>
@@ -123,7 +123,7 @@ import { Navbar, Nav, Form, Card, CardGroup, Popover, OverlayTrigger, Button } f
       <Button variant="secondary">{type}</Button>
     </OverlayTrigger>
   ))}
-    <Card className="walk">
+    <Card className="d-block w-100">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
           <div className="container">
   {/* <h3>Popover Example</h3> */}
@@ -135,7 +135,7 @@ import { Navbar, Nav, Form, Card, CardGroup, Popover, OverlayTrigger, Button } f
   <div id="contact" className="container-fluid">
 
     <h1>Contact</h1>
-    <Card className="walk">
+    <Card className="d-block w-100">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
         </Card>
   </div>
