@@ -1,19 +1,35 @@
-import React from 'react'
+import { useState, React } from 'react'
 import { Link } from 'react-router-dom'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import { Navbar, Nav, Form, Card, CardGroup, Popover, OverlayTrigger, Button } from 'react-bootstrap'
+import Toast from 'react-bootstrap/Toast'
 import Alert from 'react-bootstrap/Alert'
+
 
 
 
 const Home = () => {
 
+  const [iconA, setIconA] = useState(true)
+  // const [showB, setShowB] = useState(true);
+
+  const toggleIconA = () => setIconA(!iconA)
+  // const toggleShowB = () => setShowB(!showB);
 
 
   return (
     <>
       <Navbar className="teal" expand="bs">
-        <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
+        <Navbar.Brand id="icon" href="#">
+          <Toast show={iconA} onClose={toggleIconA}>♻︎
+            <Toast.Header>
+            </Toast.Header>
+            <Toast.Body>Hello! Welcome To My Site. Take a look at my journey of <br />becoming a Software Engineer.</Toast.Body>
+          </Toast>
+          <Button onClick={toggleIconA}>
+            ♻︎
+          </Button>
+        </Navbar.Brand>
         <div className="navbar-wrapper">
           <h4>The  love  for  cats!</h4><br />
           <p>In The Kindom Of Love, Every Life Counts</p>
@@ -59,7 +75,7 @@ const Home = () => {
         <Card className="d-block w-100">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
         </Card>
-        <p>Hello! Welcome To My Site. Take a look at my journal of becoming a Software Engineer.</p>
+        <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
       </div>
       <div id="aboutMe" className="container-fluid">
         <h1>About Me</h1>
