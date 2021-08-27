@@ -11,6 +11,18 @@ body {
     justify-content: center;
   }
 
+  .pic {
+    max-width: 150px;
+    justify-content: flex-start;
+    padding: 5px;
+    margin-top: 50px;
+
+  }
+
+  .icon {
+    max-width: 500px;
+  }
+
   #home {
     padding-top:50px;
     height:500px;

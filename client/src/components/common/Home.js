@@ -13,7 +13,13 @@ const Home = () => {
   return (
     <>
       <Navbar className="info" expand="bg">
+        <Navbar.Brand className="icon" href="#">♻︎</Navbar.Brand>
+        <h4>The love for cats!</h4>
+        <Card className="pic">
+          <img src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" />
+        </Card>
         <Navbar.Brand href="#">♻︎</Navbar.Brand>
+        <h4>Kind minds never hides!</h4>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
