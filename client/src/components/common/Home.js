@@ -11,22 +11,23 @@ import Alert from 'react-bootstrap/Alert'
 const Home = () => {
 
   const [iconA, setIconA] = useState(true)
-  // const [showB, setShowB] = useState(true);
+  const [charities1, setCharities1] = useState(true)
 
   const toggleIconA = () => setIconA(!iconA)
-  // const toggleShowB = () => setShowB(!showB);
+  const alertCharities1 = () => setCharities1(!charities1)
 
 
   return (
     <>
       <Navbar className="teal" expand="bs">
         <Navbar.Brand id="icon" href="#">
-          <Toast show={iconA} onClose={toggleIconA}>♻︎
+          <Toast id="position" show={iconA} onClose={toggleIconA}>
             <Toast.Header>
+              ♻︎
             </Toast.Header>
-            <Toast.Body>Hello! Welcome To My Site. Take a look at my journey of <br />becoming a Software Engineer.</Toast.Body>
+            <Toast.Body>Hello!<br /> Welcome<br />To My Site.</Toast.Body>
           </Toast>
-          <Button onClick={toggleIconA}>
+          <Button id="icon" onClick={toggleIconA}>
             ♻︎
           </Button>
         </Navbar.Brand>
@@ -163,7 +164,7 @@ const Home = () => {
               </Popover>
             }
           >
-            <Button variant="secondary">{type}</Button>
+            <Button variant="secondary" onClick={alertCharities1}>{type}</Button>
           </OverlayTrigger>
         ))}
 
