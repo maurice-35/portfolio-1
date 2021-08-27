@@ -15,14 +15,14 @@ const Navbar = () => {
 
         <Link to="/charities2" className="navbar-item"></Link>
       </div>
-        <Link className="button is-dark" to="/charities3">
-      
-        </Link>
-        <Link className="button is-dark" to="/charities4">
-     
-        </Link>
-   </>
-)
+      <Link className="button is-dark" to="/charities3">
+
+      </Link>
+      <Link className="button is-dark" to="/charities4">
+
+      </Link>
+    </>
+  )
 
 }
 
