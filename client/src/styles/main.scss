@@ -6,7 +6,8 @@ body {
 
   .teal {
     background-color: #a4ccc8;
-    font-family: 'Monoton', cursive
+    font-family: 'Monoton', cursive;
+    border-color: #3d449c;
   }
 
   .d-flex {
@@ -17,15 +18,14 @@ body {
     max-width: 150px;
     justify-content: flex-start;
     margin-top: 50px;
-    border-color: #acd37a;
-    border-radius: 5px;
     padding: 5px;
 
   }
 
 
-  .icon {
+  #icon {
     color: #298130;
+   font-size: 30px;
   }
 
   #home {

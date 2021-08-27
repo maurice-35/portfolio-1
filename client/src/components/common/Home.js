@@ -13,13 +13,19 @@ const Home = () => {
   return (
     <>
       <Navbar className="teal" expand="bs">
-        <Navbar.Brand className="icon" href="#">♻︎</Navbar.Brand>
-        <h4>The  love  for  cats!</h4>
+        <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
+        <div className="navbar-wrapper">
+          <h4>The  love  for  cats!</h4><br />
+          <p>In The Kindom Of Love, Every Life Counts</p>
+        </div>
         <Card className="pic">
           <img src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" />
         </Card>
-        <Navbar.Brand href="#">♻︎</Navbar.Brand>
-        <h4>Kind  minds  never  hide!</h4>
+        <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
+        <div className="navbar-wrapper">
+          <h4>Kind  minds  never  hide!</h4><br />
+          <p>The Journal Of A Thousand Miles.</p>
+        </div>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
