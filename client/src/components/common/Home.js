@@ -10,7 +10,7 @@ import Alert from 'react-bootstrap/Alert'
 
 const Home = () => {
 
-  const [iconA, setIconA] = useState(true)
+  const [iconA, setIconA] = useState(false)
   const [charities1, setCharities1] = useState(true)
 
   const toggleIconA = () => setIconA(!iconA)
