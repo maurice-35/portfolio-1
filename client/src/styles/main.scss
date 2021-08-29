@@ -17,11 +17,11 @@ body {
    
   }
 
-  // #nav {
-  //   background-color: #a4ccc8;
-  //   font-family: 'Monoton', cursive;
-  //   border-color: #3d449c;
-  // }
+  .navbar {
+    background-color: #a4ccc8;
+    font-family: 'Monoton', cursive;
+    border-color: #3d449c;
+  }
 
   .d-flex {
     justify-content: center;
@@ -62,7 +62,7 @@ body {
     height:300px;
     color: #fff;
     background-color: #514664;
-    margin-top: 0px;
+    margin-top: 150px;
   }
 
   container {

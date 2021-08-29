@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <section data-spy="scroll" data-target=".navbar" data-offset="75">
       <Navbar className="teal" expand="lg" id="nav">
-        <nav className="navbar navbar-expand-sm bg-info-light navbar- fixed-top">
+        <nav className="navbar navbar-expand-sm navbar- fixed-top">
           <ul className="navbar-nav"></ul>
           {/* <Container className="teal" expand="lg"> */}
           <Navbar.Brand id="icon" href="#">
@@ -80,10 +80,10 @@ const Home = () => {
       <br />
    
       {/* </div> */}
-      <div container="message">
+      {/* <div container="message">
         <h4>My journey of becoming a Software Engineer.</h4>
       </div>
-      <br />
+      <br /> */}
       <div id="home" className="container-fluid">
         <h1>Home</h1>
         <CardGroup>
