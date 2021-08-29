@@ -18,58 +18,61 @@ const Home = () => {
 
 
   return (
-    <>
-      <Navbar className="teal" expand="bs">
-        <Navbar.Brand id="icon" href="#">
-          <Toast id="position1" show={iconA} onClose={toggleIconA}>
-            <Toast.Header>
+    <section data-spy="scroll" data-target=".navbar" data-offset="50">
+      <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        {/* <ul class="navbar-nav"></ul> */}
+        <Navbar className="teal" expand="bs">
+          <Navbar.Brand id="icon" href="#">
+            <Toast id="position1" show={iconA} onClose={toggleIconA}>
+              <Toast.Header>
+                ♻︎
+              </Toast.Header>
+              <Toast.Body>Hello!<br /> Welcome<br />To My Site.</Toast.Body>
+            </Toast>
+            <Button id="icon" onClick={toggleIconA}>
               ♻︎
-            </Toast.Header>
-            <Toast.Body>Hello!<br /> Welcome<br />To My Site.</Toast.Body>
-          </Toast>
-          <Button id="icon" onClick={toggleIconA}>
-            ♻︎
-          </Button>
-        </Navbar.Brand>
-        <div className="navbar-wrapper">
-          <h4>The  love  for  cats!</h4><br />
-          <p>In The Kindom Of Love, Every Life Counts</p>
-        </div>
-        <Card className="pic">
-          <img src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" />
-        </Card>
-        <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
-        <div className="navbar-wrapper">
-          <h4>Kind  minds  never  hide!</h4><br />
-          <p>The Journal Of A Thousand Miles.</p>
-        </div>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="mr-auto my-2 my-bg-0"
-            style={{ maxHeight: '120px' }}
-            navbarScroll
-          >
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#aboutMe">About Me</Nav.Link>
-            <NavDropdown title="Projects" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#project1">Project 1</NavDropdown.Item>
-              <NavDropdown.Item href="#project2">Project 2</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#project3">Project 3</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#project4">Project 4</NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#experience">
-              Experience
-            </Nav.Link>
-          </Nav><br />
-          <Form className="d-flex">
-            <Nav.Link href="#interests">Interests</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Form>
-        </Navbar.Collapse>
-      </Navbar>
+            </Button>
+          </Navbar.Brand>
+          <div className="navbar-wrapper">
+            <h4>The  love  for  cats!</h4><br />
+            <p>In The Kindom Of Love, Every Life Counts</p>
+          </div>
+          <Card className="pic">
+            <img src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" />
+          </Card>
+          <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
+          <div className="navbar-wrapper">
+            <h4>Kind  minds  never  hide!</h4><br />
+            <p>The Journal Of A Thousand Miles.</p>
+          </div>
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav
+              className="mr-auto my-2 my-bg-0"
+              style={{ maxHeight: '120px' }}
+              navbarScroll
+            >
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#aboutMe">About Me</Nav.Link>
+              <NavDropdown title="Projects" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#project1">Project 1</NavDropdown.Item>
+                <NavDropdown.Item href="#project2">Project 2</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#project3">Project 3</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#project4">Project 4</NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link href="#experience">
+                Experience
+              </Nav.Link>
+            </Nav><br />
+            <Form className="d-flex">
+              <Nav.Link href="#interests">Interests</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+            </Form>
+          </Navbar.Collapse>
+        </Navbar>
+      </nav>
       <h4>My journey of becoming a Software Engineer.</h4>
       <div id="home" className="container-fluid">
         <h1>Home</h1>
@@ -213,8 +216,7 @@ const Home = () => {
 
         </Card>
       </div>
-
-    </>
+    </section>
   )
 }
 
