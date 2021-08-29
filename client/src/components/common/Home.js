@@ -19,9 +19,9 @@ const Home = () => {
 
   return (
     <section data-spy="scroll" data-target=".navbar" data-offset="50">
-      <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        {/* <ul class="navbar-nav"></ul> */}
-        <Navbar className="teal" expand="bs">
+      <Navbar className="teal" expand="lg">
+        <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+          {/* <ul class="navbar-nav"></ul> */}
           <Navbar.Brand id="icon" href="#">
             <Toast id="position1" show={iconA} onClose={toggleIconA}>
               <Toast.Header>
@@ -52,6 +52,7 @@ const Home = () => {
               style={{ maxHeight: '120px' }}
               navbarScroll
             >
+      
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#aboutMe">About Me</Nav.Link>
               <NavDropdown title="Projects" id="navbarScrollingDropdown">
@@ -71,8 +72,9 @@ const Home = () => {
               <Nav.Link href="#contact">Contact</Nav.Link>
             </Form>
           </Navbar.Collapse>
-        </Navbar>
-      </nav>
+        </nav>
+      </Navbar>
+      {/* </div> */}
       <h4>My journey of becoming a Software Engineer.</h4>
       <div id="home" className="container-fluid">
         <h1>Home</h1>
