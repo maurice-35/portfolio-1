@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import { Navbar, Nav, Form, Card, CardGroup, Popover, OverlayTrigger, Button } from 'react-bootstrap'
 import Toast from 'react-bootstrap/Toast'
-import Alert from 'react-bootstrap/Alert'
+// import Alert from 'react-bootstrap/Alert'
 
 
 
@@ -11,17 +11,17 @@ import Alert from 'react-bootstrap/Alert'
 const Home = () => {
 
   const [iconA, setIconA] = useState(false)
-  const [charities1, setCharities1] = useState(true)
+  const [type, setType] = useState(true)
 
   const toggleIconA = () => setIconA(!iconA)
-  const alertCharities1 = () => setCharities1(!charities1)
+  const toggleType = () => setType(!type)
 
 
   return (
     <>
       <Navbar className="teal" expand="bs">
         <Navbar.Brand id="icon" href="#">
-          <Toast id="position" show={iconA} onClose={toggleIconA}>
+          <Toast id="position1" show={iconA} onClose={toggleIconA}>
             <Toast.Header>
               ♻︎
             </Toast.Header>
@@ -70,13 +70,19 @@ const Home = () => {
           </Form>
         </Navbar.Collapse>
       </Navbar>
-
+      <h4>My journey of becoming a Software Engineer.</h4>
       <div id="home" className="container-fluid">
         <h1>Home</h1>
-        <Card className="d-block w-100">
-          <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-        </Card>
-        <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
+        <CardGroup>
+          <Card className="d-block w-100">
+            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
+          </Card>
+          <span />
+          <Card className="d-block w-100">
+            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
+          </Card>
+          <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
+        </CardGroup>
       </div>
       <div id="aboutMe" className="container-fluid">
         <h1>About Me</h1>
@@ -144,7 +150,7 @@ const Home = () => {
               <Popover id={`popover-positioned-${type}`}>
                 <Popover.Header as="h3">{`Popover ${type}`}</Popover.Header>
                 <Popover.Body>
-                  <Alert variant="success">
+                  {/* <Alert variant="success">
                     <Alert.Heading>Hey, nice to see you</Alert.Heading>
                     <p>
                       Aww yeah, you successfully read this important alert message. This example
@@ -156,15 +162,23 @@ const Home = () => {
                       Whenever you need to, be sure to use margin utilities to keep things nice
                       and tidy.
                     </p>
-                  </Alert>
+                  </Alert> */}
+                  {/* <Toast id="position2" show={type} onClose={toggleType}>
+                    <Toast.Header>
+                      <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
+                      <strong className="me-auto">Bootstrap</strong>
+                      <small>11 mins ago</small>
+                    </Toast.Header>
+                    <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
+                  </Toast> */}
                 </Popover.Body>
-                <Link to="charities1"></Link>
+                {/* <Link to="charities1"></Link> */}
                 {<Link to="charities" className="d-block w-50"
                   src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627289108/Project%204/f19_pwzr5o.jpg"> </Link>}
               </Popover>
             }
           >
-            <Button variant="secondary" onClick={alertCharities1}>{type}</Button>
+            <Button variant="secondary" onClick={toggleType}>{type}</Button>
           </OverlayTrigger>
         ))}
 

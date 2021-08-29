@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="footer">
       <p>
         <p>Github</p>
-        <a href="http://jpg licenses">Made With Much Hope 🤯 🖥 By MKT</a>
+        <a href="http://jpg licenses">Made With Much Hope 🤯 <span />  🖥 By MKT</a>
       </p>
     </footer>
   )
