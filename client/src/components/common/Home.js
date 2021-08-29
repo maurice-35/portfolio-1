@@ -2,7 +2,7 @@ import { useState, React } from 'react'
 import { Link } from 'react-router-dom'
 // import { NavDropdown, Toast, Container } from 'react-bootstrap'
 // import Container from 'react-bootstrap/Container'
-import { Nav, Navbar, NavDropdown, Toast, Form, Card, CardGroup, Popover, OverlayTrigger, Button } from 'react-bootstrap'
+import { Nav, Navbar, NavDropdown, Toast, Form, Card, CardGroup, Popover, OverlayTrigger, Button, Container, Row, Col, Image } from 'react-bootstrap'
 // import Toast from 'react-bootstrap/Toast'
 // import Alert from 'react-bootstrap/Alert'
 
@@ -78,7 +78,7 @@ const Home = () => {
         </nav>
       </Navbar>
       <br />
-   
+
       {/* </div> */}
       {/* <div container="message">
         <h4>My journey of becoming a Software Engineer.</h4>
@@ -226,7 +226,23 @@ const Home = () => {
 
         </Card>
       </div>
-    </section>  
+
+
+      <Container>
+        <Row>
+          <Col className="image">
+            <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" roundedCircle />
+          </Col>
+        </Row>
+      </Container>
+
+      <footer className="footer">
+        <p>
+          <p>Github</p>
+          <a href="http://jpg licenses">Made With Much Hope 🤯 <span />  🖥 By MKT</a>
+        </p>
+      </footer>
+    </section>
   )
 }
 
