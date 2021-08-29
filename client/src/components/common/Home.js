@@ -1,8 +1,9 @@
 import { useState, React } from 'react'
 import { Link } from 'react-router-dom'
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import { Navbar, Nav, Form, Card, CardGroup, Popover, OverlayTrigger, Button } from 'react-bootstrap'
-import Toast from 'react-bootstrap/Toast'
+// import { NavDropdown, Toast, Container } from 'react-bootstrap'
+// import Container from 'react-bootstrap/Container'
+import { Nav, Navbar, NavDropdown, Toast, Form, Card, CardGroup, Popover, OverlayTrigger, Button } from 'react-bootstrap'
+// import Toast from 'react-bootstrap/Toast'
 // import Alert from 'react-bootstrap/Alert'
 
 
@@ -18,10 +19,11 @@ const Home = () => {
 
 
   return (
-    <section data-spy="scroll" data-target=".navbar" data-offset="50">
-      <Navbar className="teal" expand="lg">
-        <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-          {/* <ul class="navbar-nav"></ul> */}
+    <section data-spy="scroll" data-target=".navbar" data-offset="75">
+      <Navbar className="teal" expand="lg" id="nav">
+        <nav className="navbar navbar-expand-sm bg-info-light navbar- fixed-top">
+          <ul className="navbar-nav"></ul>
+          {/* <Container className="teal" expand="lg"> */}
           <Navbar.Brand id="icon" href="#">
             <Toast id="position1" show={iconA} onClose={toggleIconA}>
               <Toast.Header>
@@ -52,7 +54,7 @@ const Home = () => {
               style={{ maxHeight: '120px' }}
               navbarScroll
             >
-      
+
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#aboutMe">About Me</Nav.Link>
               <NavDropdown title="Projects" id="navbarScrollingDropdown">
@@ -72,10 +74,16 @@ const Home = () => {
               <Nav.Link href="#contact">Contact</Nav.Link>
             </Form>
           </Navbar.Collapse>
+          {/* </Container> */}
         </nav>
       </Navbar>
+      <br />
+   
       {/* </div> */}
-      <h4>My journey of becoming a Software Engineer.</h4>
+      <div container="message">
+        <h4>My journey of becoming a Software Engineer.</h4>
+      </div>
+      <br />
       <div id="home" className="container-fluid">
         <h1>Home</h1>
         <CardGroup>
@@ -218,7 +226,7 @@ const Home = () => {
 
         </Card>
       </div>
-    </section>
+    </section>  
   )
 }
 
