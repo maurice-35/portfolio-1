@@ -226,22 +226,23 @@ const Home = () => {
 
         </Card>
       </div>
-
-
-      <Container>
-        <Row>
-          <Col className="image">
-            <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" roundedCircle />
-          </Col>
-        </Row>
-      </Container>
-
-      <footer className="footer">
-        <p>
-          <p>Github</p>
-          <a href="http://jpg licenses">Made With Much Hope 🤯 <span />  🖥 By MKT</a>
-        </p>
-      </footer>
+      <main className="Footer">
+        <div>
+          <Container>
+            <Row>
+              <Col className="image">
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" roundedCircle width="150" />
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <footer>
+          <p>
+            <p>Github</p>
+            <a href="http://jpg licenses">Made With Much Hope 🤯 <span />  🖥 By MKT</a>
+          </p>
+        </footer>
+      </main>
     </section>
   )
 }

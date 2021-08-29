@@ -30,7 +30,6 @@ body {
 
   .pic {
     max-width: 150px;
-    justify-content: flex-start;
     margin-top: 50px;
     padding: 5px;
   }
@@ -131,16 +130,25 @@ body {
       color:#61817e;
   }
 
+  .Footer {
+    max-height: 50px;
+    justify-content: center;
+    font-size: 12px;
+    
+  }
+
+  .image {
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+  }
+
   .github {
     margin: 0 auto;
     padding: 40%;
     position: cover;
     letter-spacing:2px;
-  }
-
-  .image {
-    margin: 15px;
-   
+    display: flex;
   }
 
 
