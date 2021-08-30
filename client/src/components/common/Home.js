@@ -13,15 +13,15 @@ import { Nav, Navbar, NavDropdown, Toast, Form, Card, CardGroup, Button, Contain
 const Home = () => {
 
   const [iconA, setIconA] = useState(false)
-  const [dataToggle, setDataToggle] = useState(false)
+  // const [dataToggle, setDataToggle] = useState(false)
 
   const toggleIconA = () => setIconA(!iconA)
-  const toggleDataToggle = () => setDataToggle(!dataToggle)
+  // const toggleDataToggle = () => setDataToggle(!dataToggle)
 
- 
-  $(document).ready(function(){
-    $('[data-toggle="popover"]').popover()
-  })
+
+  // $(document).ready(function(){
+  //   $('[data-toggle="popover"]').popover()
+  // })
 
 
 
@@ -161,10 +161,37 @@ const Home = () => {
       <div id="interests" className="container-fluid">
         <h1>Interests</h1>
         <div className="container">
-          {/* <h4>Charity 1<span />Charity 2<span />Charity 3</h4> */}
-          <h4>charities1<span /> charities2<span /> charities3<span /> charities4</h4>
-          <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">👆🏾👆🏾</a>
+          <ul className="nav nav-tabs">
+            <li className="active"><a data-toggle="tab" href="#menu 1">Menu 1</a></li>
+            <li><a data-toggle="tab" href="#menu 2">Menu 2</a></li>
+            <li><a data-toggle="tab" href="#menu 3">Menu 3</a></li>
+            <li><a data-toggle="tab" href="#menu4">Menu 4</a></li>
+          </ul>
+
+          <div className="tab-content">
+            <div id="home" className="tab-pane fade in active">
+              <h3>Charity21</h3>
+              <p>Evelyn Oldfield Unit.</p>
+            </div>
+            <div id="menu1" className="tab-pane fade">
+              <h3>Charity 2</h3>
+              <p>Cody Dock.</p>
+            </div>
+            <div id="menu2" className="tab-pane fade">
+              <h3>Charity 3</h3>
+              <p>Haven House Children Hospice.</p>
+            </div>
+            <div id="menu3" className="tab-pane fade">
+              <h3>Charity 4</h3>
+              <p>Richard House Children Hospice.</p>
+            </div>
+          </div>
         </div>
+        {/* <div className="container"> */}
+        {/* <h4>Charity 1<span />Charity 2<span />Charity 3</h4> */}
+        {/* <h4>charities1<span /> charities2<span /> charities3<span /> charities4</h4>
+          <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">👆🏾👆🏾</a>
+        </div> */}
         {/* <script>
           $(document).ready(function(){
             $('[data-toggle="popover"]').popover()
