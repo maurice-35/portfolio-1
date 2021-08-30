@@ -9,6 +9,27 @@ body {
     position: relative; 
   }
 
+  .affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+  .affix  .container-fluid {
+    position: relative;
+    top: 50px;
+  }
+
+  #top {
+    background-color: hsla(310, 62%, 31%, 0.137);
+    color:hsla(224, 63%, 49%, 0.137);
+    height: 200px;
+  }
+
   .teal {
     background-color: #a4ccc8;
     font-family: 'Monoton', cursive;

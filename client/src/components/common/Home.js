@@ -26,64 +26,86 @@ const Home = () => {
 
 
   return (
-    <section data-spy="scroll" data-target=".navbar" data-offset="75">
-      <Navbar className="teal" expand="lg" id="nav">
-        <nav className="navbar navbar-expand-sm navbar- fixed-top">
-          <ul className="navbar-nav"></ul>
-          {/* <Container className="teal" expand="lg"> */}
-          <Navbar.Brand id="icon" href="#">
-            <Toast id="position1" show={iconA} onClose={toggleIconA}>
-              <Toast.Header>
-                ♻︎
-              </Toast.Header>
-              <Toast.Body>Hello!<br /> Welcome<br />To My Site.</Toast.Body>
-            </Toast>
-            <Button id="icon" onClick={toggleIconA}>
-              ♻︎
-            </Button>
-          </Navbar.Brand>
-          <div className="navbar-wrapper">
-            <h4>The  love  for  cats!</h4><br />
-            <p>In The Kindom Of Love, Every Life Counts</p>
-          </div>
-          <Card className="pic">
-            <img src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" />
-          </Card>
-          <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
-          <div className="navbar-wrapper">
-            <h4>Kind  minds  never  hide!</h4><br />
-            <p>The Journal Of A Thousand Miles.</p>
-          </div>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav
-              className="mr-auto my-2 my-bg-0"
-              style={{ maxHeight: '120px' }}
-              navbarScroll
-            >
+    <>
+      {/* <Card className="d-block w-100">
+        <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
+      </Card> */}
 
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#aboutMe">About Me</Nav.Link>
-              <NavDropdown title="Projects" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#project1">Project 1</NavDropdown.Item>
-                <NavDropdown.Item href="#project2">Project 2</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#project3">Project 3</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#project4">Project 4</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="#experience">
-                Experience
-              </Nav.Link>
-            </Nav><br />
-            <Form className="d-flex">
-              <Nav.Link href="#interests">Interests</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
-            </Form>
-          </Navbar.Collapse>
-          {/* </Container> */}
+      {/* <section data-spy="scroll" data-target=".navbar" data-offset="75"> */}
+      <section data-spy="scroll" data-target=".navbar" data-offset="50">
+        <div className="container-fluid" id="top">
+          <h1>Scrollspy & Affix Example</h1>
+          <h3>Fixed navbar on scroll</h3>
+          <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels, and the links in the navbar are automatically updated based on scroll position.</p>
+        </div>
+        {/* </section> */}
+        <nav className="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+          {/* <Navbar className="teal" expand="lg" id="nav"> */}
+          <div className="container-fluid" id="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <div className="collapse navbar-collapse" id="myNavbar">
+              <ul className="nav navbar-nav">
+
+                {/* <nav className="navbar navbar-expand-sm navbar- fixed-top"> */}
+                {/* <ul className="navbar-nav"></ul> */}
+                {/* <Container className="teal" expand="lg"> */}
+                <Navbar.Brand id="icon" href="#">
+                  <Toast id="position1" show={iconA} onClose={toggleIconA}>
+                    <Toast.Header>
+                      ♻︎
+                    </Toast.Header>
+                    <Toast.Body>Hello!<br /> Welcome<br />To My Site.</Toast.Body>
+                  </Toast>
+                  <Button id="icon" onClick={toggleIconA}>
+                    ♻︎
+                  </Button>
+                </Navbar.Brand>
+                <div className="navbar-wrapper">
+                  <h4>The  love  for  cats!</h4><br />
+                  <p>In The Kindom Of Love, Every Life Counts</p>
+                </div>
+                <Card className="pic">
+                  <img src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" />
+                </Card>
+                <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
+                <div className="navbar-wrapper">
+                  <h4>Kind  minds  never  hide!</h4><br />
+                  <p>The Journal Of A Thousand Miles.</p>
+                </div>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll">
+                  <Nav
+                    className="mr-auto my-2 my-bg-0"
+                    style={{ maxHeight: '120px' }}
+                    navbarScroll
+                  >
+
+                    <Nav.Link href="#home">Home</Nav.Link>
+                    <Nav.Link href="#aboutMe">About Me</Nav.Link>
+                    <NavDropdown title="Projects" id="navbarScrollingDropdown">
+                      <NavDropdown.Item href="#project1">Project 1</NavDropdown.Item>
+                      <NavDropdown.Item href="#project2">Project 2</NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item href="#project3">Project 3</NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item href="#project4">Project 4</NavDropdown.Item>
+                    </NavDropdown>
+                    <Nav.Link href="#experience">
+                      Experience
+                    </Nav.Link>
+                  </Nav><br />
+                  <Form className="d-flex">
+                    <Nav.Link href="#interests">Interests</Nav.Link>
+                    <Nav.Link href="#contact">Contact</Nav.Link>
+                  </Form>
+                </Navbar.Collapse>
+                {/* </Container> */}
+                {/* </nav> */}
+                {/* </Navbar> */}
+              </ul>
+            </div>
+          </div>
         </nav>
-      </Navbar>
+      </section>
       <br />
 
       {/* </div> */}
@@ -91,19 +113,24 @@ const Home = () => {
         <h4>My journey of becoming a Software Engineer.</h4>
       </div>
       <br /> */}
-      <div id="home" className="container-fluid">
-        <h1>Home</h1>
-        <CardGroup>
-          <Card className="d-block w-100">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-          </Card>
-          <span />
-          <Card className="d-block w-100">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-          </Card>
-          <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
-        </CardGroup>
-      </div>
+      {/* <section data-spy="scroll" data-target="nav" data-offset="75">
+        <nav className="nav navbar-expand-sm navbar- fixed-top"> */}
+      <ul className="navbar-nav">
+        <div id="home" className="container-fluid">
+          <h1>Home</h1>
+          <CardGroup>
+            <Card className="d-block w-100">
+              <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
+            </Card>
+            <span />
+            <Card className="d-block w-100">
+              <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
+            </Card>
+            <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
+          </CardGroup>
+        </div>
+      </ul>
+
       <div id="aboutMe" className="container-fluid">
         <h1>About Me</h1>
         <CardGroup>
@@ -287,7 +314,8 @@ const Home = () => {
           </p>
         </footer>
       </main>
-    </section>
+
+    </>
   )
 }
 
