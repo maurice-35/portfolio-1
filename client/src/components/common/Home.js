@@ -2,9 +2,10 @@ import { useState, React } from 'react'
 import { Link } from 'react-router-dom'
 // import { NavDropdown, Toast, Container } from 'react-bootstrap'
 // import Container from 'react-bootstrap/Container'
-import { Nav, Navbar, NavDropdown, Toast, Form, Card, CardGroup, Popover, OverlayTrigger, Button, Container, Row, Col, Image } from 'react-bootstrap'
+import { Nav, Navbar, NavDropdown, Toast, Form, Card, CardGroup, Button, Container, Row, Col, Image } from 'react-bootstrap'
 // import Toast from 'react-bootstrap/Toast'
 // import Alert from 'react-bootstrap/Alert'
+// Popover, OverlayTrigger,
 
 
 
@@ -12,10 +13,16 @@ import { Nav, Navbar, NavDropdown, Toast, Form, Card, CardGroup, Popover, Overla
 const Home = () => {
 
   const [iconA, setIconA] = useState(false)
-  const [type, setType] = useState(true)
+  const [dataToggle, setDataToggle] = useState(false)
 
   const toggleIconA = () => setIconA(!iconA)
-  const toggleType = () => setType(!type)
+  const toggleDataToggle = () => setDataToggle(!dataToggle)
+
+ 
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover()
+  })
+
 
 
   return (
@@ -153,8 +160,18 @@ const Home = () => {
       </div>
       <div id="interests" className="container-fluid">
         <h1>Interests</h1>
+        <div className="container">
+          {/* <h4>Charity 1<span />Charity 2<span />Charity 3</h4> */}
+          <h4>charities1<span /> charities2<span /> charities3<span /> charities4</h4>
+          <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">👆🏾👆🏾</a>
+        </div>
+        {/* <script>
+          $(document).ready(function(){
+            $('[data-toggle="popover"]').popover()
+          });
+        </script> */}
 
-        {['charities1', 'charities2', 'charities3', 'charities4'].map((type) => (
+        {/* {['charities1', 'charities2', 'charities3', 'charities4'].map((type) => (
           <OverlayTrigger
             trigger="click"
             key={type}
@@ -162,8 +179,8 @@ const Home = () => {
             overlay={
               <Popover id={`popover-positioned-${type}`}>
                 <Popover.Header as="h3">{`Popover ${type}`}</Popover.Header>
-                <Popover.Body>
-                  {/* <Alert variant="success">
+                <Popover.Body> */}
+        {/* <Alert variant="success">
                     <Alert.Heading>Hey, nice to see you</Alert.Heading>
                     <p>
                       Aww yeah, you successfully read this important alert message. This example
@@ -176,7 +193,7 @@ const Home = () => {
                       and tidy.
                     </p>
                   </Alert> */}
-                  {/* <Toast id="position2" show={type} onClose={toggleType}>
+        {/* <Toast id="position2" show={type} onClose={toggleType}>
                     <Toast.Header>
                       <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
                       <strong className="me-auto">Bootstrap</strong>
@@ -184,22 +201,22 @@ const Home = () => {
                     </Toast.Header>
                     <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
                   </Toast> */}
-                </Popover.Body>
+        {/* </Popover.Body>
                 {/* <Link to="charities1"></Link> */}
-                {<Link to="charities" className="d-block w-50"
-                  src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627289108/Project%204/f19_pwzr5o.jpg"> </Link>}
-              </Popover>
+        {<Link to="charities" className="d-block w-50"
+          src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627289108/Project%204/f19_pwzr5o.jpg"> </Link>}
+        {/* </Popover>
             }
           >
             <Button variant="secondary" onClick={toggleType}>{type}</Button>
           </OverlayTrigger>
-        ))}
+        ))} */}
 
         <Card className="d-block w-100">
           <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
           <div className="container">
             {/* <h3>Popover Example</h3> */}
-            <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"></a>
+            {/* <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"></a> */} */
 
             {/* <div className="buttons">
         <Link to="/charities1">
