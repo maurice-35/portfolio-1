@@ -1,5 +1,4 @@
 import { useState, React } from 'react'
-import { Link } from 'react-router-dom'
 // import { NavDropdown, Toast, Container } from 'react-bootstrap'
 // import Container from 'react-bootstrap/Container'
 import { Nav, Navbar, NavDropdown, Toast, Form, Card, CardGroup, Button, Container, Row, Col, Image } from 'react-bootstrap'
@@ -19,18 +18,9 @@ const Home = () => {
   // const toggleDataToggle = () => setDataToggle(!dataToggle)
 
 
-  // $(document).ready(function(){
-  //   $('[data-toggle="popover"]').popover()
-  // })
-
-
 
   return (
     <>
-      {/* <Card className="d-block w-100">
-        <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-      </Card> */}
-
       <section data-spy="scroll" data-target=".navbar" data-offset="75">
         {/* <section data-spy="scroll" data-target=".navbar" data-offset="50"> */}
         <div className="container-fluid" id="top">
@@ -120,7 +110,6 @@ const Home = () => {
         <ul className="navbar-nav"><br />
           <div className="container-fluid" id="home">
             <h1>Home</h1>
-            
             <CardGroup>
               <Card className="d-block w-100">
                 <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
@@ -260,8 +249,8 @@ const Home = () => {
                   </Toast> */}
           {/* </Popover.Body>
                 {/* <Link to="charities1"></Link> */}
-          {<Link to="charities" className="d-block w-50"
-            src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627289108/Project%204/f19_pwzr5o.jpg"> </Link>}
+          {/* {<Link to="charities" className="d-block w-50" */}
+          {/* src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627289108/Project%204/f19_pwzr5o.jpg"> </Link>} */}
           {/* </Popover>
             }
           >
@@ -300,6 +289,7 @@ const Home = () => {
 
           </Card>
         </div>
+
         <main className="Footer">
           <div>
             <Container>
