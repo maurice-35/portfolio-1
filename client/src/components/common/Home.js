@@ -152,6 +152,9 @@ const Home = () => {
           <Card className="d-block w-100">
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
           </Card>
+          <Card className="d-block w-50">
+            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://www.google.com/search?q=github&sxsrf=AOaemvImT4dpKsBdW-kXWmCYSHFnyt4kfw:1630599823167&tbm=isch&source=iu&ictx=1&fir=O1ZHcIfZkHZqiM%252CHIAMPS7ac5hM_M%252C%252Fm%252F0ryppmg&vet=1&usg=AI4_-kQG6N_7WGtiAsG8ty1RQzguB0-OFw&sa=X&ved=2ahUKEwj6u-vZ2eDyAhUdgf0HHaoRDpgQ_B16BAhMEAI#imgrc=O1ZHcIfZkHZqiM" />
+          </Card>
         </div>
         <div id="project1" className="container-fluid">
           <h1>Project 1</h1>
@@ -173,7 +176,7 @@ const Home = () => {
         </div>
         <div id="project4" className="container-fluid">
           <h1>Project 4</h1>
-          <Card className="d-block w-100">
+          <Card className="d-block w-50">
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
           </Card>
         </div>
