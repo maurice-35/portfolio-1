@@ -149,17 +149,17 @@ const Home = () => {
         </div>
         <div id="experience" className="container-fluid">
           <h1>Experience</h1>
-          <Card className="d-block w-100">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-          </Card>
           <Card className="d-block w-50">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://www.google.com/search?q=github&sxsrf=AOaemvImT4dpKsBdW-kXWmCYSHFnyt4kfw:1630599823167&tbm=isch&source=iu&ictx=1&fir=O1ZHcIfZkHZqiM%252CHIAMPS7ac5hM_M%252C%252Fm%252F0ryppmg&vet=1&usg=AI4_-kQG6N_7WGtiAsG8ty1RQzguB0-OFw&sa=X&ved=2ahUKEwj6u-vZ2eDyAhUdgf0HHaoRDpgQ_B16BAhMEAI#imgrc=O1ZHcIfZkHZqiM" />
+            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" />
           </Card>
         </div>
         <div id="project1" className="container-fluid">
           <h1>Project 1</h1>
-          <Card className="d-block w-100">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
+          <Card className="d-block w-50">
+            <Image publicId="github_lslue1.png" />
+          </Card>
+          <Card className="d-block w-50">
+            <Image publicId="py_dnes7g.jpg" />
           </Card>
         </div>
         <div id="project2" className="container-fluid">
