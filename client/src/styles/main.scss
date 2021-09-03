@@ -62,6 +62,16 @@ body {
     align-items: center;
   }
 
+  .git {
+    display: flex;
+    max-width: 50px;
+    color: #298130;
+    background-color: #298130;
+  }
+
+  .boot {
+    max-width: 75px;
+  }
 
   #icon {
     color: #298130;
@@ -95,7 +105,7 @@ body {
 
   #experience {
     padding-top:50px;
-    height:500px;
+    height:200px;
     color: #fff; 
     background-color: #514664;
   }

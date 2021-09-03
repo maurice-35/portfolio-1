@@ -149,16 +149,56 @@ const Home = () => {
         </div>
         <div id="experience" className="container-fluid">
           <h1>Experience</h1>
-          <Card className="d-block w-50">
+          <Card className="git">
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" />
           </Card>
         </div>
+        <Container>
+          <Row>
+            <Col xs={6} md={4}>
+              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" rounded />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630602279/py_dnes7g.jpg" roundedCircle />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630674708/boootstr_ewpz0n.svg" rounded />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+            </Col>
+          </Row>
+        </Container>
 
         <div id="project1" className="container-fluid">
           <h1>Project 1</h1>
-          <Card className="d-block w-50">
+          {/* <Card className="git">
             <Image publicId="github_lslue1.png" />
-          </Card>
+          </Card> */}
           <Card className="d-block w-50">
             <Image publicId="py_dnes7g.jpg" />
           </Card>
