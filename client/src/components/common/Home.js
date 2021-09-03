@@ -154,41 +154,41 @@ const Home = () => {
           </Card>
         </div>
         <Container>
-          <Row>
-            <Col xs={3} md={2}>
+          <Row className="ICONS">
+            <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630697355/html_rtvtmb.png" rounded />
             </Col>
-            <Col xs={3} md={2}>
+            <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630679316/py3_z3bzw3.png" rounded />
             </Col>
-            <Col xs={3} md={2}>
+            <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630695606/boot5_qm09x5.svg" rounded  />
             </Col>
-            <Col xs={3} md={2}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630696798/node_2_chdeus.png" rounded />
+            <Col xs={5} md={3}>
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630697648/node3_fid6ns.png" rounded />
             </Col>
-            <Col xs={3} md={2}>
+            <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" rounded />
             </Col>
-            <Col xs={3} md={2}>
+            <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" rounded />
             </Col>
-            <Col xs={3} md={2}>
+            <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" rounded />
             </Col>
-            <Col xs={3} md={2}>
+            <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
             </Col>
-            <Col xs={3} md={2}>
+            <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
             </Col>
-            <Col xs={3} md={2}>
+            <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
             </Col>
-            <Col xs={6} md={4}>
+            <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
             </Col>
-            <Col xs={3} md={2}>
+            <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
             </Col>
           </Row>
