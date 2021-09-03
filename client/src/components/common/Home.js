@@ -157,41 +157,57 @@ const Home = () => {
           <Row className="ICONS">
             <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630697355/html_rtvtmb.png" rounded />
+              <h3>HTML</h3>
             </Col>
             <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630679316/py3_z3bzw3.png" rounded />
+              <h3>Python</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630695606/boot5_qm09x5.svg" rounded  />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630695606/boot5_qm09x5.svg" rounded />
+              <h3>Bootstrap</h3>
             </Col>
             <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630697648/node3_fid6ns.png" rounded />
+              <h3>Node.js</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" rounded />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630705675/css_asxn9e.png" rounded />
+              <h3>CSS</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" rounded />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630706380/sass1_tg8vcs.png" rounded />
+              <h3>Sass</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" rounded />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630705709/mongo_zyp23q.png" rounded />
+              <h3>MongoDB</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_100/v1630706859/exp_nt3jho.png" thumbnail />
+              <h3>Express</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_80/v1630708045/psql_nolbul.png" thumbnail />
+              <h3>PosgreSQL</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_100/v1630706895/react_b0cycf.png" thumbnail />
+              <h3>React</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_100/v1630706871/dj1_e2tfh1.png" thumbnail />
+              <h3>Django</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_80/v1630708004/herok_xjwyiq.png" thumbnail />
+              <h3>Heroku</h3>
             </Col>
           </Row>
+          <Col xs={5} md={3}>
+            <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
+            <h3>GitHub</h3>
+          </Col>
         </Container>
 
         <div id="project1" className="container-fluid">
