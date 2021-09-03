@@ -153,6 +153,7 @@ const Home = () => {
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" />
           </Card>
         </div>
+
         <div id="project1" className="container-fluid">
           <h1>Project 1</h1>
           <Card className="d-block w-50">
@@ -285,11 +286,9 @@ const Home = () => {
         </div>
 
         <div id="contact" className="container-fluid">
-
           <h1>Contact</h1>
           <Card className="d-block w-100">
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-
           </Card>
         </div>
 
