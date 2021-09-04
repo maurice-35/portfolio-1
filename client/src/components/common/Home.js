@@ -190,7 +190,7 @@ const Home = () => {
               <h3>MongoDB</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_100/v1630706859/exp_nt3jho.png" thumbnail />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_80/v1630706859/exp_nt3jho.png" thumbnail />
               <h3>Express</h3>
             </Col>
             <Col xs={5} md={3}>
@@ -198,7 +198,7 @@ const Home = () => {
               <h3>PosgreSQL</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_100/v1630706895/react_b0cycf.png" thumbnail />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_80/v1630706895/react_b0cycf.png" thumbnail />
               <h3>React</h3>
             </Col>
             <Col xs={5} md={3}>
@@ -206,7 +206,7 @@ const Home = () => {
               <h3>Django</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_thumb,w_150,g_face/v1630743172/jwt_svaw6v.png" thumbnail />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_thumb,w_120,g_face/v1630743172/jwt_svaw6v.png" thumbnail />
               <h3>Json Web Token</h3>
             </Col>
             <Col xs={5} md={3}>
@@ -214,8 +214,27 @@ const Home = () => {
               <h3>Heroku</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_100/v1630601356/github_lslue1.png" thumbnail />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_80/v1630711706/gith_lszan7.png" thumbnail />
               <h3>GitHub</h3>
+            </Col>
+            <Col xs={5} md={3}>
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale,w_80/v1630747880/insom_w2m7xy.png" thumbnail />
+              <h3>Imsomnia</h3>
+            </Col><Col xs={5} md={3}>
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale,w_80/v1630747998/Tplus_cyeuex.jpg" thumbnail />
+              <h3>TablePlus</h3>
+            </Col>
+            <Col xs={5} md={3}>
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale,w_80/v1630748656/trello1_gcntk6.png" thumbnail />
+              <h3>Trello</h3>
+            </Col>
+            <Col xs={5} md={3}>
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale,w_80/v1630747638/figma_znwh7b.png" thumbnail />
+              <h3>Figma</h3>
+            </Col>
+            <Col xs={5} md={3}>
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale,w_80/v1630748386/miro_vyaqjw.png" thumbnail />
+              <h3>Miro</h3>
             </Col>
           </Row>
         </Container>

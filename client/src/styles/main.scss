@@ -75,14 +75,17 @@ body {
   }
 
   .ICONS {
-    height: 700px;
+    height: 800px;
     background-color: gray;
     justify-content: space-evenly;
     align-items: center;
     display: flex;
     flex-direction: flex;
     font-style: italic;
+    flex: auto;
     font-size: 50px;
+    padding: 100px;
+    border-right: 60px;
    
   }
 
