@@ -162,12 +162,20 @@ const Home = () => {
               <h3>Python</h3>
             </Col>
             <Col xs={5} md={3}>
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630742605/bulma_xuw6t5.png" rounded />
+              <h3>Bulma</h3>
+            </Col>
+            <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_100/v1630714201/bstrap1_f7x2c1.png" rounded />
               <h3>Bootstrap</h3>
             </Col>
             <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630697648/node3_fid6ns.png" rounded />
               <h3>Node.js</h3>
+            </Col>
+            <Col xs={5} md={3}>
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630744116/axios_ltorsb.png" rounded />
+              <h3>Axios</h3>
             </Col>
             <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630705675/css.png" rounded />
@@ -194,8 +202,12 @@ const Home = () => {
               <h3>React</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_100/v1630706871/dj1_e2tfh1.png" thumbnail />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/b_rgb:a8ddb1,c_scale,e_grayscale,w_100/v1630741838/dj2_fbfe30.png" thumbnail />
               <h3>Django</h3>
+            </Col>
+            <Col xs={5} md={3}>
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_thumb,w_150,g_face/v1630743172/jwt_svaw6v.png" thumbnail />
+              <h3>Json Web Token</h3>
             </Col>
             <Col xs={5} md={3}>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_80/v1630708004/herok_xjwyiq.png" thumbnail />
