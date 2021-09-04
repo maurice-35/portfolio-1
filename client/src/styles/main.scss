@@ -71,13 +71,19 @@ body {
 
   .boot {
     max-width: 75px;
-    color-adjust: rgb(255, 0, 170);
-    background-color: #29813025;
+    background-color: #5bc9c025;
   }
 
   .ICONS {
-    height: 500px;
+    height: 700px;
     background-color: gray;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: flex;
+    font-style: italic;
+    font-size: 50px;
+   
   }
 
   #icon {

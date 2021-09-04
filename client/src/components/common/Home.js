@@ -149,9 +149,7 @@ const Home = () => {
         </div>
         <div id="experience" className="container-fluid">
           <h1>Experience</h1>
-          <Card className="git">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" />
-          </Card>
+
         </div>
         <Container>
           <Row className="ICONS">
@@ -164,7 +162,7 @@ const Home = () => {
               <h3>Python</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630695606/boot5_qm09x5.svg" rounded />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_100/v1630714201/bstrap1_f7x2c1.png" rounded />
               <h3>Bootstrap</h3>
             </Col>
             <Col xs={5} md={3}>
@@ -172,7 +170,7 @@ const Home = () => {
               <h3>Node.js</h3>
             </Col>
             <Col xs={5} md={3}>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630705675/css_asxn9e.png" rounded />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630705675/css.png" rounded />
               <h3>CSS</h3>
             </Col>
             <Col xs={5} md={3}>
@@ -203,11 +201,11 @@ const Home = () => {
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_80/v1630708004/herok_xjwyiq.png" thumbnail />
               <h3>Heroku</h3>
             </Col>
+            <Col xs={5} md={3}>
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_100/v1630601356/github_lslue1.png" thumbnail />
+              <h3>GitHub</h3>
+            </Col>
           </Row>
-          <Col xs={5} md={3}>
-            <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_100/v1630601356/github_lslue1.png" thumbnail />
-            <h3>GitHub</h3>
-          </Col>
         </Container>
 
         <div id="project1" className="container-fluid">
