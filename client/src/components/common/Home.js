@@ -107,35 +107,33 @@ const Home = () => {
       <br /> */}
         {/* <section data-spy="scroll" data-target="nav" data-offset="75">
         <nav className="nav navbar-expand-sm navbar- fixed-top"> */}
-        <ul className="navbar-nav"><br />
-          <div className="container-fluid" id="home">
-            <h1>Home</h1>
-            <CardGroup>
-              <Card className="d-block w-100">
-                <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-              </Card>
-              <span />
-              <Card className="d-block w-100">
-                <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-              </Card>
-              <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
-            </CardGroup>
-          </div>
-        </ul>
-
-        <div id="aboutMe" className="container-fluid">
-          <h1>About Me</h1>
+        {/* <ul className="navbar-nav"><br /> */}
+        <div className="container-fluid" id="home">
+          <h1>Home</h1>
+          <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
           <CardGroup>
-
-            <Card className="d-block w-100">
-              <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
-            </Card>
-            <br></br>
             <Card className="d-block w-100">
               <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
             </Card>
-            <br></br>
+            <span />
             <Card className="d-block w-100">
+              <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
+            </Card>
+          </CardGroup>
+        </div><br />
+        {/* {/* </ul> */}
+
+        <div className="container-fluid" id="aboutMe"> 
+          <h1>About Me</h1>
+          <CardGroup>
+
+            {/* <Card className="d-block w-100">
+              <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
+            </Card> */}
+            {/* <Card className="d-block w-100">
+              <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
+            </Card> */}
+            {/* <Card className="d-block w-100">
               <img className="image-border animate__animated animate__zoomIn others-img" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456970/Project%204/walk_e1u8s5.jpg" />
               <h3>Others</h3>
               <p>
@@ -143,10 +141,10 @@ const Home = () => {
                 Bad   <br />
                 <br />
               </p>
-            </Card>
+            </Card> */}
           </CardGroup >
-
         </div>
+
         <div id="experience" className="container-fluid">
           <h1>Experience</h1>
 
