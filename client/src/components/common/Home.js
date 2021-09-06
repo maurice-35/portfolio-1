@@ -123,13 +123,13 @@ const Home = () => {
         </div><br />
         {/* {/* </ul> */}
 
-        <div className="container-fluid" id="aboutMe"> 
+        <div className="container-fluid" id="aboutMe">
           <h1>About Me</h1>
           <CardGroup>
 
-            {/* <Card className="d-block w-100">
+            <Card className="d-block w-100">
               <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
-            </Card> */}
+            </Card>
             {/* <Card className="d-block w-100">
               <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
             </Card> */}
