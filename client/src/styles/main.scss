@@ -36,7 +36,7 @@ body {
 
   #projects {
     padding-top:50px;
-    height:1000px;
+    height:1200px;
     color: #fff; 
     background-color: #514664;
   }
@@ -184,12 +184,19 @@ body {
   //   border: hotpink;
   // }
 
-  // #button {
-  //   height: 60px;
-  //   color: white;
-  //   background-color: #a4ccc8;
-  //   cursor: pointer;
-  // }
+  #button {
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: #a4ccc8;
+    cursor: pointer;
+  }
+
+  #overlay-example {
+    max-width: 300px;
+    font-size: 15px;
+  }
+
   #butt {
     background-color: rgb(0, 119, 128);
     padding: 15px 14px;
