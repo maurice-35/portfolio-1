@@ -241,13 +241,16 @@ const Home = () => {
           </Row>
         </Container>
 
-        <div id="project4" className="container-fluid">
-          <h1>Project 4</h1>
+        <div id="projects" className="container-fluid">
+          <h1>Projects</h1>
           <Container>
             <Row>
               <Col xs={8} md={6}>
                 <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
+                <Button>click
+                  <a href="https://movie-app-project4.herokuapp.com/" target="_blank" rel="noreferrer noopener" />
+                </Button>
               </Col>
               <Col xs={8} md={6}>
                 <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
@@ -268,17 +271,17 @@ const Home = () => {
           {/* <Card className="git">
             <Image publicId="github_lslue1.png" />
           </Card> */}
-          <Card className="d-block w-50">
+          {/* <Card className="d-block w-50">
             <Image publicId="py_dnes7g.jpg" />
-          </Card>
+          </Card> */}
         </div>
-        <div id="project3" className="container-fluid">
+        {/* <div id="project3" className="container-fluid">
           <h1>Project 3</h1>
           <Card className="d-block w-100">
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
           </Card>
-        </div>
-        <div id="project2" className="container-fluid">
+        </div> */}
+        {/* <div id="project2" className="container-fluid">
           <h1>Project 2</h1>
           <Card className="d-block w-100">
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
@@ -289,7 +292,7 @@ const Home = () => {
           <Card className="d-block w-50">
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
           </Card>
-        </div>
+        </div> */}
         <div id="interests" className="container-fluid">
           <h1>Interests</h1>
           <Button variant="primary" onClick={handleShow}>
