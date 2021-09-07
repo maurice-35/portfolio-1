@@ -165,10 +165,18 @@ body {
     font-size: 18px;
   }
 
+  #button {
+    height: 60px;
+    color: white;
+    background-color: #a4ccc8;
+    cursor: pointer;
+  }
+
   #icon {
     color: #298130;
     font-size: 30px;
     margin: 0 auto;
+    cursor: pointer;
   }
 
    #position1 {
@@ -183,7 +191,7 @@ body {
     display: block;
     font-size: 18px;
   }
-
+  
   // image {
   //     max-width: 400px;
   //     padding: 40%;

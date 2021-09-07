@@ -13,16 +13,16 @@ const Home = () => {
 
   const [iconA, setIconA] = useState(false)
   const [show, setShow] = useState(false)
-  const target = useRef([])
+  const target = useRef(null)
   // const [dataToggle, setDataToggle] = useState(false)
 
   const toggleIconA = () => setIconA(!iconA)
   // const handleClose = () => setShow(false)
   // const handleShow = () => setShow(true)
-  // const toggleDataToggle = () => setDataToggle(!dataToggle)
 
-
-
+  const handleSubmit = async event => {
+    event.preventDefault()
+  }
   return (
     <>
       <section data-spy="scroll" data-target=".navbar" data-offset="75">
@@ -296,18 +296,21 @@ const Home = () => {
         <div id="interests" className="container-fluid">
           <h1>Interests</h1>
           <div className="char">
-            <Button className="button" ref={target} onClick={() => setShow(!show)}>
+            <Button id="button" ref={target} onClick={() => setShow(!show)}>
               Charities
             </Button>
+
             <Overlay target={target.current} show={show} placement="bottom">
               {(props) => (
                 <Tooltip id="overlay-example" {...props}>
                   1. Evelynoldfield. This charity is aimed at helping migrants in the UK.<br></br>
                   2. Haven House Children Hospice. This charity is aimed at helping migrants in the UK.
+                  3. Richard House Children Hospice.
                 </Tooltip>
               )}
             </Overlay>
-          </div>
+          </div><span />
+
           {/* <Button variant="primary" onClick={handleShow}>
             Launch demo modal
           </Button>
@@ -461,7 +464,47 @@ const Home = () => {
         <div id="contact" className="container-fluid">
           <h1>Contact</h1>
           <Card className="d-block w-100">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
+            <Container fluid="md" className="center-height animate__slideOutDown">
+              <Row className="justify-content-md-center">
+                <Col >
+                  <Form onSubmit={handleSubmit} className='function'>
+
+                    <Form.Group className="info" controlId="formBasicEmail">
+                      <Form.Label>Name</Form.Label>
+                      <Form.Control name="email" type="email" placeholder="Enter email" />
+                    </Form.Group>
+                    <Form.Group className="info" controlId="formBasicPassword">
+                      <Form.Label>Phone Number</Form.Label>
+                      <Form.Control name="phone-number" type="phone-number" placeholder="Phone Number" />
+                    </Form.Group>
+                    <Form.Group className="info" controlId="formBasicPassword">
+                      <Form.Label>Company</Form.Label>
+                      <Form.Control name="company" type="company" placeholder="company" />
+                    </Form.Group>
+                    <Form.Group className="info" controlId="formBasicPassword">
+                      <Form.Label>Message</Form.Label>
+                      <Form.Control name="message" type="message" placeholder="message" />
+                    </Form.Group>
+                    <button type="submit" className="button is-fullwidth is-warning">Send Message</button>
+                  </Form>
+                </Col>
+              </Row>
+            </Container>
+            {/* <form action="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" className="container" />
+            <form action="/action_page.php" className="contain">
+              <label htmlFor="Name"><b>Name</b></label>
+              <label htmlFor="emailAddress"><b>Email Address</b></label>
+              <label htmlFor="phoneNumber"><b>Phone Number</b></label>
+              <label htmlFor="c"><b>Company</b></label>
+              <label htmlFor="message"><b>Message</b></label>
+              <input className="name" placeholder="Name" name="name" />
+              <input type="text" placeholder="Enter Email" name="email" required />
+              <input type="text" id="phoneNumberl" placeholder="Phone Number" />
+              <label htmlFor="psw"><b>Password</b></label>
+              <input  type="password" placeholder="Enter Password" name="psw" required />
+
+              <button type="submit" className="btn">Send Message</button>
+            </form> */}
           </Card>
         </div>
 
