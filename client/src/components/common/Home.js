@@ -463,8 +463,8 @@ const Home = () => {
 
         <div id="contact" className="container-fluid">
           <h1>Contact</h1>
-          <Card className="d-block w-100">
-            <Container fluid="md" className="center-height animate__slideOutDown">
+          <Card className="d-block w-50" id="INFO">
+            <Container fluid="lg" className="mr-auto my-4 my-md-5">
               <Row className="justify-content-md-center">
                 <Col >
                   <Form onSubmit={handleSubmit} className='function'>
@@ -485,26 +485,12 @@ const Home = () => {
                       <Form.Label>Message</Form.Label>
                       <Form.Control name="message" type="message" placeholder="message" />
                     </Form.Group>
-                    <button type="submit" className="button is-fullwidth is-warning">Send Message</button>
+                    <button type="submit" className="btn" id="butt">Send Message</button>
                   </Form>
                 </Col>
               </Row>
             </Container>
-            {/* <form action="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" className="container" />
-            <form action="/action_page.php" className="contain">
-              <label htmlFor="Name"><b>Name</b></label>
-              <label htmlFor="emailAddress"><b>Email Address</b></label>
-              <label htmlFor="phoneNumber"><b>Phone Number</b></label>
-              <label htmlFor="c"><b>Company</b></label>
-              <label htmlFor="message"><b>Message</b></label>
-              <input className="name" placeholder="Name" name="name" />
-              <input type="text" placeholder="Enter Email" name="email" required />
-              <input type="text" id="phoneNumberl" placeholder="Phone Number" />
-              <label htmlFor="psw"><b>Password</b></label>
-              <input  type="password" placeholder="Enter Password" name="psw" required />
-
-              <button type="submit" className="btn">Send Message</button>
-            </form> */}
+           
           </Card>
         </div>
 
