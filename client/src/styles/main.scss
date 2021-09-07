@@ -10,6 +10,72 @@ body {
     background-color: rgba(250, 235, 215, 0.527);
   }
 
+  
+
+  #home {
+    padding-top:50px;
+    height:500px;
+    color: #fff;
+    background-color: #514664;
+    // margin-top: 150px;
+  }
+
+  #aboutMe {
+    padding-top:50px;
+    height:500px;
+    color: #fff; 
+    background-color: #514664;
+  }
+
+  #experience {
+    padding-top:50px;
+    height:500px;
+    color: #fff; 
+    background-color: #514664;
+  }
+
+  #project1 {
+    padding-top:50px;
+    height:1000px;
+    color: #fff; 
+    background-color: #514664;
+  }
+
+  #project2 {
+    padding-top:50px;
+    height:1000px;
+    color: #fff; 
+    background-color: #514664;
+  }
+
+  #project3 {
+    padding-top:50px;
+    height:1000px;
+    color: #fff; 
+    background-color: #514664;
+  }
+
+  #project4 {
+    padding-top:50px;
+    height:1000px;
+    color: #fff; 
+    background-color: #514664;
+  }
+
+  #interests {
+    padding-top:50px;
+    height:1000px;
+    color: #fff; 
+    // background-color: #514664;
+  }
+
+  #contact {
+    padding-top:50px;
+    height:800px;
+    color: #fff; 
+    background-color: #514664;
+  }
+
   .affix {
     top: 0;
     width: 100%;
@@ -87,7 +153,11 @@ body {
     font-size: 50px;
     padding: 100px;
     border-right: 60px;
-   
+  }
+
+  .g-4 {
+    max-width: 400px;
+    
   }
 
   #icon {
@@ -101,72 +171,12 @@ body {
      font-size:10px;
    }
 
-  #home {
-    padding-top:50px;
-    height:500px;
-    color: #fff;
-    background-color: #514664;
-    // margin-top: 150px;
-  }
-
-  #aboutMe {
-    padding-top:50px;
-    height:500px;
-    color: #fff; 
-    background-color: #514664;
-  }
-
-  #experience {
-    padding-top:50px;
-    height:500px;
-    color: #fff; 
-    background-color: #514664;
-  }
-
-  #project1 {
-    padding-top:50px;
-    height:1000px;
-    color: #fff; 
-    background-color: #514664;
-  }
-
-  #project2 {
-    padding-top:50px;
-    height:1000px;
-    color: #fff; 
-    background-color: #514664;
-  }
-
-  #project3 {
-    padding-top:50px;
-    height:1000px;
-    color: #fff; 
-    background-color: #514664;
-  }
-
-  #project4 {
-    padding-top:50px;
-    height:1000px;
-    color: #fff; 
-    background-color: #514664;
-  }
-
-  #interests {
-    padding-top:50px;
-    height:800px;
-    color: #fff; 
-    background-color: #514664;
-  }
-
-  #contact {
-    padding-top:50px;
-    height:800px;
-    color: #fff; 
-    background-color: #514664;
-  }
-
   .container {
     margin-top: 5px;
+  }
+  .describe {
+    display: block;
+    font-size: 18px;
   }
 
   // image {

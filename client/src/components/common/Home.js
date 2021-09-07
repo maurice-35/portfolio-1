@@ -1,7 +1,7 @@
 import { useState, React } from 'react'
 // import { NavDropdown, Toast, Container } from 'react-bootstrap'
 // import Container from 'react-bootstrap/Container'
-import { Nav, Navbar, NavDropdown, Toast, Form, Card, CardGroup, Button, Container, Row, Col, Image } from 'react-bootstrap'
+import { Nav, Navbar, Toast, Form, Card, CardGroup, Button, Container, Row, Col, Image, Modal } from 'react-bootstrap'
 // import Toast from 'react-bootstrap/Toast'
 // import Alert from 'react-bootstrap/Alert'
 // Popover, OverlayTrigger,
@@ -12,9 +12,12 @@ import { Nav, Navbar, NavDropdown, Toast, Form, Card, CardGroup, Button, Contain
 const Home = () => {
 
   const [iconA, setIconA] = useState(false)
+  const [show, setShow] = useState(false)
   // const [dataToggle, setDataToggle] = useState(false)
 
   const toggleIconA = () => setIconA(!iconA)
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
   // const toggleDataToggle = () => setDataToggle(!dataToggle)
 
 
@@ -60,7 +63,7 @@ const Home = () => {
                   <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
                   <div className="navbar-wrapper">
                     <h4>Kind  minds  never  hide!</h4><br />
-                    <p>The Journal Of A Thousand Miles.</p>
+                    <p>The Journey Of A Thousand Miles.</p>
                   </div>
                   <Navbar.Toggle aria-controls="navbarScroll" />
                   <Navbar.Collapse id="navbarScroll">
@@ -72,14 +75,15 @@ const Home = () => {
 
                       <Nav.Link href="#home">Home</Nav.Link>
                       <Nav.Link href="#aboutMe">About Me</Nav.Link>
-                      <NavDropdown title="Projects" id="navbarScrollingDropdown">
-                        <NavDropdown.Item href="#project1">Project 1</NavDropdown.Item>
-                        <NavDropdown.Item href="#project2">Project 2</NavDropdown.Item>
+                      <Nav.Link href="#projects">Projects</Nav.Link>
+                      {/* <NavDropdown title="Projects" id="navbarScrollingDropdown">
+                        <NavDropdown.Item href="#project1">Project </NavDropdown.Item>
+                        <NavDropdown.Item href="#project2">Project 3</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#project3">Project 3</NavDropdown.Item>
+                        <NavDropdown.Item href="#project3">Project 2</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#project4">Project 4</NavDropdown.Item>
-                      </NavDropdown>
+                        <NavDropdown.Item href="#project4">Project 1</NavDropdown.Item>
+                      </NavDropdown> */}
                       <Nav.Link href="#experience">
                         Experience
                       </Nav.Link>
@@ -237,19 +241,35 @@ const Home = () => {
           </Row>
         </Container>
 
-        <div id="project1" className="container-fluid">
-          <h1>Project 1</h1>
+        <div id="project4" className="container-fluid">
+          <h1>Project 4</h1>
+          <Container>
+            <Row>
+              <Col xs={8} md={6}>
+                <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
+              </Col>
+              <Col xs={8} md={6}>
+                <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
+              </Col>
+            </Row><br />
+            <Row>
+              <Col xs={8} md={6}>
+                <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
+              </Col>
+              <Col xs={8} md={6}>
+                <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
+              </Col>
+            </Row>
+          </Container>
           {/* <Card className="git">
             <Image publicId="github_lslue1.png" />
           </Card> */}
           <Card className="d-block w-50">
             <Image publicId="py_dnes7g.jpg" />
-          </Card>
-        </div>
-        <div id="project2" className="container-fluid">
-          <h1>Project 2</h1>
-          <Card className="d-block w-100">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
           </Card>
         </div>
         <div id="project3" className="container-fluid">
@@ -258,15 +278,68 @@ const Home = () => {
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
           </Card>
         </div>
-        <div id="project4" className="container-fluid">
-          <h1>Project 4</h1>
+        <div id="project2" className="container-fluid">
+          <h1>Project 2</h1>
+          <Card className="d-block w-100">
+            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
+          </Card>
+        </div>
+        <div id="project1" className="container-fluid">
+          <h1>Project 1</h1>
           <Card className="d-block w-50">
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
           </Card>
         </div>
         <div id="interests" className="container-fluid">
           <h1>Interests</h1>
-          <div className="container">
+          <Button variant="primary" onClick={handleShow}>
+            Launch demo modal
+          </Button>
+
+          <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title>Modal heading</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleClose}>
+                Close
+              </Button>
+              <Button variant="primary" onClick={handleClose}>
+                Save Changes
+              </Button>
+            </Modal.Footer>
+          </Modal>
+          {/* <Row xs={2} md={1} className="g-4">
+            {Array.from({ length: 2 }).map((_, idx) => (
+              <Col>
+                <Card>
+                  <Card.Img variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
+                  <Card.Body>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                      This is a longer card with supporting text below as a natural
+                      lead-in to additional content. This content is a little bit longer.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row> */}
+          {/* <Card style={{ width: '30rem' }}>
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </Card.Text>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body>
+          </Card> */}
+
+          {/* <div className="container">
             <ul className="nav nav-tabs">
               <li className="active"><a data-toggle="tab" href="#menu 1">Menu 1</a></li>
               <li><a data-toggle="tab" href="#menu 2">Menu 2</a></li>
@@ -292,7 +365,7 @@ const Home = () => {
                 <p>Richard House Children Hospice.</p>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* <div className="container"> */}
           {/* <h4>Charity 1<span />Charity 2<span />Charity 3</h4> */}
           {/* <h4>charities1<span /> charities2<span /> charities3<span /> charities4</h4>
@@ -345,13 +418,14 @@ const Home = () => {
           </OverlayTrigger>
         ))} */}
 
-          <Card className="d-block w-100">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-            <div className="container">
-              {/* <h3>Popover Example</h3> */}
-              {/* <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"></a> */} */
+          {/* <Card className="d-block w-100">
+            <p className="charity">Charity1<i className="fas fa-charity-one"><Card.Link className="font-monospace" href="http://evelynoldfield.co.uk/"></Card.Link></i></p> */}
+          {/* <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" /> */}
+          {/* <div className="container"> */}
+          {/* <h3>Popover Example</h3> */}
+          {/* <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"></a> */} */
 
-              {/* <div className="buttons">
+          {/* <div className="buttons">
         <Link to="/charities1">
         </Link>
 
@@ -364,9 +438,9 @@ const Home = () => {
         </Link>
         </div> */}
 
-            </div>
-          </Card>
-        </div>
+          {/* </div> */}
+          {/* </Card> */}
+        </div><br />
 
         <div id="contact" className="container-fluid">
           <h1>Contact</h1>
