@@ -1,7 +1,7 @@
-import { useState, React } from 'react'
+import { useState, React, useRef } from 'react'
 // import { NavDropdown, Toast, Container } from 'react-bootstrap'
 // import Container from 'react-bootstrap/Container'
-import { Nav, Navbar, Toast, Form, Card, CardGroup, Button, Container, Row, Col, Image, Modal } from 'react-bootstrap'
+import { Nav, Navbar, Toast, Form, Card, CardGroup, Button, Container, Row, Col, Image, Tooltip, Overlay } from 'react-bootstrap'
 // import Toast from 'react-bootstrap/Toast'
 // import Alert from 'react-bootstrap/Alert'
 // Popover, OverlayTrigger,
@@ -13,11 +13,12 @@ const Home = () => {
 
   const [iconA, setIconA] = useState(false)
   const [show, setShow] = useState(false)
+  const target = useRef([])
   // const [dataToggle, setDataToggle] = useState(false)
 
   const toggleIconA = () => setIconA(!iconA)
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
+  // const handleClose = () => setShow(false)
+  // const handleShow = () => setShow(true)
   // const toggleDataToggle = () => setDataToggle(!dataToggle)
 
 
@@ -202,7 +203,7 @@ const Home = () => {
                 <h3>React</h3>
               </Col>
               <Col xs={5} md={3}>
-                <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/b_rgb:a8ddb1,c_scale,e_grayscale,w_100/v1630741838/dj2_fbfe30.png" thumbnail />
+                <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale,w_80/v1631004003/jg3_q75wjm.png" thumbnail />
                 <h3>Django</h3>
               </Col>
               <Col xs={5} md={3}>
@@ -248,7 +249,7 @@ const Home = () => {
                 <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
                 <Button>click
-                  <Card.Link href="https://movie-app-project4.herokuapp.com/" target="_blank" rel="noreferrer noopener"><i className="fab fa-heroku project4"></i> </Card.Link>
+                  <Card.Link href="https/movie-app-project4.herokuapp.com/" target="_blank" rel="noreferrer noopener"><i className="fab fa-heroku project4"></i> </Card.Link>
                 </Button>
               </Col>
               <Col xs={8} md={6}>
@@ -294,7 +295,20 @@ const Home = () => {
         </div> */}
         <div id="interests" className="container-fluid">
           <h1>Interests</h1>
-          <Button variant="primary" onClick={handleShow}>
+          <div className="char">
+            <Button className="button" ref={target} onClick={() => setShow(!show)}>
+              Charities
+            </Button>
+            <Overlay target={target.current} show={show} placement="bottom">
+              {(props) => (
+                <Tooltip id="overlay-example" {...props}>
+                  1. Evelynoldfield. This charity is aimed at helping migrants in the UK.<br></br>
+                  2. Haven House Children Hospice. This charity is aimed at helping migrants in the UK.
+                </Tooltip>
+              )}
+            </Overlay>
+          </div>
+          {/* <Button variant="primary" onClick={handleShow}>
             Launch demo modal
           </Button>
 
@@ -311,7 +325,7 @@ const Home = () => {
                 Save Changes
               </Button>
             </Modal.Footer>
-          </Modal>
+          </Modal> */}
           {/* <Row xs={2} md={1} className="g-4">
             {Array.from({ length: 2 }).map((_, idx) => (
               <Col>
@@ -425,7 +439,7 @@ const Home = () => {
           {/* <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" /> */}
           {/* <div className="container"> */}
           {/* <h3>Popover Example</h3> */}
-          {/* <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"></a> */} */
+          {/* <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"></a> */}
 
           {/* <div className="buttons">
         <Link to="/charities1">
