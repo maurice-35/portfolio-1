@@ -29,12 +29,12 @@ body {
 
   #experience {
     padding-top:50px;
-    height:500px;
+    max-height:13000px;
     color: #fff; 
     background-color: #514664;
   }
 
-  #project1 {
+  #projects {
     padding-top:50px;
     height:1000px;
     color: #fff; 
@@ -142,8 +142,9 @@ body {
   }
 
   .ICONS {
-    height: 800px;
-    background-color: gray;
+    max-height: 1300px;
+    // background-color: gray;
+    background-color: #514664;
     justify-content: space-evenly;
     align-items: center;
     display: flex;
@@ -153,7 +154,6 @@ body {
     font-size: 50px;
     padding: 100px;
     border-right: 60px;
-    position: relative;
   }
 
   .g-4 {
