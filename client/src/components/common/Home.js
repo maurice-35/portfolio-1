@@ -150,24 +150,34 @@ const Home = () => {
               <Col xs={8} md={6}>
                 <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
-                <Button>Project 4
-                  <Card.Link href="https/movie-app-project4.herokuapp.com/" target="_blank" rel="noreferrer noopener"><i className="fab fa-heroku project4"></i> </Card.Link>
+                <Button>
+                  <a href="https://movie-app-project4.herokuapp.com/">Project 4</a>
+                  {/* <Card.Link href="https/movie-app-project4.herokuapp.com/" target="_blank" rel="noreferrer noopener"><i className="fab fa-heroku project4"></i> </Card.Link> */}
                   {/* <object type="text/html" data="https/movie-app-project4.herokuapp.com/" width='300px' height="200px"></object> */}
                 </Button>
               </Col>
               <Col xs={8} md={6}>
                 <p className="describe">Full-Stack MongoDB, Express, React, Node app with CRUD functionality from our own RESTful API. As a group, we created an e-commerce app to sell meals and treats for dogs and cats. We all worked full-stack and styled using Bootstrap and Sass. I later had the responsibility to work on the register and login pages.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631033371/P3_xxby5y.png" thumbnail />
+                <Button>
+                  <a href="https://tails-whiskers.herokuapp.com/">Project 3</a>
+                </Button>
               </Col>
             </Row><br />
             <Row>
               <Col xs={8} md={6}>
                 <p className="describe">I built a React app which used an external API from ‘thecatapi.com’ to display cats of various categories and origins. Styled using Bulma, it is a good spot for cat lovers.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034365/cat2_fwshks.png" thumbnail />
+                <Button>
+                  <a href="https://maurice-cats-app-project2.netlify.app/">Project 2</a>
+                </Button>
               </Col>
               <Col xs={8} md={6}>
                 <p className="describe">I built a number-guessing grid-game using JavaScript, HTML and CSS. It is a JavaScript random selection of numbers to match that of the user.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034515/P_jel8al.png" thumbnail />
+                <Button>
+                  <a href="https://maurice-35.github.io/number-guessing-game/">Project 1</a>
+                </Button>
               </Col>
             </Row>
           </Container>
@@ -196,8 +206,8 @@ const Home = () => {
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
           </Card>
         </div> */}
-        <div id="interests" className="container-fluid">
-          <h1>Interests</h1>
+        <div className="interests" id="container-fluid">
+          <h1 id="container2">Interests</h1>
           <div className="char">
             <Button id="button" ref={target} onClick={() => setShow(!show)}>
               Charities
@@ -214,18 +224,35 @@ const Home = () => {
             </Overlay>
           </div><span />
 
-          
           <Card className="d-block w-100">
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
           </Card>
+          {/* <Card className="paint">
+            <h4>I enjoy painting during my leisure time.</h4>
+            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/w_250/v1631098527/paint_zxpgdl.jpg" />
+          </Card> */}
+          <Container>
+            <Row>
+              <Col xs={10} md={8}>
+                <p className="describe">I enjoy painting during my leisure time.</p>
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_250/v1631098527/paint_zxpgdl.jpg" thumbnail />
+              </Col>
+            </Row>
+          </Container>
         </div><br />
+        <div className="paint">
+
+          {/* <Card className="d-block w-100">
+            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631098527/paint_zxpgdl.jpg" />
+          </Card> */}
+        </div><span />
 
         <div id="contact" className="container-fluid">
           <h1>Contact</h1>
           <Card className="d-block w-50" id="INFO">
             <Container fluid="lg" className="mr-auto my-4 my-md-5">
               <Row className="justify-content-md-center">
-                <Col >
+                <Col>
                   <Form onSubmit={handleSubmit} className='function'>
 
                     <Form.Group className="info" controlId="formBasicEmail">
@@ -255,10 +282,10 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="team">
+        {/* <div className="team">
           <p className="font-monospace">Maurice <i className="fas fa-hand-point-right"></i><Card.Link href="https://github.com/maurice-35"><i className="fab fa-github-square icon"></i></Card.Link></p>
-        </div>
-        
+        </div> */}
+
         <main className="Footer">
           <div>
             <Container>
@@ -270,10 +297,14 @@ const Home = () => {
             </Container>
           </div>
           <footer>
-            <p>
-              <p>Github</p>
-              <a href="http://jpg licenses">Made With Much Hope 🤯 <span />  🖥 By MKT</a>
-            </p>
+            <Container>
+              <Row>
+                <Col>
+                  <p>Github</p>
+                  <a href="https://github.com/maurice-35">Made With Much Hope 🤯 <span />  🖥 By MKT</a>
+                </Col>
+              </Row>
+            </Container>
           </footer>
         </main>
       </section>
