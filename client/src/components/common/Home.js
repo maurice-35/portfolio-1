@@ -1,5 +1,5 @@
 import { useState, React, useRef } from 'react'
-import { Card, CardGroup, Button, Container, Row, Col, Image, Tooltip, Overlay } from 'react-bootstrap'
+import { Form, Card, CardGroup, Button, Container, Row, Col, Image, Tooltip, Overlay } from 'react-bootstrap'
 
 
 
@@ -9,38 +9,53 @@ const Home = () => {
   const target = useRef(null)
   // const [dataToggle, setDataToggle] = useState(false)
 
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    // try {
+    // } catch (err) {
+    //   console.log(err)
+    // }
+  }
 
-  // const handleSubmit = async event => {
-  //   event.preventDefault()
+  // const handleChange = (event) => {
+  //   const newForm = { ...formData, [event.target.name]: event.target.value }
+  //   setFormData()
+  //   console.log(newForm)
   // }
+
   return (
     <>
       <section data-spy="scroll" data-target=".navbar" data-offset="75">
         <div className="container-fluid" id="home">
           <h1>Home</h1>
-          <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
-          <CardGroup>
-            <Card className="d-block w-100">
-              <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-            </Card>
-            <span />
-            <Card className="d-block w-100">
-              <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-            </Card>
-          </CardGroup>
+          <Container>
+            <Row className="ICONS">
+              <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
+              <CardGroup>
+                <Card className="d-block w-100">
+                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
+                </Card><span />
+                <span />
+                <Card className="d-block w-100">
+                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
+                </Card>
+              </CardGroup>
+            </Row>
+          </Container>
         </div><br />
 
         <div className="container-fluid" id="aboutMe">
           <h1>About Me</h1>
-          <CardGroup>
-
-            <Card className="d-block w-100">
-              <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
-            </Card>
-            {/* <Card className="d-block w-100">
+          <Container>
+            <Row className="ICONS">
+              <CardGroup>
+                <Card className="d-block w-100">
+                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
+                </Card>
+                {/* <Card className="d-block w-100">
               <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
             </Card> */}
-            {/* <Card className="d-block w-100">
+                {/* <Card className="d-block w-100">
               <img className="image-border animate__animated animate__zoomIn others-img" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456970/Project%204/walk_e1u8s5.jpg" />
               <h3>Others</h3>
               <p>
@@ -49,7 +64,9 @@ const Home = () => {
                 <br />
               </p>
             </Card> */}
-          </CardGroup >
+              </CardGroup >
+            </Row>
+          </Container>
         </div>
 
         <div id="experience" className="container-fluid">
@@ -208,31 +225,35 @@ const Home = () => {
         </div> */}
         <div className="interests" id="container-fluid">
           <h1 id="container2">Interests</h1>
-          <div className="char">
-            <Button id="button" ref={target} onClick={() => setShow(!show)}>
-              Charities
-            </Button>
+          <Container>
+            <Row className="ICONS">
+              <div className="char">
+                <Button id="button" ref={target} onClick={() => setShow(!show)}>
+                  Charities
+                </Button>
 
-            <Overlay target={target.current} show={show} placement="bottom">
-              {(props) => (
-                <Tooltip id="overlay-example" {...props}>
-                  1. Evelynoldfield. This charity is aimed at helping migrants in the UK.<br></br>
-                  2. Haven House Children Hospice. This charity is aimed at helping migrants in the UK.
-                  3. Richard House Children Hospice.
-                </Tooltip>
-              )}
-            </Overlay>
-          </div><span />
+                <Overlay target={target.current} show={show} placement="bottom">
+                  {(props) => (
+                    <Tooltip id="overlay-example" {...props}>
+                      1. Evelynoldfield. This charity is aimed at helping migrants in the UK.<br></br>
+                      2. Haven House Children Hospice. This charity is aimed at helping migrants in the UK.
+                      3. Richard House Children Hospice.
+                    </Tooltip>
+                  )}
+                </Overlay>
+              </div><br />
 
-          <Card className="d-block w-100">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
-          </Card>
+              <Card className="d-block w-100">
+                <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
+              </Card>
+            </Row>
+          </Container>
           {/* <Card className="paint">
             <h4>I enjoy painting during my leisure time.</h4>
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/w_250/v1631098527/paint_zxpgdl.jpg" />
           </Card> */}
           <Container>
-            <Row>
+            <Row className="ICONS" id="paint">
               <Col xs={10} md={8}>
                 <p className="describe">I enjoy painting during my spare time.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_250/v1631098527/paint_zxpgdl.jpg" thumbnail />
@@ -240,14 +261,54 @@ const Home = () => {
             </Row>
           </Container>
         </div><br />
-        <div className="paint">
+        {/* <div className="paint"> */}
 
-          {/* <Card className="d-block w-100">
+        {/* <Card className="d-block w-100">
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631098527/paint_zxpgdl.jpg" />
           </Card> */}
-        </div><span />
 
+        {/* </div><span /> */}
 
+        <div id="contact" className="container-fluid">
+          <h1>Contact</h1>
+          <Card className="d-block w-50" id="INFO">
+            <Container fluid="lg" className="mr-auto my-4 my-md-5">
+              <Row className="justify-content-md-center">
+                <Col>
+                  <Form onSubmit={handleSubmit} className='function'>
+
+                    <Form.Group className="info">
+                      <Form.Label>Name</Form.Label>
+                      <Form.Control name="email" type="email" placeholder="Enter email" />
+                    </Form.Group>
+                    <Form.Group className="info">
+                      <Form.Label>Phone Number</Form.Label>
+                      <Form.Control name="phone-number" type="phone-number" placeholder="Phone Number" />
+                    </Form.Group>
+                    <Form.Group className="info">
+                      <Form.Label>Company</Form.Label>
+                      <Form.Control name="company" type="company" placeholder="company" />
+                    </Form.Group>
+                    <Form.Group className="info">
+                      {/* <Form.Label>Message</Form.Label> */}
+                      <h3>Message</h3>
+                    </Form.Group><br />
+                    {/* <textarea className="Form.Control" name="message" type="message" placeholder="message" /> */}
+                    <div className="form-field">
+                      <label htmlFor="message">Your message</label>
+                      <textarea id="message" name="message" placeholder="What do you want to say?" required></textarea>
+                    </div>
+
+                    <button type="submit" className="btn" id="butt"> <a href="mailto:kollewem.35@gmail.com">Send Message</a></button>
+                  </Form>
+                </Col>
+              </Row>
+            </Container>
+          </Card>
+          <div className="icon">
+            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/maurice-kollewe/"></a>
+          </div>
+        </div>
 
         {/* <div className="team">
           <p className="font-monospace">Maurice <i className="fas fa-hand-point-right"></i><Card.Link href="https://github.com/maurice-35"><i className="fab fa-github-square icon"></i></Card.Link></p>
@@ -265,7 +326,7 @@ const Home = () => {
           </div>
           <footer>
             <Container>
-              <Row>
+              <Row className="foot">
                 <Col>
                   <p>Github</p>
                   <a href="https://github.com/maurice-35">Made With Much Hope 🤯 <span />  🖥 By MKT</a>

@@ -21,59 +21,61 @@ body {
   }
 
   #aboutMe {
-    padding-top:50px;
-    height:500px;
+    padding-top: 100px;
+    max-height: 16000px;;
     color: #fff; 
     background-color: #514664;
   }
 
   #experience {
-    padding-top:50px;
-    max-height:13000px;
+    padding-top: 100px;
+    max-height: 16000px;
     color: #fff; 
     background-color: #514664;
   }
 
   #projects {
-    padding-top:50px;
-    height:1200px;
+    padding-top: 100px;
+    max-height: 1600px;
     color: #fff; 
     background-color: #514664;
   }
 
   #project2 {
-    padding-top:50px;
-    height:1000px;
+    padding-top: 100px;
+    height: 1600px;
     color: #fff; 
     background-color: #514664;
   }
 
   #project3 {
-    padding-top:50px;
-    height:1000px;
+    padding-top: 100px;
+    height: 1600px;
     color: #fff; 
     background-color: #514664;
   }
 
   #project4 {
-    padding-top:50px;
-    height:1000px;
+    padding-top: 100px;
+    height: 1600px;
     color: #fff; 
     background-color: #514664;
   }
 
   .interests {
-    padding-top:50px;
-    height:1000px;
+    padding-top: 100px;
+    height: 1600px;
     color: #fff; 
     background-color: #514664;
   }
 
   #contact {
-    padding-top:50px;
-    height:800px;
+    padding-top: 100px;
+    height: 1600px;
     color: #fff; 
     background-color: #514664;
+    // @media screen(500)
+      
   }
 
   #INFO {
@@ -84,6 +86,7 @@ body {
     background-position: center;
     padding: 80px;
     border-color: whitesmoke;
+   
   }
 
   [name="message"] {
@@ -229,6 +232,9 @@ body {
      max-width: 100px;
      font-size:10px;
    }
+   #paint {
+     margin-top: 20px;
+   }
 
   .container {
     margin-top: 5px;
@@ -252,12 +258,20 @@ body {
       color:#61817e;
   }
 
-  .Footer {
-    max-height: 50px;
-    justify-content: center;
-    font-size: 12px;
-    
-  }
+  .foot {
+  // max-height: 1300px;
+  // background-color: gray;
+  background-color: #514664;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: flex;
+  font-style: italic;
+  flex: auto;
+  font-size: 50px;
+  // padding: 100px;
+  // border-right: 60px;
+}
 
   .image {
     justify-content: center;
