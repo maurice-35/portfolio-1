@@ -223,8 +223,8 @@ const Home = () => {
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
           </Card>
         </div> */}
-        <div className="interests" id="container-fluid">
-          <h1 id="container2">Interests</h1>
+        <div  id="interests" className="container-fluid">
+          <h1>Interests</h1>
           <Container>
             <Row className="ICONS">
               <div className="char">
@@ -253,7 +253,7 @@ const Home = () => {
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/w_250/v1631098527/paint_zxpgdl.jpg" />
           </Card> */}
           <Container>
-            <Row className="ICONS" id="paint">
+            <Row className="tools" id="paint">
               <Col xs={10} md={8}>
                 <p className="describe">I enjoy painting during my spare time.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_250/v1631098527/paint_zxpgdl.jpg" thumbnail />
@@ -271,7 +271,7 @@ const Home = () => {
 
         <div id="contact" className="container-fluid">
           <h1>Contact</h1>
-          <Card className="d-block w-50" id="INFO">
+          <Card className="d-block w-100" id="INFO">
             <Container fluid="lg" className="mr-auto my-4 my-md-5">
               <Row className="justify-content-md-center">
                 <Col>
