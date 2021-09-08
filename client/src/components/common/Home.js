@@ -1,5 +1,5 @@
 import { useState, React, useRef } from 'react'
-import { Form, Card, CardGroup, Button, Container, Row, Col, Image, Tooltip, Overlay } from 'react-bootstrap'
+import { Card, CardGroup, Button, Container, Row, Col, Image, Tooltip, Overlay } from 'react-bootstrap'
 
 
 
@@ -10,9 +10,9 @@ const Home = () => {
   // const [dataToggle, setDataToggle] = useState(false)
 
 
-  const handleSubmit = async event => {
-    event.preventDefault()
-  }
+  // const handleSubmit = async event => {
+  //   event.preventDefault()
+  // }
   return (
     <>
       <section data-spy="scroll" data-target=".navbar" data-offset="75">
@@ -234,7 +234,7 @@ const Home = () => {
           <Container>
             <Row>
               <Col xs={10} md={8}>
-                <p className="describe">I enjoy painting during my leisure time.</p>
+                <p className="describe">I enjoy painting during my spare time.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_250/v1631098527/paint_zxpgdl.jpg" thumbnail />
               </Col>
             </Row>
@@ -247,40 +247,7 @@ const Home = () => {
           </Card> */}
         </div><span />
 
-        <div id="contact" className="container-fluid">
-          <h1>Contact</h1>
-          <Card className="d-block w-50" id="INFO">
-            <Container fluid="lg" className="mr-auto my-4 my-md-5">
-              <Row className="justify-content-md-center">
-                <Col>
-                  <Form onSubmit={handleSubmit} className='function'>
 
-                    <Form.Group className="info" controlId="formBasicEmail">
-                      <Form.Label>Name</Form.Label>
-                      <Form.Control name="email" type="email" placeholder="Enter email" />
-                    </Form.Group>
-                    <Form.Group className="info" controlId="formBasicPassword">
-                      <Form.Label>Phone Number</Form.Label>
-                      <Form.Control name="phone-number" type="phone-number" placeholder="Phone Number" />
-                    </Form.Group>
-                    <Form.Group className="info" controlId="formBasicPassword">
-                      <Form.Label>Company</Form.Label>
-                      <Form.Control name="company" type="company" placeholder="company" />
-                    </Form.Group>
-                    <Form.Group className="info" controlId="formBasicPassword">
-                      <Form.Label>Message</Form.Label>
-                      <Form.Control name="message" type="message" placeholder="message" />
-                    </Form.Group><br />
-                    <button type="submit" className="btn" id="butt">Send Message</button>
-                  </Form>
-                </Col>
-              </Row>
-            </Container>
-          </Card>
-          <div className="icon">
-            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/maurice-kollewe/"></a>
-          </div>
-        </div>
 
         {/* <div className="team">
           <p className="font-monospace">Maurice <i className="fas fa-hand-point-right"></i><Card.Link href="https://github.com/maurice-35"><i className="fab fa-github-square icon"></i></Card.Link></p>
