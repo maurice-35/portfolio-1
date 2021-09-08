@@ -82,6 +82,13 @@ body {
     background-repeat: no-repeat;
     position: relative;
     background-position: center;
+    padding: 80px;
+    border-color: whitesmoke;
+  }
+
+  [name="message"] {
+    height: 100px;
+    position: relative;
   }
 
   .affix {
@@ -141,7 +148,7 @@ body {
     display: flex;
     max-width: 50px;
     color: #298130;
-    background-color: #298130;
+    background-color: white;
   }
 
   .boot {

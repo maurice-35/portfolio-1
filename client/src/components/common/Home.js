@@ -1,24 +1,14 @@
 import { useState, React, useRef } from 'react'
-// import { NavDropdown, Toast, Container } from 'react-bootstrap'
-// import Container from 'react-bootstrap/Container'
-import { Nav, Navbar, Toast, Form, Card, CardGroup, Button, Container, Row, Col, Image, Tooltip, Overlay } from 'react-bootstrap'
-// import Toast from 'react-bootstrap/Toast'
-// import Alert from 'react-bootstrap/Alert'
-// Popover, OverlayTrigger,
-
+import { Form, Card, CardGroup, Button, Container, Row, Col, Image, Tooltip, Overlay } from 'react-bootstrap'
 
 
 
 const Home = () => {
 
-  const [iconA, setIconA] = useState(false)
   const [show, setShow] = useState(false)
   const target = useRef(null)
   // const [dataToggle, setDataToggle] = useState(false)
 
-  const toggleIconA = () => setIconA(!iconA)
-  // const handleClose = () => setShow(false)
-  // const handleShow = () => setShow(true)
 
   const handleSubmit = async event => {
     event.preventDefault()
@@ -26,93 +16,6 @@ const Home = () => {
   return (
     <>
       <section data-spy="scroll" data-target=".navbar" data-offset="75">
-        {/* <section data-spy="scroll" data-target=".navbar" data-offset="50"> */}
-        <div className="container-fluid" id="top">
-          <h1>Scrollspy & Affix Example</h1>
-          <h3>Fixed navbar on scroll</h3>
-          <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels, and the links in the navbar are automatically updated based on scroll position.</p>
-        </div>
-        {/* </section> */}
-        <nav className="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-          <Navbar className="teal" expand="lg" id="nav">
-            {/* <div className="container-fluid" id="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> */}
-            {/* <div className="collapse navbar-collapse" id="myNavbar"> */}
-            <ul className="nav navbar-nav">
-
-              {/* <nav className="navbar navbar-expand-sm navbar- fixed-top"> */}
-              <div className="navbar navbar-expand-sm navbar- fixed-top">
-                <ul className="navbar-nav">
-                  {/* <Container className="teal" expand="lg"> */}
-                  <Navbar.Brand id="icon" href="#">
-                    <Toast id="position1" show={iconA} onClose={toggleIconA}>
-                      <Toast.Header>
-                        ♻︎
-                      </Toast.Header>
-                      <Toast.Body>Hello!<br /> Welcome<br />To My Site.</Toast.Body>
-                    </Toast>
-                    <Button id="icon" onClick={toggleIconA}>
-                      ♻︎
-                    </Button>
-                  </Navbar.Brand>
-                  <div className="navbar-wrapper">
-                    <h4>The  love  for  cats!</h4><br />
-                    <p>In The Kindom Of Love, Every Life Counts</p>
-                  </div>
-                  <Card className="pic">
-                    <img src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" />
-                  </Card>
-                  <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
-                  <div className="navbar-wrapper">
-                    <h4>Kind  minds  never  hide!</h4><br />
-                    <p>The Journey Of A Thousand Miles.</p>
-                  </div>
-                  <Navbar.Toggle aria-controls="navbarScroll" />
-                  <Navbar.Collapse id="navbarScroll">
-                    <Nav
-                      className="mr-auto my-2 my-bg-0"
-                      style={{ maxHeight: '120px' }}
-                      navbarScroll
-                    >
-
-                      <Nav.Link href="#home">Home</Nav.Link>
-                      <Nav.Link href="#aboutMe">About Me</Nav.Link>
-                      <Nav.Link href="#projects">Projects</Nav.Link>
-                      {/* <NavDropdown title="Projects" id="navbarScrollingDropdown">
-                        <NavDropdown.Item href="#project1">Project </NavDropdown.Item>
-                        <NavDropdown.Item href="#project2">Project 3</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#project3">Project 2</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#project4">Project 1</NavDropdown.Item>
-                      </NavDropdown> */}
-                      <Nav.Link href="#experience">
-                        Experience
-                      </Nav.Link>
-                    </Nav><br />
-                    <Form className="d-flex">
-                      <Nav.Link href="#interests">Interests</Nav.Link>
-                      <Nav.Link href="#contact">Contact</Nav.Link>
-                    </Form>
-                  </Navbar.Collapse>
-                  {/* </Container> */}
-                  {/* </nav> */}
-                  {/* </Navbar> */}
-                </ul>
-                {/* </nav> */}
-              </div>
-            </ul>
-          </Navbar>
-        </nav>
-        <br />
-
-        {/* </div> */}
-        {/* <div container="message">
-        <h4>My journey of becoming a Software Engineer.</h4>
-      </div>
-      <br /> */}
-        {/* <section data-spy="scroll" data-target="nav" data-offset="75">
-        <nav className="nav navbar-expand-sm navbar- fixed-top"> */}
-        {/* <ul className="navbar-nav"><br /> */}
         <div className="container-fluid" id="home">
           <h1>Home</h1>
           <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
@@ -126,7 +29,6 @@ const Home = () => {
             </Card>
           </CardGroup>
         </div><br />
-        {/* {/* </ul> */}
 
         <div className="container-fluid" id="aboutMe">
           <h1>About Me</h1>
@@ -248,9 +150,9 @@ const Home = () => {
               <Col xs={8} md={6}>
                 <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
-                <Button>click
-                  {/* <Card.Link href="https/movie-app-project4.herokuapp.com/" target="_blank" rel="noreferrer noopener"><i className="fab fa-heroku project4"></i> </Card.Link> */}
-                  <a target="_blank" rel="noreferrer noopener" href="https/movie-app-project4.herokuapp.com/" />
+                <Button>Project 4
+                  <Card.Link href="https/movie-app-project4.herokuapp.com/" target="_blank" rel="noreferrer noopener"><i className="fab fa-heroku project4"></i> </Card.Link>
+                  {/* <object type="text/html" data="https/movie-app-project4.herokuapp.com/" width='300px' height="200px"></object> */}
                 </Button>
               </Col>
               <Col xs={8} md={6}>
@@ -312,154 +214,10 @@ const Home = () => {
             </Overlay>
           </div><span />
 
-          {/* <Button variant="primary" onClick={handleShow}>
-            Launch demo modal
-          </Button>
-
-          <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
-              <Modal.Title>Modal heading</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={handleClose}>
-                Close
-              </Button>
-              <Button variant="primary" onClick={handleClose}>
-                Save Changes
-              </Button>
-            </Modal.Footer>
-          </Modal> */}
-          {/* <Row xs={2} md={1} className="g-4">
-            {Array.from({ length: 2 }).map((_, idx) => (
-              <Col>
-                <Card>
-                  <Card.Img variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-                  <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                      This is a longer card with supporting text below as a natural
-                      lead-in to additional content. This content is a little bit longer.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row> */}
-          {/* <Card style={{ width: '30rem' }}>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </Card.Text>
-              <Card.Link href="#">Card Link</Card.Link>
-              <Card.Link href="#">Another Link</Card.Link>
-            </Card.Body>
-          </Card> */}
-
-          {/* <div className="container">
-            <ul className="nav nav-tabs">
-              <li className="active"><a data-toggle="tab" href="#menu 1">Menu 1</a></li>
-              <li><a data-toggle="tab" href="#menu 2">Menu 2</a></li>
-              <li><a data-toggle="tab" href="#menu 3">Menu 3</a></li>
-              <li><a data-toggle="tab" href="#menu4">Menu 4</a></li>
-            </ul>
-
-            <div className="tab-content">
-              <div id="home" className="tab-pane fade in active">
-                <h3>Charity21</h3>
-                <p>Evelyn Oldfield Unit.</p>
-              </div>
-              <div id="menu1" className="tab-pane fade">
-                <h3>Charity 2</h3>
-                <p>Cody Dock.</p>
-              </div>
-              <div id="menu2" className="tab-pane fade">
-                <h3>Charity 3</h3>
-                <p>Haven House Children Hospice.</p>
-              </div>
-              <div id="menu3" className="tab-pane fade">
-                <h3>Charity 4</h3>
-                <p>Richard House Children Hospice.</p>
-              </div>
-            </div>
-          </div> */}
-          {/* <div className="container"> */}
-          {/* <h4>Charity 1<span />Charity 2<span />Charity 3</h4> */}
-          {/* <h4>charities1<span /> charities2<span /> charities3<span /> charities4</h4>
-          <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">👆🏾👆🏾</a>
-        </div> */}
-          {/* <script>
-          $(document).ready(function(){
-            $('[data-toggle="popover"]').popover()
-          });
-        </script> */}
-
-          {/* {['charities1', 'charities2', 'charities3', 'charities4'].map((type) => (
-          <OverlayTrigger
-            trigger="click"
-            key={type}
-            type={type}
-            overlay={
-              <Popover id={`popover-positioned-${type}`}>
-                <Popover.Header as="h3">{`Popover ${type}`}</Popover.Header>
-                <Popover.Body> */}
-          {/* <Alert variant="success">
-                    <Alert.Heading>Hey, nice to see you</Alert.Heading>
-                    <p>
-                      Aww yeah, you successfully read this important alert message. This example
-                      text is going to run a bit longer so that you can see how spacing within an
-                      alert works with this kind of content.
-                    </p>
-                    <hr />
-                    <p className="mb-0">
-                      Whenever you need to, be sure to use margin utilities to keep things nice
-                      and tidy.
-                    </p>
-                  </Alert> */}
-          {/* <Toast id="position2" show={type} onClose={toggleType}>
-                    <Toast.Header>
-                      <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
-                      <strong className="me-auto">Bootstrap</strong>
-                      <small>11 mins ago</small>
-                    </Toast.Header>
-                    <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
-                  </Toast> */}
-          {/* </Popover.Body>
-                {/* <Link to="charities1"></Link> */}
-          {/* {<Link to="charities" className="d-block w-50" */}
-          {/* src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627289108/Project%204/f19_pwzr5o.jpg"> </Link>} */}
-          {/* </Popover>
-            }
-          >
-            <Button variant="secondary" onClick={toggleType}>{type}</Button>
-          </OverlayTrigger>
-        ))} */}
-
-          {/* <Card className="d-block w-100">
-            <p className="charity">Charity1<i className="fas fa-charity-one"><Card.Link className="font-monospace" href="http://evelynoldfield.co.uk/"></Card.Link></i></p> */}
-          {/* <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" /> */}
-          {/* <div className="container"> */}
-          {/* <h3>Popover Example</h3> */}
-          {/* <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"></a> */}
-
-          {/* <div className="buttons">
-        <Link to="/charities1">
-        </Link>
-
-        <Link to="/charities2"></Link>
-     
-        <Link to="/charities3">
-      
-        </Link>
-        <Link to="/charities4">
-        </Link>
-        </div> */}
-
-          {/* </div> */}
-          {/* </Card> */}
+          
+          <Card className="d-block w-100">
+            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
+          </Card>
         </div><br />
 
         <div id="contact" className="container-fluid">
@@ -485,16 +243,22 @@ const Home = () => {
                     <Form.Group className="info" controlId="formBasicPassword">
                       <Form.Label>Message</Form.Label>
                       <Form.Control name="message" type="message" placeholder="message" />
-                    </Form.Group>
+                    </Form.Group><br />
                     <button type="submit" className="btn" id="butt">Send Message</button>
                   </Form>
                 </Col>
               </Row>
             </Container>
-           
           </Card>
+          <div className="icon">
+            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/maurice-kollewe/"></a>
+          </div>
         </div>
 
+        <div className="team">
+          <p className="font-monospace">Maurice <i className="fas fa-hand-point-right"></i><Card.Link href="https://github.com/maurice-35"><i className="fab fa-github-square icon"></i></Card.Link></p>
+        </div>
+        
         <main className="Footer">
           <div>
             <Container>
