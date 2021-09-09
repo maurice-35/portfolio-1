@@ -6,15 +6,19 @@ import { Form, Card, CardGroup, Button, Container, Row, Col, Image, Tooltip, Ove
 const Home = () => {
 
   const [show, setShow] = useState(false)
+  const [show1, setShow1] = useState(false)
   const target = useRef(null)
+  const target1 = useRef(null)
   // const [dataToggle, setDataToggle] = useState(false)
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    // try {
-    // } catch (err) {
-    //   console.log(err)
-    // }
+
+    //   function AlertDismissible() { }
+    //   // try {
+    //   // } catch (err) {
+    //   //   console.log(err)
+    //   // }
   }
 
   // const handleChange = (event) => {
@@ -223,7 +227,7 @@ const Home = () => {
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
           </Card>
         </div> */}
-        <div  id="interests" className="container-fluid">
+        <div id="interests" className="container-fluid">
           <h1>Interests</h1>
           <Container>
             <Row className="ICONS">
@@ -231,7 +235,6 @@ const Home = () => {
                 <Button id="button" ref={target} onClick={() => setShow(!show)}>
                   Charities
                 </Button>
-
                 <Overlay target={target.current} show={show} placement="bottom">
                   {(props) => (
                     <Tooltip id="overlay-example" {...props}>
@@ -242,6 +245,34 @@ const Home = () => {
                   )}
                 </Overlay>
               </div><br />
+
+              <div className="char">
+                <Button id="button" ref={target1} onClick={() => setShow1(!show1)}>
+                  Charities 1
+                </Button>
+                <Overlay target1={target1.current} show1={show1} placement="bottom">
+                  {(props) => (
+                    <Tooltip id="overlay-example" {...props}>
+                      This is charity 2.
+                    </Tooltip>
+                  )}
+                </Overlay>
+              </div><br />
+
+              {/* <Alert show1={show1} variant="success">
+                <Alert.Heading>Welcome!</Alert.Heading>
+                <p>
+                  This is charity 2.
+                </p>
+                <hr />
+                <div className="d-flex justify-content-end">
+                  <Button onClick={() => setShow1(false)} variant="outline-success">
+                    Close me!
+                  </Button>
+                </div>
+              </Alert> */}
+
+              {/* {!show1 && <Button onClick={() => setShow1(true)}>Charities2</Button>} */}
 
               <Card className="d-block w-100">
                 <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
@@ -290,13 +321,13 @@ const Home = () => {
                       <Form.Control name="company" type="company" placeholder="company" />
                     </Form.Group>
                     <Form.Group className="info">
-                      {/* <Form.Label>Message</Form.Label> */}
-                      <h3>Message</h3>
+                      {/* <h3>Message</h3> */}
                     </Form.Group><br />
-                    {/* <textarea className="Form.Control" name="message" type="message" placeholder="message" /> */}
                     <div className="form-field">
-                      <label htmlFor="message">Your message</label>
-                      <textarea id="message" name="message" placeholder="What do you want to say?" required></textarea>
+                      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                        <Form.Label>Message</Form.Label>
+                        <Form.Control as="textarea" rows={3} />
+                      </Form.Group>
                     </div>
 
                     <button type="submit" className="btn" id="butt"> <a href="mailto:kollewem.35@gmail.com">Send Message</a></button>
@@ -309,10 +340,27 @@ const Home = () => {
             <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/maurice-kollewe/"></a>
           </div>
         </div>
-
-        {/* <div className="team">
+        {/* <div>
           <p className="font-monospace">Maurice <i className="fas fa-hand-point-right"></i><Card.Link href="https://github.com/maurice-35"><i className="fab fa-github-square icon"></i></Card.Link></p>
         </div> */}
+
+        <Row className="ICONS">
+          <Col xs={8} md={6}>
+
+            <i className="fa fa-envelope icon"></i>
+            <Button>
+              <a id="pro" href="mailto:kollewem.35@gmail.com">Email</a>
+            </Button>
+            <i className="fa fa-linkedin icon"></i>
+            <Button>
+              <a id="pro" href="https://www.linkedin.com/in/maurice-kollewe/">LinkIn</a>
+            </Button>
+            <i className="fa fa-github-square icon"></i>
+            <Button>
+              <a id="pro" href="https://github.com/maurice-35">GitHub</a>
+            </Button>
+          </Col>
+        </Row>
 
         <main className="Footer">
           <div>

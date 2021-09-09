@@ -5,7 +5,7 @@ import Navigation from './components/common/Navigation'
 import ContactForm from './components/ContactForm'
 import CardIn from './components/common/CardIn'
 // import Footer from './components/common/Footer.js'
-// import Interests from './components/common/Footer.js'
+// import Interests from './components/common/Interests'
 
 
 const App = () => {
@@ -19,8 +19,8 @@ const App = () => {
         <Route path="/" component={Home} />
         <Route path="/ContactForm" component={ContactForm} />
         <Route path="/CardIn" component={CardIn} />
+        {/* <Route path="/interests" component={Interests} /> */}
       </Switch>
-      {/* <Interests /> */}
       {/* <Footer /> */}
     </BrowserRouter>
   )
