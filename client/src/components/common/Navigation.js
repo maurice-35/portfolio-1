@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 // import { Link, useHistory, useLocation } from 'react-router-dom'
-import { Navbar, Nav, Button, Form, Toast } from 'react-bootstrap'
+import { Navbar, Nav, Button, Form, Toast, Row, Card } from 'react-bootstrap'
 
 
 const Navigation = () => {
@@ -14,7 +14,7 @@ const Navigation = () => {
 
 
   return (
-    <>
+    <Row className="ICONS3">
       <div className="container-fluid" id="top">
         {/* <h1>Scrollspy & Affix Example</h1>
         <h3>Fixed navbar on scroll</h3>
@@ -47,9 +47,9 @@ const Navigation = () => {
                   <h4>The  love  for  cats!</h4><br />
                   <p>In The Kindom Of Love, Every Life Counts</p>
                 </div>
-                {/* <Card className="pic">
+                <Card className="pic">
                   <img src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" />
-                </Card> */}
+                </Card>
                 <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
                 <div className="navbar-wrapper">
                   <h4>Kind  minds  never  hide!</h4><br />
@@ -62,18 +62,9 @@ const Navigation = () => {
                     style={{ maxHeight: '120px' }}
                     navbarScroll
                   >
-
                     <Nav.Link href="#home">Home</Nav.Link>
                     <Nav.Link href="#aboutMe">About Me</Nav.Link>
                     <Nav.Link href="#projects">Projects</Nav.Link>
-                    {/* <NavDropdown title="Projects" id="navbarScrollingDropdown">
-                        <NavDropdown.Item href="#project1">Project </NavDropdown.Item>
-                        <NavDropdown.Item href="#project2">Project 3</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#project3">Project 2</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#project4">Project 1</NavDropdown.Item>
-                      </NavDropdown> */}
                     <Nav.Link href="#experience">
                       Experience
                     </Nav.Link>
@@ -83,16 +74,12 @@ const Navigation = () => {
                     <Nav.Link href="#contact">Contact</Nav.Link>
                   </Form>
                 </Navbar.Collapse>
-                {/* </Container> */}
-                {/* </nav> */}
-                {/* </Navbar> */}
               </ul>
-              {/* </nav> */}
             </div>
           </ul>
         </Navbar>
       </nav>
-    </>
+    </Row>
   )
 }
 

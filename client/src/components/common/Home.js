@@ -347,16 +347,16 @@ const Home = () => {
         </div> */}
 
         <Row className="ICONS2">
-          <Col xs={12} md={8}>
+          <Col xs={14} md={10}>
 
             <i className="fa fa-envelope icon"></i>
             <Button>
               <a id="pro" href="mailto:kollewem.35@gmail.com">Email</a>
-            </Button>
+            </Button><span /><span />
             <i className="fa fa-linkedin icon"></i>
-            <Button>
+            <Button><span />
               <a id="pro" href="https://www.linkedin.com/in/maurice-kollewe/">LinkIn</a>
-            </Button>
+            </Button><span />
             <i className="fa fa-github-square icon"></i>
             <Button>
               <a id="pro" href="https://github.com/maurice-35">GitHub</a>
@@ -369,7 +369,7 @@ const Home = () => {
             <Container>
               <Row>
                 <Col className="image">
-                  <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" roundedCircle width="150" />
+                  <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" roundedCircle width="150" />
                 </Col>
               </Row>
             </Container>
@@ -378,7 +378,9 @@ const Home = () => {
             <Container>
               <Row id="foot">
                 <Col>
-                  <h4>Made With Much Hopes<span /> 🤯 <span />  🖥 <span />By MKT</h4>
+                  {/* <h4>Made With Much Hopes<span /> 🤯 <span />  🖥 <span />By MKT</h4> */}
+                  <h4>Made With Much Hopes<span /><img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_25,w_20/v1631216473/think_fzgsji.png"></img>
+                    <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_green:0,h_25,w_30/v1631217039/lapton_vk9nqa.png"></img><span />By MKT</h4>
                 </Col>
               </Row>
             </Container>
