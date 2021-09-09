@@ -232,7 +232,7 @@ const Home = () => {
           <Container>
             <Row className="ICONS">
               <div className="char">
-                <Button id="button" ref={target} onClick={() => setShow(!show)}>
+                <Button id="big-button" ref={target} onClick={() => setShow(!show)}>
                   Charities
                 </Button>
                 <Overlay target={target.current} show={show} placement="bottom">
@@ -344,8 +344,8 @@ const Home = () => {
           <p className="font-monospace">Maurice <i className="fas fa-hand-point-right"></i><Card.Link href="https://github.com/maurice-35"><i className="fab fa-github-square icon"></i></Card.Link></p>
         </div> */}
 
-        <Row className="ICONS">
-          <Col xs={8} md={6}>
+        <Row className="ICONS2">
+          <Col xs={12} md={8}>
 
             <i className="fa fa-envelope icon"></i>
             <Button>

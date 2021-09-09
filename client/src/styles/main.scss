@@ -333,29 +333,8 @@ body {
   background-color: #514664;
 }
 
-#project2 {
-  padding-top: 100px;
-  height: 1600px;
-  color: #fff; 
-  background-color: #514664;
-}
-
-#project3 {
-  padding-top: 100px;
-  height: 1600px;
-  color: #fff; 
-  background-color: #514664;
-}
-
-#project4 {
-  padding-top: 100px;
-  height: 1600px;
-  color: #fff; 
-  background-color: #514664;
-}
-
 .interests {
-  padding-top: 150px;
+  padding-top: 100px;
   height: 1600px;
   color: #fff; 
   background-color: #514664;
@@ -474,6 +453,21 @@ body {
   padding: 0px;
   border-right: 60px;
 }
+.ICONS2 {
+  max-height: 1300px;
+  // background-color: gray;
+  background-color: #514664;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: flex;
+  font-style: italic;
+  flex: auto;
+  font-size: 50px;
+  padding: 5px;
+  border: 10px;
+  color: white;
+}
 
 .g-4 {
   max-width: 400px;
@@ -500,14 +494,16 @@ body {
 //   border: hotpink;
 // }
 
-#button {
+#big-button {
   height: 100px;
   width: 100px;
   color: rgba(17, 15, 15, 0.966);
   background-color: #a4ccc8;
   cursor: pointer;
   font-weight: bold;
+  font-size: 16px;
   letter-spacing: 2px;
+  border-radius: 8px;
 }
 
 #pro {
@@ -525,8 +521,10 @@ body {
   background-color: rgb(0, 119, 128);
   padding: 15px 14px;
   margin: auto;
-  border: rgb(39, 5, 233);
-  border-radius: 2px;
+  color: #fff;
+  border: rgb(239, 238, 245);
+  border-radius: 8px;
+  text-decoration: #fff;
   
 }
 
