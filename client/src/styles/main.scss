@@ -355,14 +355,14 @@
 }
 
 .interests {
-  padding-top: 100px;
+  padding-top: 150px;
   height: 1600px;
   color: #fff; 
   background-color: #514664;
 }
 
 #contact {
-  padding-top: 50px;
+  padding-top: 100px;
   max-height: 1600px;
   color: #fff; 
   justify-content: space-evenly;
@@ -503,9 +503,17 @@
 #button {
   height: 100px;
   width: 100px;
-  color: white;
+  color: rgba(17, 15, 15, 0.966);
   background-color: #a4ccc8;
   cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#pro {
+  color: white;
+  font-weight: bold;
+  text-decoration-color: yellow;
 }
 
 #overlay-example {
@@ -518,6 +526,7 @@
   padding: 15px 14px;
   margin: auto;
   border: rgb(39, 5, 233);
+  border-radius: 2px;
   
 }
 
@@ -536,6 +545,27 @@
  #paint {
    margin-top: 20px;
  }
+
+ #foot {
+  // max-height: 1300px;
+  // background-color: gray;
+  height: 50px;
+  background-color: #514664;
+  justify-content: space-between;
+  text-align-last: justify;
+  align-items: center;
+  display: flex;
+  flex-direction: flex;
+  font-style: italic;
+  flex: auto;
+  font-size: 50px;
+  text-decoration: rgb(0, 255, 149);
+  color: #298130;
+  letter-spacing: 4px;
+  border-radius: 2px;
+  // padding: 100px;
+  // border-right: 60px;
+  }
 
 .container {
   margin-top: 5px;
@@ -557,21 +587,6 @@
 // }
 #Nav {
     color:#61817e;
-}
-
-.foot {
-// max-height: 1300px;
-// background-color: gray;
-background-color: #514664;
-justify-content: space-evenly;
-align-items: center;
-display: flex;
-flex-direction: flex;
-font-style: italic;
-flex: auto;
-font-size: 50px;
-// padding: 100px;
-// border-right: 60px;
 }
 
 .image {
