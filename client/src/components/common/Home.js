@@ -6,9 +6,9 @@ import { Form, Card, CardGroup, Button, Container, Row, Col, Image, Tooltip, Ove
 const Home = () => {
 
   const [show, setShow] = useState(false)
-  const [show1, setShow1] = useState(false)
+  // const [show1, setShow1] = useState(false)
   const target = useRef(null)
-  const target1 = useRef(null)
+  // const target1 = useRef(null)
   // const [dataToggle, setDataToggle] = useState(false)
 
   const handleSubmit = async (event) => {
@@ -40,13 +40,13 @@ const Home = () => {
                   <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
                 </Card><span />
                 <span />
-                <Card className="d-block w-100">
+                {/* <Card className="d-block w-100">
                   <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-                </Card>
+                </Card> */}
               </CardGroup>
             </Row>
           </Container>
-        </div><br />
+        </div>
 
         <div className="container-fluid" id="aboutMe">
           <h1>About Me</h1>
@@ -235,7 +235,7 @@ const Home = () => {
                 <Button id="big-button" ref={target} onClick={() => setShow(!show)}>
                   Charities
                 </Button>
-                <Overlay target={target.current} show={show} placement="bottom">
+                <Overlay target={target.current} show={show} placement="right">
                   {(props) => (
                     <Tooltip id="overlay-example" {...props}>
                       1. Evelynoldfield. This charity is aimed at helping migrants in the UK.<br></br>
@@ -244,9 +244,9 @@ const Home = () => {
                     </Tooltip>
                   )}
                 </Overlay>
-              </div><br />
+              </div>
 
-              <div className="char">
+              {/* <div className="char">
                 <Button id="button" ref={target1} onClick={() => setShow1(!show1)}>
                   Charities 1
                 </Button>
@@ -257,7 +257,7 @@ const Home = () => {
                     </Tooltip>
                   )}
                 </Overlay>
-              </div><br />
+              </div><br /> */}
 
               {/* <Alert show1={show1} variant="success">
                 <Alert.Heading>Welcome!</Alert.Heading>
@@ -278,16 +278,18 @@ const Home = () => {
                 <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
               </Card>
             </Row>
-          </Container>
-          {/* <Card className="paint">
+            {/* <Card className="paint">
             <h4>I enjoy painting during my leisure time.</h4>
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/w_250/v1631098527/paint_zxpgdl.jpg" />
           </Card> */}
-          <Container>
             <Row className="tools" id="paint">
               <Col xs={10} md={8}>
                 <p className="describe">I enjoy painting during my spare time.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_250/v1631098527/paint_zxpgdl.jpg" thumbnail />
+              </Col>
+              <Col xs={10} md={8}>
+                <p className="describe">I enjoy cycling around the town.</p>
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" thumbnail />
               </Col>
             </Row>
           </Container>

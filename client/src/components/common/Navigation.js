@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 // import { Link, useHistory, useLocation } from 'react-router-dom'
-import { Navbar, Nav, Button, Card, Form, Toast } from 'react-bootstrap'
+import { Navbar, Nav, Button, Form, Toast } from 'react-bootstrap'
 
 
 const Navigation = () => {
@@ -16,12 +16,12 @@ const Navigation = () => {
   return (
     <>
       <div className="container-fluid" id="top">
-        <h1>Scrollspy & Affix Example</h1>
+        {/* <h1>Scrollspy & Affix Example</h1>
         <h3>Fixed navbar on scroll</h3>
-        <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels, and the links in the navbar are automatically updated based on scroll position.</p>
+        <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels, and the links in the navbar are automatically updated based on scroll position.</p> */}
       </div>
       {/* </section> */}
-      <nav className="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+      <nav className="navbar navbar-inverse" data-spy="affix" data-offset-top="75">
         <Navbar className="teal" expand="lg" id="nav">
           {/* <div className="container-fluid" id="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> */}
           {/* <div className="collapse navbar-collapse" id="myNavbar"> */}
@@ -29,6 +29,7 @@ const Navigation = () => {
 
             {/* <nav className="navbar navbar-expand-sm navbar- fixed-top"> */}
             <div className="navbar navbar-expand-sm navbar- fixed-top">
+              {/* <nav className="navbar navbar-inverse" data-spy="affix" data-offset-top="20"> */}
               <ul className="navbar-nav">
                 {/* <Container className="teal" expand="lg"> */}
                 <Navbar.Brand id="icon" href="#">
@@ -46,9 +47,9 @@ const Navigation = () => {
                   <h4>The  love  for  cats!</h4><br />
                   <p>In The Kindom Of Love, Every Life Counts</p>
                 </div>
-                <Card className="pic">
+                {/* <Card className="pic">
                   <img src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" />
-                </Card>
+                </Card> */}
                 <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
                 <div className="navbar-wrapper">
                   <h4>Kind  minds  never  hide!</h4><br />
