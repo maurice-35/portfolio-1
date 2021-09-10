@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   background-color: #514664;
+  // color: whitesmoke;
 }
 
 body {
@@ -15,7 +16,8 @@ body {
 #home {
   padding-top:350px;
   height:500px;
-  color: #fff;
+  color: #fff; 
+  // color: whitesmoke;
   background-color: #514664;
   display: flex;
   // margin-top: 150px;
@@ -25,30 +27,34 @@ body {
   padding-top: 300px;
   max-height: 16000px;;
   color: #fff; 
-  background-color: #514664;
+  // background-color: #514664;
   display: flex;
+  color: whitesmoke;
 }
 
 #experience {
   padding-top: 100px;
   max-height: 16000px;
   color: #fff; 
-  background-color: #514664;
+  // background-color: #514664;
   display: flex;
+  color: whitesmoke;
 }
 
 #projects {
   padding-top: 100px;
   max-height: 1800px;
   color: #fff; 
-  background-color: #514664;
+  // background-color: #514664;
+  // color: whitesmoke;
 }
 
 #interests {
   padding-top: 100px;
   height: 1600px;
   color: #fff; 
-  background-color: #514664;
+  // background-color: #514664;
+  // color: whitesmoke;
 }
 
 #contact {
@@ -60,7 +66,8 @@ body {
   display: flex;
   flex: auto;
   position: relative;
-  background-color: #514664;
+  // background-color: #514664;
+  // color: whitesmoke;
     // @media screen(500)
       
   }
@@ -96,9 +103,9 @@ img {
   z-index: 9999 !important;
 }
 
-.navbar {
-  margin-bottom: 0px;
-}
+// .navbar-nav {
+//   margin-bottom: 0px;
+// }
 
 .affix  .container-fluid {
   position: relative;
@@ -108,23 +115,21 @@ img {
 #top {
   background-color: hsla(310, 62%, 31%, 0.137);
   color:hsla(224, 63%, 49%, 0.137);
-  height: 50px;
+  height: 10px;
 }
 
 .teal {
-  background-color: #a4ccc8;
-  // color: green;
   font-family: 'Monoton', cursive;
-  // max-height: 300px;
+  color: whitesmoke;
   display: flex;
 }
 
-.navbar {
-  background-color: #a4ccc8;
-  font-family: 'Monoton', cursive;
-  border-color: #3d449c;
-  justify-content: center;
-}
+// .navbar {
+//   background-color: #a4ccc8;
+//   font-family: 'Monoton', cursive;
+//   border-color: #3d449c;
+//   justify-content: center;
+// }
 
 .ICONS3 {
   display: flex;
@@ -178,6 +183,7 @@ img {
   padding: 0px;
   border-right: 60px;
 }
+
 .ICONS2 {
   max-height: 1300px;
   // background-color: gray;
@@ -276,6 +282,7 @@ img {
   font-size: 30px;
   margin: 0 auto;
   cursor: pointer;
+  border-radius: 10px;
 }
 
  #position1 {
@@ -284,6 +291,7 @@ img {
  }
  #paint {
    margin-top: 20px;
+  //  max-width: 500px;
   //  display: flex;
   //  flex-direction: row;
  }
@@ -327,9 +335,6 @@ img {
 //     padding: 40%;
 //     position: cover;
 // }
-#Nav {
-    color:#61817e;
-}
 
 .image {
   justify-content: center;
