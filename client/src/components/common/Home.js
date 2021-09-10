@@ -226,9 +226,9 @@ const Home = () => {
             </Row>
 
             <Row className="tools" id="paint">
-              <Col xs={10} md={8}>
+              <Col xs={12} md={10}>
                 <p className="describe">I enjoy painting during my spare time.</p>
-                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631098527/paint_zxpgdl.jpg" thumbnail />
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_700/v1631098527/paint_zxpgdl.jpg" />
               </Col>
               <Col xs={10} md={8}>
                 <p className="describe">I enjoy cycling around the town and my neigbourhood.</p>
