@@ -1,6 +1,6 @@
 // import React from 'react'
 // import { Form, Col, Row, Container, Card } from 'react-bootstrap'
-// //import axios from 'axios'
+
 
 // // const ContactForm = () => {
 //   // const history = useHistory()

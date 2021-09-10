@@ -6,26 +6,15 @@ import { Form, Card, CardGroup, Button, Container, Row, Col, Image, Tooltip, Ove
 const Home = () => {
 
   const [show, setShow] = useState(false)
-  // const [show1, setShow1] = useState(false)
   const target = useRef(null)
-  // const target1 = useRef(null)
-  // const [dataToggle, setDataToggle] = useState(false)
+  
 
   const handleSubmit = async (event) => {
     event.preventDefault()
 
-    //   function AlertDismissible() { }
-    //   // try {
-    //   // } catch (err) {
-    //   //   console.log(err)
-    //   // }
+   
   }
 
-  // const handleChange = (event) => {
-  //   const newForm = { ...formData, [event.target.name]: event.target.value }
-  //   setFormData()
-  //   console.log(newForm)
-  // }
 
   return (
     <>
@@ -36,13 +25,13 @@ const Home = () => {
             <Row className="ICONS">
               <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
               <CardGroup>
-                <Card className="d-block w-100">
+                <Card className="d-block w-50">
                   <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
                 </Card><span />
                 <span />
-                {/* <Card className="d-block w-100">
+                <Card className="d-block w-50">
                   <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-                </Card> */}
+                </Card>
               </CardGroup>
             </Row>
           </Container>
@@ -56,19 +45,7 @@ const Home = () => {
                 <Card className="d-block w-100">
                   <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
                 </Card>
-                {/* <Card className="d-block w-100">
-              <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-            </Card> */}
-                {/* <Card className="d-block w-100">
-              <img className="image-border animate__animated animate__zoomIn others-img" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456970/Project%204/walk_e1u8s5.jpg" />
-              <h3>Others</h3>
-              <p>
-                Good... <span id="other-name">others</span> <br />
-                Bad   <br />
-                <br />
-              </p>
-            </Card> */}
-              </CardGroup >
+              </CardGroup>
             </Row>
           </Container>
         </div>
@@ -179,8 +156,6 @@ const Home = () => {
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
                 <Button>
                   <a id="pro" href="https://movie-app-project4.herokuapp.com/">Project 4</a>
-                  {/* <Card.Link href="https/movie-app-project4.herokuapp.com/" target="_blank" rel="noreferrer noopener"><i className="fab fa-heroku project4"></i> </Card.Link> */}
-                  {/* <object type="text/html" data="https/movie-app-project4.herokuapp.com/" width='300px' height="200px"></object> */}
                 </Button>
               </Col>
               <Col xs={8} md={6}>
@@ -208,31 +183,8 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
-          {/* <Card className="git">
-            <Image publicId="github_lslue1.png" />
-          </Card> */}
-          {/* <Card className="d-block w-50">
-            <Image publicId="py_dnes7g.jpg" />
-          </Card> */}
+          
         </div>
-        {/* <div id="project3" className="container-fluid">
-          <h1>Project 3</h1>
-          <Card className="d-block w-100">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-          </Card>
-        </div> */}
-        {/* <div id="project2" className="container-fluid">
-          <h1>Project 2</h1>
-          <Card className="d-block w-100">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-          </Card>
-        </div>
-        <div id="project1" className="container-fluid">
-          <h1>Project 1</h1>
-          <Card className="d-block w-50">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-          </Card>
-        </div> */}
         <div id="interests" className="container-fluid">
           <h1>Interests</h1>
           <Container>
@@ -253,13 +205,13 @@ const Home = () => {
               </div>
 
               <Card className="d-block w-100">
-                <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
+                <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631261773/EOU_pv1mnf.png" />
               </Card>
             </Row>
             <Row className="tools" id="paint">
               <Col xs={10} md={8}>
                 <p className="describe">I enjoy painting during my spare time.</p>
-                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_250/v1631098527/paint_zxpgdl.jpg" thumbnail />
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631098527/paint_zxpgdl.jpg" thumbnail />
               </Col>
               <Col xs={10} md={8}>
                 <p className="describe">I enjoy cycling around the town and my neigbourhood.</p>
@@ -268,12 +220,6 @@ const Home = () => {
             </Row>
           </Container>
         </div><br />
-
-        {/* <Card className="d-block w-100">
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631098527/paint_zxpgdl.jpg" />
-          </Card> */}
-
-        {/* </div><span /> */}
 
         <div id="contact" className="container-fluid">
           <h1>Contact</h1>

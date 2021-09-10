@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
-// import { Link, useHistory, useLocation } from 'react-router-dom'
 import { Navbar, Nav, Button, Form, Toast, Row, Card } from 'react-bootstrap'
 
 
 const Navigation = () => {
 
   const [iconA, setIconA] = useState(false)
-  // const [show, setShow] = useState(false)
-  // const target = useRef(null)
+ 
 
   const toggleIconA = () => setIconA(!iconA)
 
@@ -15,23 +13,11 @@ const Navigation = () => {
 
   return (
     <Row className="ICONS3">
-      <div className="container-fluid" id="top">
-        {/* <h1>Scrollspy & Affix Example</h1>
-        <h3>Fixed navbar on scroll</h3>
-        <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels, and the links in the navbar are automatically updated based on scroll position.</p> */}
-      </div>
-      {/* </section> */}
       <nav className="navbar navbar-inverse" data-spy="affix" data-offset-top="75">
         <Navbar className="teal" expand="lg" id="nav">
-          {/* <div className="container-fluid" id="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> */}
-          {/* <div className="collapse navbar-collapse" id="myNavbar"> */}
           <ul className="nav navbar-nav">
-
-            {/* <nav className="navbar navbar-expand-sm navbar- fixed-top"> */}
             <div className="navbar navbar-expand-sm navbar- fixed-top">
-              {/* <nav className="navbar navbar-inverse" data-spy="affix" data-offset-top="20"> */}
               <ul className="navbar-nav">
-                {/* <Container className="teal" expand="lg"> */}
                 <Navbar.Brand id="icon" href="#">
                   <Toast id="position1" show={iconA} onClose={toggleIconA}>
                     <Toast.Header>

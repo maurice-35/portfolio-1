@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   // background-color: #514664;
-  background-color: black;
+  background-color: rgba(133, 156, 153, 0.87);
   // color: whitesmoke;
 }
 
@@ -127,6 +127,7 @@ img {
   font-family: 'Monoton', cursive;
   color: whitesmoke;
   display: flex;
+  letter-spacing: 2px;
 }
 
 // #navbarScroll {
@@ -139,6 +140,7 @@ img {
 
 // .navbar {
 //   background-color: #a4ccc8;
+//   color: white;
 //   font-family: 'Monoton', cursive;
 //   border-color: #3d449c;
 //   justify-content: center;
@@ -163,12 +165,12 @@ img {
   padding: 5px;
 }
 
-// .navbar-wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   align-items: center;
-// }
+.navbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 
 .git {
   display: flex;
@@ -225,7 +227,7 @@ img {
 
 .d-block {
   font-size: 18px;
-  max-width: 500px;
+  max-width: 700px;
 }
 
 .tools {
@@ -305,7 +307,7 @@ img {
  }
  #paint {
    margin-top: 20px;
-  //  max-width: 500px;
+   max-width: 700px;
   //  display: flex;
   //  flex-direction: row;
  }
@@ -363,6 +365,5 @@ img {
   letter-spacing:2px;
   display: flex;
 }
-
 
 @import "~bootstrap/scss/bootstrap";
