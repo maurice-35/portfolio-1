@@ -74,8 +74,14 @@ const Home = () => {
         </div>
 
         <div id="experience" className="container-fluid">
-          <h1>Experience</h1>
+          <h1>Experience</h1><br /><span />
           <Container>
+            <Row>
+              <Col>
+                <h3> <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png"></img><span />General Assembly</h3>
+              </Col>
+            </Row>
+    
             <Row className="ICONS">
               <Col xs={5} md={3}>
                 <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630697355/html_rtvtmb.png" rounded />
@@ -239,62 +245,29 @@ const Home = () => {
                   {(props) => (
                     <Tooltip id="overlay-example" {...props}>
                       1. Evelynoldfield. This charity is aimed at helping migrants in the UK.<br></br>
-                      2. Haven House Children Hospice. This charity is aimed at helping migrants in the UK.
-                      3. Richard House Children Hospice.
+                      2. Haven House Children Hospice. This charity raises funds to help children with terminal illnesses and to give them some hope to life.<br />
+                      3. Richard House Children Hospice. Same objectives as Haven House above.
                     </Tooltip>
                   )}
                 </Overlay>
               </div>
 
-              {/* <div className="char">
-                <Button id="button" ref={target1} onClick={() => setShow1(!show1)}>
-                  Charities 1
-                </Button>
-                <Overlay target1={target1.current} show1={show1} placement="bottom">
-                  {(props) => (
-                    <Tooltip id="overlay-example" {...props}>
-                      This is charity 2.
-                    </Tooltip>
-                  )}
-                </Overlay>
-              </div><br /> */}
-
-              {/* <Alert show1={show1} variant="success">
-                <Alert.Heading>Welcome!</Alert.Heading>
-                <p>
-                  This is charity 2.
-                </p>
-                <hr />
-                <div className="d-flex justify-content-end">
-                  <Button onClick={() => setShow1(false)} variant="outline-success">
-                    Close me!
-                  </Button>
-                </div>
-              </Alert> */}
-
-              {/* {!show1 && <Button onClick={() => setShow1(true)}>Charities2</Button>} */}
-
               <Card className="d-block w-100">
                 <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
               </Card>
             </Row>
-            {/* <Card className="paint">
-            <h4>I enjoy painting during my leisure time.</h4>
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/w_250/v1631098527/paint_zxpgdl.jpg" />
-          </Card> */}
             <Row className="tools" id="paint">
               <Col xs={10} md={8}>
                 <p className="describe">I enjoy painting during my spare time.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_250/v1631098527/paint_zxpgdl.jpg" thumbnail />
               </Col>
               <Col xs={10} md={8}>
-                <p className="describe">I enjoy cycling around the town.</p>
+                <p className="describe">I enjoy cycling around the town and my neigbourhood.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" thumbnail />
               </Col>
             </Row>
           </Container>
         </div><br />
-        {/* <div className="paint"> */}
 
         {/* <Card className="d-block w-100">
             <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631098527/paint_zxpgdl.jpg" />
@@ -323,7 +296,6 @@ const Home = () => {
                       <Form.Control name="company" type="company" placeholder="company" />
                     </Form.Group>
                     <Form.Group className="info">
-                      {/* <h3>Message</h3> */}
                     </Form.Group><br />
                     <div className="form-field">
                       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
@@ -342,9 +314,6 @@ const Home = () => {
             <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/maurice-kollewe/"></a>
           </div>
         </div>
-        {/* <div>
-          <p className="font-monospace">Maurice <i className="fas fa-hand-point-right"></i><Card.Link href="https://github.com/maurice-35"><i className="fab fa-github-square icon"></i></Card.Link></p>
-        </div> */}
 
         <Row className="ICONS2">
           <Col xs={14} md={10}>
@@ -378,7 +347,6 @@ const Home = () => {
             <Container>
               <Row id="foot">
                 <Col>
-                  {/* <h4>Made With Much Hopes<span /> 🤯 <span />  🖥 <span />By MKT</h4> */}
                   <h4>Made With Much Hopes<span /><img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_25,w_20/v1631216473/think_fzgsji.png"></img>
                     <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_green:0,h_25,w_30/v1631217039/lapton_vk9nqa.png"></img><span />By MKT</h4>
                 </Col>
