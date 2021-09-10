@@ -41,13 +41,24 @@ const Home = () => {
           <h1>About Me</h1>
           <Container>
             <Row className="ICONS">
+              <img id="profile" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" thumbnail width="150"/>
+              <Col xs={8} md={6}>
+                <p className="describe"> I am Maurice. A Software Developer based in Greater London.</p>
+                <p className="describe">During my volunteering role behind the till at a charity shop, I was curious about the technology used to process receipts, and I became passionate about the impact of computing and technology on the modern world. After online searches, I developed more of an interest and started taking self learning online and writing some codes. I later enrolled in a full time Software Engineering course in order to acquire new skills and develop the passion and curiosity to solve problems. I thrive when building on my new skills and excel when collaborating and working as a team.</p>
+                <p className="describe">With my recent engineering and customer service skills, and a strong desire to learn, I am looking to progress in the tech industry as a Junior Software Engineer.</p>
+              </Col>
+              <img id="profile" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" thumbnail width="150" />
+            </Row>
+          </Container>
+          {/* <Container>
+            <Row className="ICONS">
               <CardGroup>
                 <Card className="d-block w-100">
                   <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
                 </Card>
               </CardGroup>
             </Row>
-          </Container>
+          </Container> */}
         </div>
 
         <div id="experience" className="container-fluid">
@@ -57,8 +68,8 @@ const Home = () => {
               <Col>
                 <h3> <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png"></img><span />General Assembly</h3>
               </Col>
-            </Row>
-
+            </Row><br />
+            <h3>Technologies</h3><br />
             <Row className="ICONS">
               <Col xs={5} md={3}>
                 <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630697355/html_rtvtmb.png" rounded />
@@ -213,7 +224,7 @@ const Home = () => {
                 </Card>
               </CardGroup>
             </Row>
-            
+
             <Row className="tools" id="paint">
               <Col xs={10} md={8}>
                 <p className="describe">I enjoy painting during my spare time.</p>
