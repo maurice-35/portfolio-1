@@ -7,12 +7,12 @@ const Home = () => {
 
   const [show, setShow] = useState(false)
   const target = useRef(null)
-  
+
 
   const handleSubmit = async (event) => {
     event.preventDefault()
 
-   
+
   }
 
 
@@ -58,7 +58,7 @@ const Home = () => {
                 <h3> <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png"></img><span />General Assembly</h3>
               </Col>
             </Row>
-    
+
             <Row className="ICONS">
               <Col xs={5} md={3}>
                 <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630697355/html_rtvtmb.png" rounded />
@@ -183,7 +183,7 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
-          
+
         </div>
         <div id="interests" className="container-fluid">
           <h1>Interests</h1>
@@ -204,10 +204,16 @@ const Home = () => {
                 </Overlay>
               </div>
 
-              <Card className="d-block w-100">
-                <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631261773/EOU_pv1mnf.png" />
-              </Card>
+              <CardGroup>
+                <Card className="d-block w-50">
+                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_700/v1631261773/EOU_pv1mnf.png" /><span />
+                </Card><span />
+                <Card className="d-block w-50">
+                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_brightness_hsb,r_2,w_700/v1631262940/Haven_ei8exo.png" />
+                </Card>
+              </CardGroup>
             </Row>
+            
             <Row className="tools" id="paint">
               <Col xs={10} md={8}>
                 <p className="describe">I enjoy painting during my spare time.</p>
@@ -215,7 +221,7 @@ const Home = () => {
               </Col>
               <Col xs={10} md={8}>
                 <p className="describe">I enjoy cycling around the town and my neigbourhood.</p>
-                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" thumbnail />
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_700/v1627456360/Project%204/cycle1_clsr8b.jpg" />
               </Col>
             </Row>
           </Container>
