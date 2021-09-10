@@ -48,7 +48,6 @@ const Navigation = () => {
                     style={{ maxHeight: '120px' }}
                     navbarScroll
                   >
-                    <Nav.Link href="#home">Home</Nav.Link>
                     <Nav.Link href="#aboutMe">About Me</Nav.Link>
                     <Nav.Link href="#projects">Projects</Nav.Link>
                     <Nav.Link href="#experience">

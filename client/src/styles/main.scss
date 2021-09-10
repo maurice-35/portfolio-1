@@ -14,18 +14,22 @@ body {
   }
 
 
-#home {
-  padding-top:350px;
-  height:500px;
-  color: #fff; 
+#myName {
+  padding-top:160px;
+  // height:300px;
+  color: rgb(9, 26, 70); 
   // color: whitesmoke;
   // background-color: #514664;
   display: flex;
+  align-items: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 20px;
+  justify-content: center;
   // margin-top: 150px;
 }
 
 #aboutMe {
-  padding-top: 300px;
+  padding-top: 50px;
   max-height: 16000px;;
   color: #fff; 
   // background-color: #514664;
@@ -52,7 +56,7 @@ body {
 
 #interests {
   padding-top: 100px;
-  height: 1800px;
+  height: 2000px;
   color: #fff; 
   // background-color: #514664;
   // color: whitesmoke;
@@ -96,6 +100,10 @@ body {
 img {
   position: relative;
   background-position: cover;
+}
+
+.myName {
+  color: #fff;
 }
 
 .affix {

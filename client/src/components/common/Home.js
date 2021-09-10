@@ -18,12 +18,9 @@ const Home = () => {
 
   return (
     <>
+
       <section data-spy="scroll" data-target=".navbar" data-offset="75">
-        <div className="container-fluid" id="home">
-          <h1>Home</h1>
-          <Container>
-            <Row className="ICONS">
-              <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
+        {/* <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
               <CardGroup>
                 <Card className="d-block w-50">
                   <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
@@ -32,18 +29,33 @@ const Home = () => {
                 <Card className="d-block w-50">
                   <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
                 </Card>
-              </CardGroup>
-            </Row>
+              </CardGroup> */}
+        {/* </div> */}
+        {/* <div className="myName">
+          <h1>Maurice Kollewe Tcheungwe</h1>
+          <h3>Junior Software Engineer</h3>
+        </div> */}
+        <div id="myName">
+          {/* <h1>Home</h1> */}
+          <Container>
+            {/* <Row id="myName"> */}
+            <Col xs={14} md={10} id="myName">
+              <div className="myself">
+                <h1>Maurice Kollewe Tcheungwe</h1>
+                <h3>Junior Software Engineer</h3>
+              </div>
+              {/* </Row> */}
+            </Col>
+
           </Container>
         </div>
-
         <div className="container-fluid" id="aboutMe">
-          <h1>About Me</h1>
+          <h1>About Me</h1><br />
           <Container>
             <Row className="ICONS">
-              <img id="profile" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" thumbnail width="150"/>
+              <img id="profile" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" thumbnail width="150" />
               <Col xs={8} md={6}>
-                <p className="describe"> I am Maurice. A Software Developer based in Greater London.</p>
+                <p className="describe"> I am Maurice. A Software Engineer based in Greater London.</p>
                 <p className="describe">During my volunteering role behind the till at a charity shop, I was curious about the technology used to process receipts, and I became passionate about the impact of computing and technology on the modern world. After online searches, I developed more of an interest and started taking self learning online and writing some codes. I later enrolled in a full time Software Engineering course in order to acquire new skills and develop the passion and curiosity to solve problems. I thrive when building on my new skills and excel when collaborating and working as a team.</p>
                 <p className="describe">With my recent engineering and customer service skills, and a strong desire to learn, I am looking to progress in the tech industry as a Junior Software Engineer.</p>
               </Col>
@@ -163,10 +175,17 @@ const Home = () => {
           <Container>
             <Row>
               <Col xs={8} md={6}>
-                <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
-                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
+                <p className="describe">I built a number-guessing grid-game using JavaScript, HTML and CSS. It is a JavaScript random selection of numbers to match that of the user.</p>
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034515/P_jel8al.png" thumbnail />
                 <Button>
-                  <a id="pro" href="https://movie-app-project4.herokuapp.com/">Project 4</a>
+                  <a id="pro" href="https://maurice-35.github.io/number-guessing-game/">Project 1</a>
+                </Button>
+              </Col>
+              <Col xs={8} md={6}>
+                <p className="describe">I built a React app which used an external API from ‘thecatapi.com’ to display cats of various categories and origins. Styled using Bulma, it is a good spot for cat lovers.</p>
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034365/cat2_fwshks.png" thumbnail />
+                <Button>
+                  <a id="pro" href="https://maurice-cats-app-project2.netlify.app/">Project 2</a>
                 </Button>
               </Col>
               <Col xs={8} md={6}>
@@ -176,20 +195,11 @@ const Home = () => {
                   <a id="pro" href="https://tails-whiskers.herokuapp.com/">Project 3</a>
                 </Button>
               </Col>
-            </Row><br />
-            <Row>
               <Col xs={8} md={6}>
-                <p className="describe">I built a React app which used an external API from ‘thecatapi.com’ to display cats of various categories and origins. Styled using Bulma, it is a good spot for cat lovers.</p>
-                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034365/cat2_fwshks.png" thumbnail />
+                <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
                 <Button>
-                  <a id="pro" href="https://maurice-cats-app-project2.netlify.app/">Project 2</a>
-                </Button>
-              </Col>
-              <Col xs={8} md={6}>
-                <p className="describe">I built a number-guessing grid-game using JavaScript, HTML and CSS. It is a JavaScript random selection of numbers to match that of the user.</p>
-                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034515/P_jel8al.png" thumbnail />
-                <Button>
-                  <a id="pro" href="https://maurice-35.github.io/number-guessing-game/">Project 1</a>
+                  <a id="pro" href="https://movie-app-project4.herokuapp.com/">Project 4</a>
                 </Button>
               </Col>
             </Row>
@@ -310,7 +320,7 @@ const Home = () => {
             <Container>
               <Row id="foot">
                 <Col>
-                  <h4>Made With Much Hopes<span /><img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_25,w_20/v1631216473/think_fzgsji.png"></img>
+                  <h4>Made With Much Hope<span /><img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_25,w_20/v1631216473/think_fzgsji.png"></img>
                     <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_green:0,h_25,w_30/v1631217039/lapton_vk9nqa.png"></img><span />By MKT</h4>
                 </Col>
               </Row>
