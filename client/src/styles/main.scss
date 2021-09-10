@@ -2,64 +2,56 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // background-color: #514664;
   background-color: rgba(133, 156, 153, 0.87);
-  // color: whitesmoke;
 }
 
 body {
     font-family: 'Monoton', cursive;
     position: relative; 
-    // background-color: #514664;
   }
 
 
 #myName {
   padding-top:160px;
-  // height:300px;
   color: rgb(9, 26, 70); 
-  // color: whitesmoke;
-  // background-color: #514664;
   display: flex;
   align-items: center;
   font-family: 'Kaushan Script', cursive;
   font-size: 20px;
   justify-content: center;
-  // margin-top: 150px;
+  letter-spacing: 2px;
 }
 
 #aboutMe {
   padding-top: 50px;
   max-height: 16000px;;
   color: #fff; 
-  // background-color: #514664;
   display: flex;
   color: whitesmoke;
+  letter-spacing: 2px;
 }
 
 #experience {
   padding-top: 100px;
   max-height: 16000px;
   color: #fff; 
-  // background-color: #514664;
   display: flex;
   color: whitesmoke;
+  letter-spacing: 2px;
 }
 
 #projects {
   padding-top: 100px;
-  max-height: 1800px;
+  max-height: 2000px;
   color: #fff; 
-  // background-color: #514664;
-  // color: whitesmoke;
+  letter-spacing: 2px;
 }
 
 #interests {
   padding-top: 100px;
   height: 2000px;
   color: #fff; 
-  // background-color: #514664;
-  // color: whitesmoke;
+  letter-spacing: 2px;
 }
 
 #contact {
@@ -71,12 +63,8 @@ body {
   display: flex;
   flex: auto;
   position: relative;
-  // background-color: #514664;
-  // color: whitesmoke;
-    // @media screen(500)
-      
+  letter-spacing: 2px;     
   }
-  // @media screen(500)
     
 
 
@@ -112,10 +100,6 @@ img {
   z-index: 9999 !important;
 }
 
-// .navbar-nav {
-//   margin-bottom: 0px;
-// }
-
 .affix  .container-fluid {
   position: relative;
   top: 50px;
@@ -127,10 +111,6 @@ img {
   height: 10px;
 }
 
-// #position1 {
-//   flex-direction: flex-start;
-// }
-
 .teal {
   font-family: 'Monoton', cursive;
   color: whitesmoke;
@@ -138,21 +118,9 @@ img {
   letter-spacing: 2px;
 }
 
-// #navbarScroll {
-//   color: whitesmoke;
-// }
-
-// Navbar.Collapse {
-//   color: whitesmoke;
-// }
-
-// .navbar {
-//   background-color: #a4ccc8;
-//   color: white;
-//   font-family: 'Monoton', cursive;
-//   border-color: #3d449c;
-//   justify-content: center;
-// }
+.navbar {
+  justify-content: center;
+}
 
 .ICONS3 {
   display: flex;
@@ -162,10 +130,6 @@ img {
 .d-flex {
   justify-content: center;
 }
-
-// .d-block w-100 {
-//   flex-direction: row;
-// }
 
 .pic {
   max-width: 150px;
@@ -194,8 +158,6 @@ img {
 
 .ICONS {
   max-height: 1300px;
-  // background-color: gray;
-  background-color: #514664;
   justify-content: space-evenly;
   align-items: center;
   display: flex;
@@ -209,7 +171,6 @@ img {
 
 .ICONS2 {
   max-height: 1300px;
-  // background-color: gray;
   background-color: #514664;
   justify-content: space-between;
   align-items: center;
@@ -239,7 +200,6 @@ img {
 }
 
 .tools {
-  // background-color: #514664;
   justify-content: space-evenly;
   align-items: center;
   display: flex;
@@ -252,17 +212,6 @@ img {
 #container2 {
   display: row; 
 }
-
-// #navbarScroll {
-//   display: flex;
-//   justify-content: center;
-// }
-// .btn {
-//   background-color: rgb(128, 0, 79);
-//   padding: 15px 14px;
-//   margin: auto;
-//   border: hotpink;
-// }
 
 #profile {
   width: 150px
@@ -292,7 +241,6 @@ img {
 }
 
 #butt {
-  // background-color: rgb(0, 119, 128);
   background-color: rgb(212, 219, 219);
   padding: 14px 14px;
   margin: auto;
@@ -320,13 +268,9 @@ img {
  #paint {
    margin-top: 20px;
    max-width: 700px;
-  //  display: flex;
-  //  flex-direction: row;
  }
 
  #foot {
-  // max-height: 1300px;
-  // background-color: gray;
   height: 50px;
   background-color: #514664;
   justify-content: space-between;
@@ -341,8 +285,6 @@ img {
   color: #298130;
   letter-spacing: 4px;
   border-radius: 2px;
-  // padding: 100px;
-  // border-right: 60px;
   }
 
 .container {
@@ -356,17 +298,6 @@ img {
 #EOU {
   max-width: 700px;
 }
-
-// .paint {
-//   max-width: 400px;
-//   font-size:18px;
-//   background-color: #514664;
-// }
-// image {
-//     max-width: 400px;
-//     padding: 40%;
-//     position: cover;
-// }
 
 .image {
   justify-content: center;

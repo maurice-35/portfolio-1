@@ -18,33 +18,14 @@ const Home = () => {
 
   return (
     <>
-
       <section data-spy="scroll" data-target=".navbar" data-offset="75">
-        {/* <h4>Hello! Welcome To My Site. Take a look at my journey of becoming a Software Engineer.</h4>
-              <CardGroup>
-                <Card className="d-block w-50">
-                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-                </Card><span />
-                <span />
-                <Card className="d-block w-50">
-                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg" />
-                </Card>
-              </CardGroup> */}
-        {/* </div> */}
-        {/* <div className="myName">
-          <h1>Maurice Kollewe Tcheungwe</h1>
-          <h3>Junior Software Engineer</h3>
-        </div> */}
         <div id="myName">
-          {/* <h1>Home</h1> */}
           <Container>
-            {/* <Row id="myName"> */}
             <Col xs={14} md={10} id="myName">
               <div className="myself">
                 <h1>Maurice Kollewe Tcheungwe</h1>
                 <h3>Junior Software Engineer</h3>
               </div>
-              {/* </Row> */}
             </Col>
 
           </Container>
@@ -62,15 +43,6 @@ const Home = () => {
               <img id="profile" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" thumbnail width="150" />
             </Row>
           </Container>
-          {/* <Container>
-            <Row className="ICONS">
-              <CardGroup>
-                <Card className="d-block w-100">
-                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1627456360/Project%204/cycle1_clsr8b.jpg" />
-                </Card>
-              </CardGroup>
-            </Row>
-          </Container> */}
         </div>
 
         <div id="experience" className="container-fluid">
