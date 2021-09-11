@@ -31,7 +31,7 @@ const Home = () => {
           </Container>
         </div>
         <div className="container-fluid" id="aboutMe">
-          <h1>About Me</h1><br />
+          <h1 id="about">About Me</h1><br />
           <Container>
             <Row className="ICONS">
               <img id="profile" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" thumbnail width="150" />
@@ -46,7 +46,7 @@ const Home = () => {
         </div>
 
         <div id="experience" className="container-fluid">
-          <h1>Experience</h1><br /><span />
+          <h1 id="exp">Experience</h1><br /><span />
           <Container>
             <Row>
               <Col>
@@ -143,7 +143,7 @@ const Home = () => {
         </div>
 
         <div id="projects" className="container-fluid">
-          <h1>Projects</h1>
+          <h1 id="proj">Projects</h1>
           <Container>
             <Row>
               <Col xs={8} md={6}>
@@ -179,7 +179,7 @@ const Home = () => {
 
         </div>
         <div id="interests" className="container-fluid">
-          <h1>Interests</h1>
+          <h1 id="inter">Interests</h1>
           <Container>
             <Row className="ICONS">
               <div className="char">
@@ -221,7 +221,7 @@ const Home = () => {
         </div><br />
 
         <div id="contact" className="container-fluid">
-          <h1>Contact</h1>
+          <h1 id="cont">Contact</h1>
           <Card className="d-block w-100" id="INFO">
             <Container fluid="lg" className="mr-auto my-4 my-md-5">
               <Row className="justify-content-md-center">
