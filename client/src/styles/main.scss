@@ -120,10 +120,11 @@ img {
 // }
 
 .teal {
+  width: 100%;
   // font-family: 'Monoton', cursive;
   font-family: 'Bungee Outline', cursive;
   // color: white;
-  color: rgb(2, 18, 20);
+  // color: rgb(2, 18, 20);
   display: flex;
   letter-spacing: 2px;
 }
@@ -142,8 +143,8 @@ img {
 }
 
 .pic {
-  max-width: 80px;
-  height: 90px;
+  max-width: 50px;
+  height: 50px;
   margin-top: 20px;
   padding: 5px;
   justify-content: center;
@@ -224,9 +225,18 @@ img {
   font-size: 50px;
   }
 
-  // #nav {
-  //   color: blue;
-  // }
+  .nav-link {
+    color: red;
+  }
+
+  #nav {
+    width: 100%;
+    color: blue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(133, 156, 153, 0.87);
+  }
 #about, #exp, #proj, #inter, #cont {
   font-family: 'Bowlby One SC';
   text-transform: uppercase;
@@ -277,8 +287,9 @@ img {
 
 
 #icon {
+  max-height: 40px;
   color: #298130;
-  font-size: 30px;
+  font-size: 20px;
   margin: 0 auto;
   cursor: pointer;
   border-radius: 10px;
@@ -336,6 +347,7 @@ img {
   letter-spacing:2px;
   display: flex;
 }
+
 
 
 @import "~bootstrap/scss/bootstrap";
