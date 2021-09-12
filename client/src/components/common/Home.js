@@ -21,7 +21,16 @@ const Home = () => {
       <section data-spy="scroll" data-target=".navbar" data-offset="75">
         <div id="myName">
           <Container>
-            <Col xs={14} md={10} id="myName">
+            <Col xs={16} md={12} id="myName">
+              <div id="fa-fa1">
+                <Card.Link><a href="mailto:kollewem.35@gmail.com"><i className="fa fa-at icon"></i></a></Card.Link>
+              </div>
+              <div id="fa-fa2">
+                <Card.Link><a href="https://www.linkedin.com/in/maurice-kollewe/"><i className="fa fa-linkedin-square icon"></i></a></Card.Link>
+              </div>
+              <div id="fa-fa3">
+                <Card.Link><a href="https://github.com/maurice-35"><i className="fa fa-github-square icon"></i></a></Card.Link>
+              </div>
               <div className="myself">
                 <h1>Maurice Kollewe Tcheungwe</h1>
                 <h3>Junior Software Engineer</h3>
@@ -161,7 +170,8 @@ const Home = () => {
                 </Button>
               </Col>
               <Col xs={8} md={6}>
-                <p className="describe">Full-Stack MongoDB, Express, React, Node app with CRUD functionality from our own RESTful API. As a group, we created an e-commerce app to sell meals and treats for dogs and cats. We all worked full-stack and styled using Bootstrap and Sass. I later had the responsibility to work on the register and login pages.</p>
+                <p className="describe">Full-Stack MongoDB, Express, React, Node app with CRUD functionality from our own RESTful API. As a group, we created an e-commerce app to sell meals and treats for dogs and cats. 
+                We all worked full-stack and styled using Bootstrap and Sass. I later had the responsibility to work on the register and login pages.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631033371/P3_xxby5y.png" thumbnail />
                 <Button>
                   <a id="pro" href="https://tails-whiskers.herokuapp.com/">Project 3</a>
@@ -218,7 +228,7 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
-        </div><br />
+        </div>
 
         <div id="contact" className="container-fluid">
           <h1 id="cont">Contact</h1>
@@ -263,7 +273,8 @@ const Home = () => {
         <Row className="ICONS2">
           <Col xs={14} md={10}>
 
-            <i className="fa fa-envelope icon"></i>
+            {/* <i className="fa fa-envelope icon"></i> */}
+            <i className="fa fa-at icon"></i>
             <Button>
               <a id="pro" href="mailto:kollewem.35@gmail.com">Email</a>
             </Button><span /><span />

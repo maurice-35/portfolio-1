@@ -15,7 +15,7 @@ body {
   padding-top:160px;
   color: rgb(215, 231, 233); 
   display: flex;
-  align-items: center;
+  // align-items: center;
   // font-family: 'Russo One', sans-serif;
   font-family: 'Bungee Shade', cursive;
   font-size: 20px;
@@ -29,7 +29,7 @@ body {
   max-height: 16000px;;
   color: #fff; 
   display: flex;
-  color: whitesmoke;
+  // color: whitesmoke;
   letter-spacing: 2px;
   background-color: cadetblue;
 }
@@ -39,7 +39,7 @@ body {
   max-height: 16000px;
   color: #fff; 
   display: flex;
-  color: whitesmoke;
+  // color: whitesmoke;
   letter-spacing: 2px;
   background-color: coral;
 }
@@ -48,6 +48,7 @@ body {
   padding-top: 100px;
   max-height: 2000px;
   color: #fff; 
+  display: flex;
   letter-spacing: 2px;
   background-color: cornflowerblue;
 }
@@ -56,6 +57,7 @@ body {
   padding-top: 100px;
   height: 2400px;
   color: #fff; 
+  display: flex;
   letter-spacing: 2px;
   background-color: darkslategray;
 }
@@ -98,9 +100,9 @@ img {
   background-position: cover;
 }
 
-.myName {
-  color: #fff;
-}
+// .myName {
+//   color: #fff;
+// }
 
 .affix {
   top: 0;
