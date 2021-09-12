@@ -22,13 +22,13 @@ const Home = () => {
         <div id="myName">
           <Container>
             <Col xs={16} md={12} id="myName">
-              <div id="fa-fa1">
+              <div id="fa-fa">
                 <Card.Link><a href="mailto:kollewem.35@gmail.com"><i className="fa fa-at icon"></i></a></Card.Link>
               </div>
-              <div id="fa-fa2">
+              <div id="fa-fa">
                 <Card.Link><a href="https://www.linkedin.com/in/maurice-kollewe/"><i className="fa fa-linkedin-square icon"></i></a></Card.Link>
               </div>
-              <div id="fa-fa3">
+              <div id="fa-fa">
                 <Card.Link><a href="https://github.com/maurice-35"><i className="fa fa-github-square icon"></i></a></Card.Link>
               </div>
               <div className="myself">
@@ -190,7 +190,7 @@ const Home = () => {
         </div>
         <div id="interests" className="container-fluid">
           <h1 id="inter">Interests</h1>
-          <Container>
+          <Container className="interests2">
             <Row className="ICONS">
               <div className="char">
                 <Button id="big-button" ref={target} onClick={() => setShow(!show)}>
@@ -209,20 +209,18 @@ const Home = () => {
 
               <CardGroup>
                 <Card className="d-block w-50">
-                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_700/v1631261773/EOU_pv1mnf.png" /><span />
+                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_650/v1631261773/EOU_pv1mnf.png" /><span />
                 </Card><span />
                 <Card className="d-block w-50">
-                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_brightness_hsb,r_2,w_700/v1631262940/Haven_ei8exo.png" />
+                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_brightness_hsb,r_2,w_650/v1631262940/Haven_ei8exo.png" />
                 </Card>
               </CardGroup>
             </Row>
 
             <Row className="tools" id="paint">
-              <Col xs={12} md={10}>
+              <Col xs={5} md={3}>
                 <p className="describe">I enjoy painting during my spare time.</p>
-                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_700/v1631098527/paint_zxpgdl.jpg" />
-              </Col>
-              <Col xs={10} md={8}>
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_700/v1631098527/paint_zxpgdl.jpg" /><span />
                 <p className="describe">I enjoy cycling around the town and my neigbourhood.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_700/v1627456360/Project%204/cycle1_clsr8b.jpg" />
               </Col>
