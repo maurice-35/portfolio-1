@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Navbar, Nav, Button, Form, Toast, Card } from 'react-bootstrap'
+import { Navbar, Nav, Button, Form, Row, Col, Toast, Card } from 'react-bootstrap'
 
 
 const Navigation = () => {
@@ -51,18 +51,22 @@ const Navigation = () => {
               <Nav
                 className="options"
                 style={{ maxHeight: '100px' }}
-                navbarScroll
+                navbarScroll 
               >
-                <Nav.Link href="#aboutMe">About Me</Nav.Link>
-                <Nav.Link href="#projects">Projects</Nav.Link>
-                <Nav.Link href="#experience">
-                  Experience
-                </Nav.Link>
+                <Row xs={8} md={6}> 
+                <Nav.Link href="#aboutMe" id="options">About Me</Nav.Link>
+                <Nav.Link href="#projects" id="options">Projects</Nav.Link><spn />
+                <Nav.Link href="#experience" id="options">Experience</Nav.Link><br />
+                {/* </Nav><br /> */}
+                {/* <Form className="d-flex"> */}
+                <Col xs={5} md={3} id="nav2">
+                  <Nav.Link href="#interests" id="options">Interests</Nav.Link>
+                  <Nav.Link href="#contact" id="options">Contact</Nav.Link>
+                </Col>
+                </Row>
               </Nav><br />
-              <Form className="d-flex">
-                <Nav.Link href="#interests">Interests</Nav.Link>
-                <Nav.Link href="#contact">Contact</Nav.Link>
-              </Form>
+
+              {/* </Form> */}
               {/* </ul>
             </div>
          </ul>

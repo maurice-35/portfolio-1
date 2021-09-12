@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgba(133, 156, 153, 0.87);
+  background-color: black;
 }
 
 body {
@@ -160,6 +160,10 @@ img {
   align-items: center;
 }
 
+#options {
+  color: white;
+}
+
 .git {
   display: flex;
   max-width: 50px;
@@ -225,22 +229,30 @@ img {
   font-size: 50px;
   }
 
-  .nav-link {
-    color: red;
-  }
+  // .nav-link {
+  //   color: red;
+  // }
 
   #nav {
     width: 100%;
-    color: blue;
+    color: white;
     align-items: center;
     display: flex;
     justify-content: center;
-    background-color: rgba(133, 156, 153, 0.87);
+    // background-color: rgba(133, 156, 153, 0.87);
+  }
+
+  #nav2 {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    // color: blue;
   }
 #about, #exp, #proj, #inter, #cont {
   font-family: 'Bowlby One SC';
   text-transform: uppercase;
-  color: rgb(2, 18, 20)
+  // color: rgb(2, 18, 20)
 }
 
 #container2 {
