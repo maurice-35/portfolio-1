@@ -31,6 +31,7 @@ body {
   display: flex;
   color: whitesmoke;
   letter-spacing: 2px;
+  background-color: cadetblue;
 }
 
 #experience {
@@ -40,6 +41,7 @@ body {
   display: flex;
   color: whitesmoke;
   letter-spacing: 2px;
+  background-color: coral;
 }
 
 #projects {
@@ -47,6 +49,7 @@ body {
   max-height: 2000px;
   color: #fff; 
   letter-spacing: 2px;
+  background-color: cornflowerblue;
 }
 
 #interests {
@@ -54,6 +57,7 @@ body {
   height: 2400px;
   color: #fff; 
   letter-spacing: 2px;
+  background-color: darkslategray;
 }
 
 #contact {
@@ -66,7 +70,8 @@ body {
   flex: auto;
   position: relative;
   letter-spacing: 2px; 
-  margin-bottom: 4px;    
+  margin-bottom: 4px; 
+  background-color: #514664;   
   }
     
 
@@ -300,12 +305,13 @@ img {
 
 #icon {
   max-height: 40px;
-  color: #298130;
+   // color: #298130;
+  color: white;
   font-size: 20px;
   margin: 0 auto;
   cursor: pointer;
   border-radius: 10px;
-  text-decoration-color: whitesmoke;
+ 
 }
 
  #position1 {
