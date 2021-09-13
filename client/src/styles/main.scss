@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(158, 151, 151);
 }
 
 body {
@@ -32,6 +32,7 @@ body {
   // color: whitesmoke;
   letter-spacing: 2px;
   background-color: cadetblue;
+  // font-family: 'Bungee Outline', cursive;
 }
 
 #experience {
@@ -45,8 +46,8 @@ body {
 }
 
 #projects {
-  padding-top: 100px;
-  max-height: 2000px;
+  padding-top: 80px;
+  max-height: 20100px;
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
@@ -54,7 +55,7 @@ body {
 }
 
 #interests {
-  padding-top: 100px;
+  padding-top: 80px;
   height: 2050px;
   color: #fff; 
   display: flex;
@@ -129,7 +130,7 @@ img {
 .teal {
   width: 100%;
   // font-family: 'Monoton', cursive;
-  font-family: 'Bungee Outline', cursive;
+  font-family: 'Monoton', cursive;
   // color: white;
   // color: rgb(2, 18, 20);
   display: flex;
@@ -167,8 +168,13 @@ img {
   align-items: center;
 }
 
-#options {
+Navbar.Toggle {
   color: white;
+}
+
+#options {
+  color: rgb(128, 145, 192);
+  margin-left: 10px;
 }
 
 .git {
@@ -226,6 +232,10 @@ img {
   max-width: 700px;
 }
 
+.title {
+  text-decoration: underline;
+}
+
 // .interests2 {
 //   flex-direction: row-reverse;
 // }
@@ -252,21 +262,26 @@ img {
   // margin: 2px;
 }
 
-  #nav {
-    width: 100%;
-    color: white;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    // background-color: rgba(133, 156, 153, 0.87);
+#open {
+  font-size: 30px;
+}
+
+#nav {
+  width: 100%;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  // background-color: rgba(133, 156, 153, 0.87);
   }
 
-  #nav2 {
-    display: flex;
-    // justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    // color: blue;
+#nav2 {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  // margin-left: 2px;
+  // color: blue;
   }
 #about, #exp, #proj, #inter, #cont {
   font-family: 'Bowlby One SC';

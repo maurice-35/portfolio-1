@@ -50,16 +50,16 @@ const Navigation = () => {
             <Navbar.Collapse id="navbarScroll">
               <Nav
                 className="options"
-                style={{ maxHeight: '100px' }}
+                style={{ maxHeight: '110px' }}
                 navbarScroll 
               >
-                <Row xs={8} md={6}> 
+                <Row xs={3} md={2}> 
                 <Nav.Link href="#aboutMe" id="options">About Me</Nav.Link>
-                <Nav.Link href="#projects" id="options">Projects</Nav.Link><spn />
-                <Nav.Link href="#experience" id="options">Experience</Nav.Link><br />
+                <Nav.Link href="#projects" id="options">Projects</Nav.Link>
+                <Nav.Link href="#experience" id="options">Experience</Nav.Link><span />
                 {/* </Nav><br /> */}
                 {/* <Form className="d-flex"> */}
-                <Col xs={5} md={3} id="nav2">
+                <Col xs={4} md={2} id="nav2">
                   <Nav.Link href="#interests" id="options">Interests</Nav.Link>
                   <Nav.Link href="#contact" id="options">Contact</Nav.Link>
                 </Col>

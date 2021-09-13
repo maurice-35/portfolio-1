@@ -156,33 +156,29 @@ const Home = () => {
           <Container>
             <Row>
               <Col xs={8} md={6}>
+                <h2 className="title">Project1:</h2>
                 <p className="describe">I built a number-guessing grid-game using JavaScript, HTML and CSS. It is a JavaScript random selection of numbers to match that of the user.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034515/P_jel8al.png" thumbnail />
-                <Button>
-                  <a id="pro" href="https://maurice-35.github.io/number-guessing-game/">Project 1</a>
-                </Button>
+                <Card.Link><a href="https://maurice-35.github.io/number-guessing-game/"><i className="fa fa-mouse-pointer icon" id="open"></i></a></Card.Link>
               </Col>
               <Col xs={8} md={6}>
+              <h2 className="title">Project2:</h2>
                 <p className="describe">I built a React app which used an external API from ‘thecatapi.com’ to display cats of various categories and origins. Styled using Bulma, it is a good spot for cat lovers.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034365/cat2_fwshks.png" thumbnail />
-                <Button>
-                  <a id="pro" href="https://maurice-cats-app-project2.netlify.app/">Project 2</a>
-                </Button>
+                <Card.Link><a href="https://maurice-cats-app-project2.netlify.app/"><i className="fa fa-mouse-pointer icon" id="open"></i></a></Card.Link>
               </Col>
               <Col xs={8} md={6}>
+              <h2 className="title">Project3:</h2>
                 <p className="describe">Full-Stack MongoDB, Express, React, Node app with CRUD functionality from our own RESTful API. As a group, we created an e-commerce app to sell meals and treats for dogs and cats. 
                 We all worked full-stack and styled using Bootstrap and Sass. I later had the responsibility to work on the register and login pages.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631033371/P3_xxby5y.png" thumbnail />
-                <Button>
-                  <a id="pro" href="https://tails-whiskers.herokuapp.com/">Project 3</a>
-                </Button>
+                <Card.Link><a href="https://tails-whiskers.herokuapp.com/"><i className="fa fa-mouse-pointer icon" id="open"></i></a></Card.Link>
               </Col>
               <Col xs={8} md={6}>
+              <h2 className="title">Project4:</h2>
                 <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
-                <Button>
-                  <a id="pro" href="https://movie-app-project4.herokuapp.com/">Project 4</a>
-                </Button>
+                <Card.Link><a href="https://movie-app-project4.herokuapp.com/"><i className="fa fa-mouse-pointer icon" id="open"></i></a></Card.Link>
               </Col>
             </Row>
           </Container>
