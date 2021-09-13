@@ -6,7 +6,6 @@
 }
 
 body {
-    // font-family: 'Monoton', cursive;
     position: relative; 
   }
 
@@ -15,8 +14,6 @@ body {
   padding-top:160px;
   color: rgb(215, 231, 233); 
   display: flex;
-  // align-items: center;
-  // font-family: 'Russo One', sans-serif;
   font-family: 'Bungee Shade', cursive;
   font-size: 20px;
   justify-content: center;
@@ -29,10 +26,7 @@ body {
   max-height: 2000px;;
   color: #fff; 
   display: flex;
-  // color: whitesmoke;
   letter-spacing: 2px;
-  // background-color: cadetblue;
-  // font-family: 'Bungee Outline', cursive;
 }
 
 #experience {
@@ -40,9 +34,7 @@ body {
   max-height: 1600px;
   color: #fff; 
   display: flex;
-  // color: whitesmoke;
   letter-spacing: 2px;
-  // background-color: coral;
 }
 
 #projects {
@@ -51,7 +43,6 @@ body {
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
-  // background-color: cornflowerblue;
 }
 
 #interests {
@@ -60,7 +51,6 @@ body {
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
-  // background-color: darkslategray;
 }
 
 #contact {
@@ -73,8 +63,7 @@ body {
   flex: auto;
   position: relative;
   letter-spacing: 2px; 
-  margin-bottom: 4px; 
-  // background-color: #514664;   
+  margin-bottom: 4px;  
   }
     
 
@@ -101,10 +90,6 @@ img {
   background-position: cover;
 }
 
-// .myName {
-//   color: #fff;
-// }
-
 .affix {
   top: 0;
   width: 100%;
@@ -116,23 +101,9 @@ img {
   top: 50px;
 }
 
-
-// #top {
-//   background-color: hsla(310, 62%, 31%, 0.137);
-//   color:hsla(224, 63%, 49%, 0.137);
-//   height: 10px;
-// }
-
-// Nav .mr-auto my-2 my-bg-0  {
-//   color: red;
-// }
-
 .teal {
   width: 100%;
-  // font-family: 'Monoton', cursive;
   font-family: 'Monoton', cursive;
-  // color: white;
-  // color: rgb(2, 18, 20);
   display: flex;
   letter-spacing: 2px;
 }
@@ -157,8 +128,6 @@ img {
   padding: 5px;
   justify-content: center;
   margin: 0 auto;
-  // display: flex;
-  // align-items: center;
 }
 
 .navbar-wrapper {
@@ -236,10 +205,6 @@ Navbar.Toggle {
   text-decoration: underline;
 }
 
-// .interests2 {
-//   flex-direction: row-reverse;
-// }
-
 .tools {
   justify-content: space-evenly;
   align-items: center;
@@ -250,16 +215,9 @@ Navbar.Toggle {
   font-size: 50px;
   }
 
-  // .nav-link {
-  //   color: red;
-  // }
-
 #fa-fa {
   background-color: cadetblue;
   font-size: 40px;
-  // padding: 2px;
-  // border: 2px;
-  // margin: 2px;
 }
 
 #open {
@@ -272,21 +230,16 @@ Navbar.Toggle {
   align-items: center;
   display: flex;
   justify-content: center;
-  // background-color: rgba(133, 156, 153, 0.87);
   }
 
 #nav2 {
   display: flex;
-  // justify-content: center;
   align-items: center;
   justify-content: space-between;
-  // margin-left: 2px;
-  // color: blue;
   }
 #about, #exp, #proj, #inter, #cont {
   font-family: 'Bungee';
   text-transform: uppercase;
-  // color: rgb(6, 34, 160);
 }
 
 #container2 {
@@ -334,7 +287,6 @@ Navbar.Toggle {
 
 #icon {
   max-height: 40px;
-   // color: #298130;
   color: white;
   font-size: 20px;
   margin: 0 auto;
@@ -401,9 +353,6 @@ Navbar.Toggle {
     height: 2700px;
     padding: 150px;
   } 
-  // #projects {
-  //   height: 2400px;
-  // }
 }
 
 
