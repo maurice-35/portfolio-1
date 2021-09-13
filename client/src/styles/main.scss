@@ -31,36 +31,36 @@ body {
   display: flex;
   // color: whitesmoke;
   letter-spacing: 2px;
-  background-color: cadetblue;
+  // background-color: cadetblue;
   // font-family: 'Bungee Outline', cursive;
 }
 
 #experience {
   padding-top: 100px;
-  max-height: 16000px;
+  max-height: 1600px;
   color: #fff; 
   display: flex;
   // color: whitesmoke;
   letter-spacing: 2px;
-  background-color: coral;
+  // background-color: coral;
 }
 
 #projects {
   padding-top: 80px;
-  max-height: 20100px;
+  max-height: 2010px;
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
-  background-color: cornflowerblue;
+  // background-color: cornflowerblue;
 }
 
 #interests {
   padding-top: 80px;
-  height: 2050px;
+  height: 2000px;
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
-  background-color: darkslategray;
+  // background-color: darkslategray;
 }
 
 #contact {
@@ -74,7 +74,7 @@ body {
   position: relative;
   letter-spacing: 2px; 
   margin-bottom: 4px; 
-  background-color: #514664;   
+  // background-color: #514664;   
   }
     
 
@@ -173,7 +173,7 @@ Navbar.Toggle {
 }
 
 #options {
-  color: rgb(128, 145, 192);
+  color: rgb(4, 58, 207);
   margin-left: 10px;
 }
 
@@ -284,9 +284,9 @@ Navbar.Toggle {
   // color: blue;
   }
 #about, #exp, #proj, #inter, #cont {
-  font-family: 'Bowlby One SC';
+  font-family: 'Bungee';
   text-transform: uppercase;
-  // color: rgb(2, 18, 20)
+  // color: rgb(6, 34, 160);
 }
 
 #container2 {
@@ -396,6 +396,15 @@ Navbar.Toggle {
   display: flex;
 }
 
+@media screen and (max-width: 600px) {
+  #interests {
+    height: 2700px;
+    padding: 150px;
+  } 
+  // #projects {
+  //   height: 2400px;
+  // }
+}
 
 
 @import "~bootstrap/scss/bootstrap";
