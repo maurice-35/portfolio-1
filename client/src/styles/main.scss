@@ -12,7 +12,7 @@ body {
 
 #myName {
   padding-top:160px;
-  color: rgb(215, 231, 233); 
+  color: rgb(16, 30, 75); 
   display: flex;
   font-family: 'Bungee Shade', cursive;
   font-size: 20px;
@@ -39,7 +39,7 @@ body {
 
 #projects {
   padding-top: 80px;
-  max-height: 2010px;
+  max-height: 2100px;
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
@@ -47,14 +47,14 @@ body {
 
 #interests {
   padding-top: 80px;
-  height: 2000px;
+  height: 2400px;
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
 }
 
 #contact {
-  padding-top: 50px;
+  padding-top: 0px;
   max-height: 1600px;
   color: #fff; 
   justify-content: space-evenly;
@@ -146,10 +146,6 @@ Navbar.Toggle {
   margin-left: 10px;
 }
 
-// #font {
-//   font-size: 10px;
-// }
-
 .git {
   display: flex;
   max-width: 50px;
@@ -161,7 +157,6 @@ Navbar.Toggle {
   max-width: 75px;
   background-color: white;
   padding: 10px;
-  // justify-content: space-between;
 }
 
 .ICONS {
@@ -356,10 +351,10 @@ Navbar.Toggle {
 }
 
 @media screen and (max-width: 300px) {
-#interests {
-  height: 2700px;
-  padding: 150px;
-} 
+// #interests {
+//   height: 2700px;
+//   padding: 150px;
+// } 
 
 #projects {
   max-height: 2300x;
