@@ -2,15 +2,18 @@
 // import { Form, Col, Row, Container, Card } from 'react-bootstrap'
 
 
-// // const ContactForm = () => {
+// const ContactForm = () => {
+//     const [formdata, setFormdataa] = useState({
+//         email
+//     })
 //   // const history = useHistory()
 
-//   const ContactForm = ({
-//     formData,
-//     handleChange,
-//     handleSubmit,
-//     // button = 'send message',
-// }) => {
+// //   const ContactForm = ({
+// //     formData,
+// //     handleChange,
+// //     handleSubmit,
+// //     // button = 'send message',
+// // }) => {
 
 
 //     //   const handleSubmit = async (event) => {
@@ -21,11 +24,11 @@
 //     //     }
 //     //   }
 
-//     //   const handleChange = (event) => {
-//     //     const newForm = { ...formData, [event.target.name]: event.target.value }
-//     //     setFormData()
-//     //     console.log(newForm)
-//     //   }
+//       const handleChange = (event) => {
+//         const newForm = { ...formData, [event.target.name]: event.target.value }
+//         setFormData()
+//         console.log(newForm)
+//       }
 //     return (
 //         <>
 //             <div id="contact" className="container-fluid">

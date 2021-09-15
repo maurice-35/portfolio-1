@@ -253,7 +253,7 @@ const Home = () => {
                         <Form.Control as="textarea" rows={3} />
                       </Form.Group>
                     </div>
-                    <button type="submit" className="btn" id="butt"> <a href="mailto:kollewem.35@gmail.com">Send Message</a></button>
+                    <button type="submit" className="btn" id="butt">Send Message</button>
                   </Form>
                 </Col>
               </Row>
