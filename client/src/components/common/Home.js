@@ -8,20 +8,27 @@ const Home = () => {
   const [show, setShow] = useState(false)
   const target = useRef(null)
 
+  // const ContactForm = () => {
+  //   const [formdata, setFormdata] = useState([])
 
+  // }
   const handleSubmit = async (event) => {
     event.preventDefault()
-
-
   }
 
+  // const handleChange = (event) => {
+  //   const newForm = { ...formData, [event.target.name]: event.target.value }
+  //   setFormData()
+  //   console.log(newForm)
+  // }
 
   return (
     <>
       <section data-spy="scroll" data-target=".navbar" data-offset="75">
         <div id="myName">
           <Container>
-            <Col xs={16} md={12} id="myName">
+            {/* <Col xs={16} md={12} id="myName"> */}
+            <Col xs='auto' id="myName">
               <div id="fa-fa">
                 <Card.Link><a href="mailto:kollewem.35@gmail.com"><i className="fa fa-at icon"></i></a></Card.Link>
               </div>
@@ -31,7 +38,7 @@ const Home = () => {
               <div id="fa-fa">
                 <Card.Link><a href="https://github.com/maurice-35"><i className="fa fa-github-square icon"></i></a></Card.Link>
               </div>
-              <div className="myself">
+              <div id="myself">
                 <h1>Maurice Kollewe Tcheungwe</h1>
                 <h3>Junior Software Engineer</h3>
               </div>
@@ -45,11 +52,11 @@ const Home = () => {
             <Row className="ICONS">
               <img id="profile" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" thumbnail width="150" />
               <Col xs={8} md={6}>
-                <p className="describe"> I am Maurice. A Software Engineer based in Greater London.</p>
-                <p className="describe">During my volunteering role behind the till at a charity shop, I was curious about the technology used to process receipts, and I became passionate about the impact of computing and technology on the modern world. After online searches, I developed more of an interest and started taking self learning online and writing some codes. I later enrolled in a full time Software Engineering course in order to acquire new skills and develop the passion and curiosity to solve problems. I thrive when building on my new skills and excel when collaborating and working as a team.</p>
-                <p className="describe">With my recent engineering and customer service skills, and a strong desire to learn, I am looking to progress in the tech industry as a Junior Software Engineer.</p>
+                <p className="describe"> I am Maurice, a Software Engineer based in Greater London.</p>
+                <p className="describe">During my volunteering role behind the till at a charity shop, I was curious about the technology used to process receipts, and I became passionate about the impact of computing and technology on the modern world. After online searches, I developed more of an interest and started taking self learning online and writing some codes. I later enrolled in a full time Software Engineering course in order to acquire new skills and develop the passion and curiosity to solve problems.</p>
+                <p className="describe">I thrive when building on my new skills and excel when collaborating and working as a team. With my new engineering and customer service skills, and a strong desire to learn, I am looking to progress in the tech industry as a Junior Software Engineer.</p>
               </Col>
-              <img id="profile" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" thumbnail width="150" />
+              {/* <img id="profile" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" thumbnail width="150" /> */}
             </Row>
           </Container>
         </div>
@@ -153,7 +160,7 @@ const Home = () => {
         </div>
 
         <div id="projects" className="container-fluid">
-          <h1 id="proj">Projects</h1>
+          <h1 id="proj">Projects</h1><br />
           <Container>
             <Row>
               <Col xs={8} md={6}>
@@ -186,7 +193,7 @@ const Home = () => {
 
         </div>
         <div id="interests" className="container-fluid">
-          <h1 id="inter">Interests</h1>
+          <h1 id="inter">Interests</h1><br />
           <Container className="interests2">
             <Row className="ICONS">
               <div className="char">

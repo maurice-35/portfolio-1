@@ -2,18 +2,18 @@
 // import { Form, Col, Row, Container, Card } from 'react-bootstrap'
 
 
-// const ContactForm = () => {
-//     const [formdata, setFormdataa] = useState({
-//         email
-//     })
-//   // const history = useHistory()
+// // const ContactForm = () => {
+// //     const [formdata, setFormdataa] = useState({
+// //         email
+// //     })
+// // const history = useHistory()
 
-// //   const ContactForm = ({
-// //     formData,
-// //     handleChange,
-// //     handleSubmit,
-// //     // button = 'send message',
-// // }) => {
+// const ContactForm = ({
+//     formData,
+//     handleChange,
+//     handleSubmit,
+//     buttonText = 'send message',
+// }) => {
 
 
 //     //   const handleSubmit = async (event) => {
@@ -24,11 +24,11 @@
 //     //     }
 //     //   }
 
-//       const handleChange = (event) => {
-//         const newForm = { ...formData, [event.target.name]: event.target.value }
-//         setFormData()
-//         console.log(newForm)
-//       }
+//     //   const handleChange = (event) => {
+//     //     const newForm = { ...formData, [event.target.name]: event.target.value }
+//     //     setFormData()
+//     //     console.log(newForm)
+//     //   }
 //     return (
 //         <>
 //             <div id="contact" className="container-fluid">
@@ -40,22 +40,22 @@
 //                                 <Form className="function" onSubmit={handleSubmit}>
 //                                     <Form.Group className="info">
 //                                         <Form.Label>Name</Form.Label>
-//                                         <Form.Control onChange={handleChange} name="email" type="email" placeholder="Enter email" />
+//                                         <Form.Control name="email" type="email" placeholder="Enter email" onChange={handleChange} value={formData.title} />
 //                                     </Form.Group>
 //                                     <Form.Group className="info">
 //                                         <Form.Label>Phone Number</Form.Label>
-//                                         <Form.Control onChange={handleChange} name="phone-number" type="phone-number" placeholder="Phone Number" />
+//                                         <Form.Control name="phone-number" type="phone-number" placeholder="Phone Number" onChange={handleChange} value={formData.title} />
 //                                     </Form.Group>
 //                                     <Form.Group className="info">
 //                                         <Form.Label>Company</Form.Label>
-//                                         <Form.Control onChange={handleChange} name="company" type="company" placeholder="company" />
+//                                         <Form.Control name="company" type="company" placeholder="company" onChange={handleChange} value={formData.title} />
 //                                     </Form.Group>
 //                                     <Form.Group className="info">
 //                                         <Form.Label>Message</Form.Label>
 //                                         {/* <label htmlFor="massage">massage</label> */}
-//                                         <textarea className="Form.Control" name="message" type="message" placeholder="message" />
+//                                         <textarea className="Form.Control" name="message" type="message" placeholder="message" onChange={handleChange} value={formData.title} />
 //                                     </Form.Group><br />
-//                                     <button type="submit" className="btn" id="butt">Send Message</button>
+//                                     <button type="submit" className="btn" id="butt">{buttonText}</button>
 //                                 </Form>
 //                             </Col>
 //                         </Row>
