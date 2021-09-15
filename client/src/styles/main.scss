@@ -355,11 +355,24 @@ Navbar.Toggle {
   display: flex;
 }
 
-@media screen and (max-width: 600px) {
-  #interests {
-    height: 2700px;
-    padding: 150px;
-  } 
+@media screen and (max-width: 300px) {
+#interests {
+  height: 2700px;
+  padding: 150px;
+} 
+
+#projects {
+  max-height: 2300x;
+}
+
+.pic {
+  max-width: 15px;
+  height: 20px;
+  margin-top: 100px;
+  padding: 2px;
+  justify-content: center;
+  margin: 0 auto;
+  }
 }
 
 
