@@ -146,6 +146,10 @@ Navbar.Toggle {
   margin-left: 10px;
 }
 
+// #font {
+//   font-size: 10px;
+// }
+
 .git {
   display: flex;
   max-width: 50px;
@@ -155,7 +159,9 @@ Navbar.Toggle {
 
 .boot {
   max-width: 75px;
-  background-color: #5bc9c025;
+  background-color: white;
+  padding: 10px;
+  // justify-content: space-between;
 }
 
 .ICONS {
@@ -165,6 +171,7 @@ Navbar.Toggle {
   display: flex;
   flex-direction: flex;
   font-style: italic;
+  font-size: 10px;
   flex: auto;
   font-size: 50px;
   padding: 0px;
