@@ -64,7 +64,7 @@ const Home = () => {
           </Container>
         </div>
 
-        <div className="container-fluid" id="aboutMe">
+        <div className="container-fluid" id="aboutMe" width="100">
           <h1 id="about">About Me</h1><br />
           <Container>
             <Row className="ICONS">
@@ -77,7 +77,7 @@ const Home = () => {
           </Container>
         </div>
 
-        <div id="experience" className="container-fluid">
+        <div id="experience" className="container-fluid" width="100">
           <h1 id="exp">Experience</h1><br /><span />
           <Container>
             <Row>
@@ -85,6 +85,12 @@ const Home = () => {
                 <h3> <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png"></img><span />General Assembly</h3>
               </Col>
             </Row><br />
+            <Row className="ICONS">
+              <Col xs={8} md={6}>
+                <p className="describe">Fundamentals of Web Development from front-end to back-end in an agile environment.</p>
+                <p className="describe">Daily stand-ups, lectures, labs (workshops), pair-coding, daily-homework and four projects.</p>
+              </Col><br />
+            </Row>
             <h3>Technologies</h3><br />
             <Row className="ICONS">
               <Col xs={5} md={3}>
@@ -175,30 +181,30 @@ const Home = () => {
           </Container>
         </div>
 
-        <div id="projects" className="container-fluid">
+        <div id="projects" className="container-fluid" width="100">
           <h1 id="proj">Projects</h1><br />
           <Container>
             <Row>
-              <Col xs={8} md={6}>
+              <Col xs={8} md={6} id="proj1">
                 <h2 className="title">Project1:</h2>
                 <p className="describe">I built a number-guessing grid-game using JavaScript, HTML and CSS. It is a JavaScript random selection of numbers to match that of the user.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034515/P_jel8al.png" thumbnail />
                 <Card.Link><a href="https://maurice-35.github.io/number-guessing-game/"><i className="fa fa-mouse-pointer icon" id="open"></i></a></Card.Link>
               </Col>
-              <Col xs={8} md={6}>
+              <Col xs={8} md={6} id="proj2">
                 <h2 className="title">Project2:</h2>
                 <p className="describe">I built a React app which used an external API from ‘thecatapi.com’ to display cats of various categories and origins. Styled using Bulma, it is a good spot for cat lovers.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034365/cat2_fwshks.png" thumbnail />
                 <Card.Link><a href="https://maurice-cats-app-project2.netlify.app/"><i className="fa fa-mouse-pointer icon" id="open"></i></a></Card.Link>
               </Col>
-              <Col xs={8} md={6}>
+              <Col xs={8} md={6} id="proj3">
                 <h2 className="title">Project3:</h2>
                 <p className="describe">Full-Stack MongoDB, Express, React, Node app with CRUD functionality from our own RESTful API. As a group, we created an e-commerce app to sell meals and treats for dogs and cats.
                   We all worked full-stack and styled using Bootstrap and Sass. I later had the responsibility to work on the register and login pages.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631033371/P3_xxby5y.png" thumbnail />
                 <Card.Link><a href="https://tails-whiskers.herokuapp.com/"><i className="fa fa-mouse-pointer icon" id="open"></i></a></Card.Link>
               </Col>
-              <Col xs={8} md={6}>
+              <Col xs={8} md={6} id="proj4">
                 <h2 className="title">Project4:</h2>
                 <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
@@ -229,10 +235,10 @@ const Home = () => {
 
               <CardGroup>
                 <Card className="d-block w-50">
-                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_650/v1631261773/EOU_pv1mnf.png" /><span />
+                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_550/v1631261773/EOU_pv1mnf.png" /><span />
                 </Card><span />
                 <Card className="d-block w-50">
-                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_brightness_hsb,r_2,w_650/v1631262940/Haven_ei8exo.png" />
+                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_brightness_hsb,r_2,w_450/v1631262940/Haven_ei8exo.png" />
                 </Card>
               </CardGroup>
             </Row><bbr />
@@ -240,11 +246,11 @@ const Home = () => {
             <Row className="tools" id="paint">
               <p id="description">I enjoy painting during my spare time.</p>
               <Col xs={5} md={3}>
-                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_700/v1631098527/paint_zxpgdl.jpg" /><span />
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_500/v1631098527/paint_zxpgdl.jpg" /><span />
               </Col><br />
               <p id="description">I enjoy cycling around the town and my neigbourhood.</p>
               <Col xs={5} md={3}>
-                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_700/v1627456360/Project%204/cycle1_clsr8b.jpg" />
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_500/v1627456360/Project%204/cycle1_clsr8b.jpg" />
               </Col>
             </Row>
           </Container>

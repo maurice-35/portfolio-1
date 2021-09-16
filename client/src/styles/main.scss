@@ -2,15 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: rgb(116, 81, 148);
 }
 
 body {
-    position: relative; 
+    position: absolute; 
   }
 
   #myIcons {
-    padding-top: 60px;
-    padding-right: 20px; 
+    padding-top: 60px; 
     display: flex;
     flex-direction: column;
     font-family: 'Bungee Shade', cursive;
@@ -25,7 +25,8 @@ body {
 }
 
   #profile {
-    height: 700px;
+    max-height: 100vh;
+    width: 100vw;
     background-color: rgba(173, 42, 42, 0.253);
     display: flex;
     justify-content: space-evenly;
@@ -36,10 +37,11 @@ body {
 
 #img {
   padding-top: 200px;
+  border-radius: 12px;
 }
 
 #aboutMe {
-  background-color: black;
+  background-color: rgb(45, 12, 75);
   padding-top: 80px;
   max-height: 2000px;;
   color: #fff; 
@@ -68,7 +70,7 @@ body {
 #interests {
   background-color: rgb(17, 52, 53);
   padding-top: 80px;
-  height: 2300px;
+  height: 1800px;
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
@@ -152,7 +154,6 @@ img {
 
 .navbar {
   justify-content: center;
-  background-color: rgb(148, 95, 95);
 }
 
 .ICONS3 {
@@ -185,7 +186,7 @@ Navbar.Toggle {
 }
 
 #option {
-  color: rgb(4, 58, 207);
+  color: white;
   margin-left: 10px;
   display: inline;
   flex-direction: row;
@@ -330,7 +331,7 @@ Navbar.Toggle {
 
 #icon {
   max-height: 40px;
-  color: rgba(26, 12, 12, 0.904);
+  color: #fff;
   font-size: 20px;
   margin: 0 auto;
   cursor: pointer;
@@ -369,6 +370,10 @@ Navbar.Toggle {
   display: inline;
   font-size: 18px;
   justify-content: center;
+}
+
+#proj1, #proj2, #proj3, #proj4 {
+  padding-bottom: 40px;
 }
 
 .container {
