@@ -29,8 +29,6 @@ const Home = () => {
           <Container id="profile">
             <div>
               <Container>
-                {/* <Col xs={16} md={12} id="myName"> */}
-                {/* <Col xs={5} md={3} id="myIcons"> */}
                 <Col id="myIcons">
                   <div id="fa-fa">
                     <Card.Link><a href="mailto:kollewem.35@gmail.com"><i className="fa fa-at icon"></i></a></Card.Link>
@@ -65,28 +63,16 @@ const Home = () => {
             </div>
           </Container>
         </div>
-        {/* <div className="myProfile">
-          <Container>
-            <Col xs={5} md={3}>
-              <div>
-                <img id="profile" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" thumbnail width />
-              </div>
-            </Col>
-          </Container>
-        </div> */}
-
 
         <div className="container-fluid" id="aboutMe">
           <h1 id="about">About Me</h1><br />
           <Container>
             <Row className="ICONS">
-              {/* <img id="profile" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" thumbnail width /> */}
               <Col xs={8} md={6}>
                 <p className="describe"> I am Maurice, a Software Engineer based in Greater London.</p>
                 <p className="describe">During my volunteering role behind the till at a charity shop, I was curious about the technology used to process receipts, and I became passionate about the impact of computing and technology on the modern world. After online searches, I developed more of an interest and started taking self learning online and writing some codes. I later enrolled in a full time Software Engineering course in order to acquire new skills and develop the passion and curiosity to solve problems.</p>
                 <p className="describe">I thrive when building on my new skills and excel when collaborating and working as a team. With my new engineering and customer service skills, and a strong desire to learn, I am looking to progress in the tech industry as a Junior Software Engineer.</p>
               </Col>
-              {/* <img id="profile" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" thumbnail width="150" /> */}
             </Row>
           </Container>
         </div>
@@ -249,14 +235,15 @@ const Home = () => {
                   <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_brightness_hsb,r_2,w_650/v1631262940/Haven_ei8exo.png" />
                 </Card>
               </CardGroup>
-            </Row>
+            </Row><bbr />
 
             <Row className="tools" id="paint">
-              {/* <Col xs="auto"> */}
+              <p id="description">I enjoy painting during my spare time.</p>
               <Col xs={5} md={3}>
-                <p className="describe">I enjoy painting during my spare time.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_700/v1631098527/paint_zxpgdl.jpg" /><span />
-                <p className="describe">I enjoy cycling around the town and my neigbourhood.</p>
+              </Col><br />
+              <p id="description">I enjoy cycling around the town and my neigbourhood.</p>
+              <Col xs={5} md={3}>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_700/v1627456360/Project%204/cycle1_clsr8b.jpg" />
               </Col>
             </Row>

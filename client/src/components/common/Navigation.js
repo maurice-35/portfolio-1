@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Navbar, Nav, Button, Row, Toast, Card } from 'react-bootstrap'
+import { Navbar, Nav, Button, Col, Toast, Card } from 'react-bootstrap'
 
 
 const Navigation = () => {
@@ -46,15 +46,13 @@ const Navigation = () => {
                 style={{ maxHeight: '110px' }}
                 navbarScroll
               >
-                <Row xs={3} md={2}>
-                  <Nav.Link href="#aboutMe" id="options">About Me</Nav.Link>
-                  <Nav.Link href="#projects" id="options">Projects</Nav.Link>
-                  <Nav.Link href="#experience" id="options">Experience</Nav.Link><span />
-                  {/* <Col xs={4} md={2} id="nav2"> */}
-                  <Nav.Link href="#interests" id="options">Interests</Nav.Link>
-                  <Nav.Link href="#contact" id="options">Contact</Nav.Link>
-                  {/* </Col> */}
-                </Row>
+                <Col xs={4} md={2} id="nav2">
+                  <Nav.Link href="#aboutMe" id="option">About Me</Nav.Link>
+                  <Nav.Link href="#projects" id="option">Projects</Nav.Link>
+                  <Nav.Link href="#experience" id="option">Experience</Nav.Link><span />
+                  <Nav.Link href="#interests" id="option">Interests</Nav.Link>
+                  <Nav.Link href="#contact" id="option">Contact</Nav.Link>
+                </Col>
               </Nav><br />
             </Navbar.Collapse>
           </Navbar>
