@@ -2,7 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(116, 81, 148);
+  // background-color: rgb(116, 81, 148);
+  background-color: rgba(30, 75, 9, 0.527);
+  
 }
 
 body {
@@ -77,6 +79,8 @@ body {
 
 #contact {
   background-color: rgb(48, 75, 105);
+  background-image: url("https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg");
+  background-size: cover;
   padding-top: 50px;
   padding-bottom: 50px;
   max-height: 1600px;
@@ -87,20 +91,25 @@ body {
   flex: auto;
   position: relative;
   letter-spacing: 2px; 
-  margin-bottom: 4px;  
+  margin-bottom: 4px; 
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center; 
   }
+
     
-#INFO {
-  background-image: url("https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  background-position: center;
-  padding: 80px;
-  border-color: whitesmoke;
-  display: flex;
-  float: right;
-}
+// #INFO {
+//   background-image: url("https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   position: relative;
+//   background-position: center;
+//   padding: 80px;
+//   border-color: whitesmoke;
+//   display: flex;
+//   justify-content: center;
+//   // float: right;
+// }
 
 .myName {
   padding-top:160px;
@@ -288,6 +297,7 @@ Navbar.Toggle {
 #about, #exp, #proj, #inter, #cont {
   font-family: 'Bungee';
   text-transform: uppercase;
+  color: #fff; 
 }
 
 #container2 {
@@ -388,6 +398,12 @@ Navbar.Toggle {
   max-width: 700px;
 }
 
+Form {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+}
+
 .describe {
   display: block;
   font-size: 18px;
@@ -396,7 +412,7 @@ Navbar.Toggle {
 .image {
   justify-content: center;
   display: flex;
-  padding: 140px;
+  padding: 20px;
 }
 
 .github {

@@ -3,10 +3,12 @@ import emailjs from 'emailjs-com'
 import Swal from 'sweetalert2'
 import { Form, Input, TextArea, Button } from 'semantic-ui-react'
 
+// import './App.css'
 
 
 const SERVICE_ID = 'service_c20xitn'
-const TEMPLATE_ID = 'template_djzskr9'
+// const TEMPLATE_ID = 'template_djzskr9'
+const TEMPLATE_ID = 'portfolio_contact'
 const USER_ID = 'user_5IYK8PnAJVLxrn8uCB56n'
 
 const ContactForm = () => {
@@ -38,7 +40,7 @@ const ContactForm = () => {
           control={Input}
           label='Email'
           name='user_email'
-          placeholder='Email'
+          placeholder='email'
           required
           icon='mail'
           iconPosition='left'
@@ -46,11 +48,21 @@ const ContactForm = () => {
         <Form.Field
           id='form-input-control-last-name'
           control={Input}
-          label='Name'
-          name='user_name'
-          placeholder='Email'
+          label='Phone Number'
+          name='user_phone_number'
+          placeholder='phone number'
           required
-          icon='user circle'
+          icon='user number'
+          iconPosition='left'
+        />
+        <Form.Field
+          id='form-input-control-last-name'
+          control={Input}
+          label='Company'
+          name='user_company'
+          placeholder='company'
+          required
+          icon='user house'
           iconPosition='left'
         />
         <Form.Field
@@ -61,7 +73,7 @@ const ContactForm = () => {
           placeholder='message'
           required
         />
-        <Button type='submit' color='red'>Send</Button>
+        <Button id="contactbutt" type='submit' color='blue'>Send</Button>
       </Form>
     </div>
   )

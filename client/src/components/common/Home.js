@@ -291,8 +291,8 @@ const Home = () => {
           </Container>
         </div>
 
-        {/* <div id="contact" className="container-fluid">
-          <h1 id="cont">Contact</h1></div> */}
+        <div className="container-fluid">
+          <h1 id="cont">Contact</h1></div>
         <Contact />
         {/* <Card className="d-block w-100" id="INFO">
             <Container fluid="lg" className="mr-auto my-4 my-md-5">
