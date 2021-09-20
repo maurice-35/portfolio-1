@@ -9,7 +9,7 @@ const ContactForm = ({ handleChange, handleSubmit, contactForm }) => {
 
 
   return (
-    <Card className="d-block w-100" id="INFO">
+    <Card className="d-block w-50" id="INFO">
       <Container fluid="lg" className="mr-auto my-4 my-md-5" id="form">
         <Row className="justify-content-md-center">
           <Col>

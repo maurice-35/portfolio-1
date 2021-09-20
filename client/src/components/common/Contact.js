@@ -16,7 +16,7 @@ import ContactForm from './ContactForm'
 // const history = useHistory()
 
 // const SERVICE_ID = 'service_c20xitn',
-// const template_id = 'portfolio_form'
+// const TEMPLATE_ID = 'portfolio_form'
 // const USER_ID = 'user_5IYK8PnAJVLxrn8uCB56n'
 
 
@@ -31,21 +31,34 @@ const Contact = () => {
   const [contactForm, setContactForm] = useState({ user_email: '', user_phone_number: '', user_company: '', user_message: '' })
   const [success, setSuccess] = useState('')
 
-  function handleChange(e) {
-    const { name, value } = e.target
-    const data = { ...contactForm, [name]: value }
-    setContactForm(data)
+  const handleChange = (event) => {
+    // const { name, value } = event.target
+    const newContactForm = { ...ContactForm, [event.target.name]: event.target.value }
+    // const newContactForm = { ...contactForm }
+    setContactForm(newContactForm)
     console.log('change')
   }
 
-  function handleSubmit() {
+  const setTokenToLocalStorage = (token) => {
+    window.localStorage.setItem('token', token)
+  }
+
+  const handleSubmit = () => {
+    const  data  = { ...contactForm }
+    event.preventDefault()
+    try {
+      setTokenToLocalStorage(data.token)
+    } catch (err) {
+      console.log(err)
+    }
     console.log('Hello')
 
-    const serviceId = 'service_c20xitn'
-    const templateId = 'portfolio_contactForm'
+    const serviceID = 'service_c20xitn'
+    const templateID = 'portfolio_contactForm'
+    const userID = 'user_5IYK8PnAJVLxrn8uCB56n'
 
 
-    EmailJS.sendForm(serviceId, templateId, event.target, 'user_5IYK8PnAJVLxrn8uCB56n')
+    EmailJS.sendForm(serviceID, templateID,  event.target.value, userID)
       .then((res) => {
         setSuccess(res.text)
       })
@@ -53,9 +66,10 @@ const Contact = () => {
         alert(err.text)
       })
   }
+  console.log('Event =>', event)
   // const handleOnSubmit = (event) => {
-  //     event.preventDefault()
-  //     emailjs.sendForm(SERVICE_ID, e.target, USER_ID)
+  //   event.preventDefault()
+  //   emailjs.sendForm(SERVICE_ID, e.target, USER_ID)
   //     .then((result) => {
   //         console.log(result.text)
   //         Swal.fire({
@@ -83,9 +97,9 @@ const Contact = () => {
   //     const newForm = { ...formData, [event.target.name]: event.target.value }
   //     setFormData()
   //     console.log(newForm)
-  //   }
+  // }
   return (
-    <section>
+    <section className="contact">
       <div id="contact" className="container-fluid">
         <h1 id="cont">Contact</h1>
         {/* <Card className="d-block w-100" id="INFO">

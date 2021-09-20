@@ -13,8 +13,8 @@ const App = () => {
     <BrowserRouter>
       <Navigation />
       <Switch>
-        <Route path="/#contactForm" component={Contact} />
         <Route path="/" component={Home} />
+        <Route path="/#contactForm" component={Contact} />
       </Switch>
     </BrowserRouter>
   )
