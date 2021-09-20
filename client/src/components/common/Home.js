@@ -1,5 +1,8 @@
 import { useState, React, useRef } from 'react'
-import { Form, Card, CardGroup, Button, Container, Row, Col, Image, Tooltip, Overlay } from 'react-bootstrap'
+import { Card, CardGroup, Button, Container, Row, Col, Image, Tooltip, Overlay } from 'react-bootstrap'
+// import EmailJS from 'emailjs-com'
+// import { Link } from 'react-router-dom'
+import Contact from './Contact'
 
 
 
@@ -8,13 +11,45 @@ const Home = () => {
   const [show, setShow] = useState(false)
   const target = useRef(null)
 
-  // const ContactForm = () => {
+  // const [contactForm, setContactForm] = useState({ user_email: '', user_phone_number: '', user_company: '', user_message: '' })
+  // const [success, setSuccess] = useState('')
+
+  // const ContactForm = ({ handleChange, handleSubmit, contactForm }) 
+  // const { user_email, user_phone_number, user_company, user_message } = contactForm
+
+
+  // function handleChange(e) {
+  //   const { name, value } = e.target
+  //   const data = { ...contactForm, [name]: value }
+  //   setContactForm(data)
+  // }
+
+  // function handleSubmit() {
+  //   console.log('Hello')
+
+  //   const serviceId = 'service_c20xitn'
+  //   const templateId = 'portfolio_contactForm'
+
+
+  //   EmailJS.sendForm(serviceId, templateId, event.target, 'user_5IYK8PnAJVLxrn8uCB56n')
+  //     .then((res) => {
+  //       setSuccess(res.text)
+  //     })
+  //     .catch((Err) => {
+  //       alert(err.text)
+  //     })
+  // }
+
+  // const ContactForm = ({ handleChange, handleSubmit, contactForm }) => {
+  //   const { userEmail, userPhoneNumber, userCompany, userMessage } = contactForm
+  // }
+  // // const ContactForm = () => {
   //   const [formdata, setFormdata] = useState([])
 
   // }
-  const handleSubmit = async (event) => {
-    event.preventDefault()
-  }
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault()
+  // }
 
   // const handleChange = (event) => {
   //   const newForm = { ...formData, [event.target.name]: event.target.value }
@@ -189,26 +224,26 @@ const Home = () => {
                 <h2 className="title">Project1:</h2>
                 <p className="describe">I built a number-guessing grid-game using JavaScript, HTML and CSS. It is a JavaScript random selection of numbers to match that of the user.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034515/P_jel8al.png" thumbnail />
-                <Card.Link><a href="https://maurice-35.github.io/number-guessing-game/"><i className="fa fa-mouse-pointer icon" id="open"></i></a></Card.Link>
+                <Card.Link><a href="https://maurice-35.github.io/number-guessing-game/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
               </Col>
               <Col xs={8} md={6} id="proj2">
                 <h2 className="title">Project2:</h2>
                 <p className="describe">I built a React app which used an external API from ‘thecatapi.com’ to display cats of various categories and origins. Styled using Bulma, it is a good spot for cat lovers.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034365/cat2_fwshks.png" thumbnail />
-                <Card.Link><a href="https://maurice-cats-app-project2.netlify.app/"><i className="fa fa-mouse-pointer icon" id="open"></i></a></Card.Link>
+                <Card.Link><a href="https://maurice-cats-app-project2.netlify.app/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
               </Col>
               <Col xs={8} md={6} id="proj3">
                 <h2 className="title">Project3:</h2>
                 <p className="describe">Full-Stack MongoDB, Express, React, Node app with CRUD functionality from our own RESTful API. As a group, we created an e-commerce app to sell meals and treats for dogs and cats.
                   We all worked full-stack and styled using Bootstrap and Sass. I later had the responsibility to work on the register and login pages.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631033371/P3_xxby5y.png" thumbnail />
-                <Card.Link><a href="https://tails-whiskers.herokuapp.com/"><i className="fa fa-mouse-pointer icon" id="open"></i></a></Card.Link>
+                <Card.Link><a href="https://tails-whiskers.herokuapp.com/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
               </Col>
               <Col xs={8} md={6} id="proj4">
                 <h2 className="title">Project4:</h2>
                 <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
-                <Card.Link><a href="https://movie-app-project4.herokuapp.com/"><i className="fa fa-mouse-pointer icon" id="open"></i></a></Card.Link>
+                <Card.Link><a href="https://movie-app-project4.herokuapp.com/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
               </Col>
             </Row>
           </Container>
@@ -225,7 +260,7 @@ const Home = () => {
                 <Overlay target={target.current} show={show} placement="right">
                   {(props) => (
                     <Tooltip id="overlay-example" {...props}>
-                      1. Evelynoldfield. This charity is aimed at helping migrants in the UK.<br></br>
+                      1. Evelynoldfield. This charity is aimed at helping migrants in the UK.<br />
                       2. Haven House Children Hospice. This charity raises funds to help children with terminal illnesses and to give them some hope to life.<br />
                       3. Richard House Children Hospice. Same objectives as Haven House above.
                     </Tooltip>
@@ -256,43 +291,46 @@ const Home = () => {
           </Container>
         </div>
 
-        <div id="contact" className="container-fluid">
-          <h1 id="cont">Contact</h1>
-          <Card className="d-block w-100" id="INFO">
+        {/* <div id="contact" className="container-fluid">
+          <h1 id="cont">Contact</h1></div> */}
+        <Contact />
+        {/* <Card className="d-block w-100" id="INFO">
             <Container fluid="lg" className="mr-auto my-4 my-md-5">
               <Row className="justify-content-md-center">
                 <Col>
-                  <Form onSubmit={handleSubmit} className='function'>
+                  <Form onSubmit={handleSubmit} className="function">
                     <Form.Group className="info">
+
                       <Form.Label>Name</Form.Label>
-                      <Form.Control name="email" type="email" placeholder="Enter email" />
+                      <Form.Control name="email" type="email" placeholder="Enter email" required name="user-email" onChange={handleChange} value={user_email || ''} />
                     </Form.Group>
                     <Form.Group className="info">
                       <Form.Label>Phone Number</Form.Label>
-                      <Form.Control name="phone-number" type="phone-number" placeholder="Phone Number" />
+                      <Form.Control name="phone-number" type="phone-number" placeholder="Phone Number" required name="user_phone_number" onChange={handleChange} value={user_phone_number || ''} />
                     </Form.Group>
                     <Form.Group className="info">
                       <Form.Label>Company</Form.Label>
-                      <Form.Control name="company" type="company" placeholder="company" />
+                      <Form.Control name="company" type="company" placeholder="company" required name="user_company" onChange={handleChange} value={user_company || ''} />
                     </Form.Group>
                     <Form.Group className="info">
                     </Form.Group><br />
                     <div className="form-field">
                       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Message</Form.Label>
-                        <Form.Control as="textarea" rows={3} />
+                        <Form.Control as="textarea" name="user-message" rows={3} required value={user_message || ''} />
                       </Form.Group>
                     </div>
-                    <button type="submit" className="btn" id="butt">Send Message</button>
+                    <Link to='/#contactForm'><button type="submit" className="btn" id="butt" onClick={(e) => handleSubmit(e)}>Send Message</button></Link>
                   </Form>
                 </Col>
               </Row>
             </Container>
-          </Card>
-          <div className="icon">
+          </Card> */}
+        {/* <div className="icon">
             <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/maurice-kollewe/"></a>
-          </div>
-        </div>
+          </div> */}
+
+        {/* </div> */}
 
         <Row className="ICONS2">
           <Col xs={14} md={10}>

@@ -99,6 +99,7 @@ body {
   padding: 80px;
   border-color: whitesmoke;
   display: flex;
+  float: right;
 }
 
 .myName {
@@ -348,6 +349,10 @@ Navbar.Toggle {
    justify-content: center;
  }
 
+//  #form {
+//    float: right;
+//  }
+
  #foot {
   height: 50px;
   background-color: #514664;
@@ -391,7 +396,7 @@ Navbar.Toggle {
 .image {
   justify-content: center;
   display: flex;
-  padding: 10px;
+  padding: 140px;
 }
 
 .github {

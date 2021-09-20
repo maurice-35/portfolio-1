@@ -2,8 +2,8 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './components/common/Home'
 import Navigation from './components/common/Navigation'
-import ContactForm from './components/ContactForm'
- 
+import Contact from './components/common/Contact'
+
 
 const App = () => {
 
@@ -13,8 +13,8 @@ const App = () => {
     <BrowserRouter>
       <Navigation />
       <Switch>
+        <Route path="/#contactForm" component={Contact} />
         <Route path="/" component={Home} />
-        <Route path="/ContactForm" component={ContactForm} />
       </Switch>
     </BrowserRouter>
   )
