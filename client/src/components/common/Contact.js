@@ -34,7 +34,7 @@ const ContactForm = () => {
 
   return (
     <div className="ContactForm" id="contact">
-      <Form onSubmit={handleOnSubmit}>
+      <Form id="form" onSubmit={handleOnSubmit}>
         <Form.Field
           id='form-input-control-email'
           control={Input}

@@ -292,9 +292,9 @@ const Home = () => {
         </div>
 
         <div className="container-fluid">
-          <h1 id="cont">Contact</h1></div>
-        <Contact />
-        {/* <Card className="d-block w-100" id="INFO">
+          <h1 id="cont">Contact</h1>
+          <Contact />
+          {/* <Card className="d-block w-100" id="INFO">
             <Container fluid="lg" className="mr-auto my-4 my-md-5">
               <Row className="justify-content-md-center">
                 <Col>
@@ -326,28 +326,29 @@ const Home = () => {
               </Row>
             </Container>
           </Card> */}
-        {/* <div className="icon">
+          {/* <div className="icon">
             <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/maurice-kollewe/"></a>
           </div> */}
 
-        {/* </div> */}
+          {/* </div> */}
 
-        <Row className="ICONS2">
-          <Col xs={14} md={10}>
-            <i className="fa fa-at icon"></i>
-            <Button>
-              <a id="pro" href="mailto:kollewem.35@gmail.com">Email</a>
-            </Button><span /><span />
-            <i className="fa fa-linkedin icon"></i>
-            <Button><span />
-              <a id="pro" href="https://www.linkedin.com/in/maurice-kollewe/">LinkIn</a>
-            </Button><span />
-            <i className="fa fa-github-square icon"></i>
-            <Button>
-              <a id="pro" href="https://github.com/maurice-35">GitHub</a>
-            </Button>
-          </Col>
-        </Row>
+          <Row className="ICONS2">
+            <Col xs={14} md={10}>
+              {/* <i className="fa fa-at icon"></i> */}
+              {/* <Button> */}
+              <a id="pro" i className="fa fa-at icon" href="mailto:kollewem.35@gmail.com"></a>
+              {/* </Button><span /><span /> */}
+              {/* <i className="fa fa-linkedin icon"></i> */}
+              {/* <Button><span /> */}
+              <a id="pro" i className="fa fa-linkedin icon" href="https://www.linkedin.com/in/maurice-kollewe/"></a>
+              {/* </Button><span /> */}
+              {/* <i className="fa fa-github-square icon"></i> */}
+              {/* <Button> */}
+              <a id="pro" i className="fa fa-github-square icon" href="https://github.com/maurice-35"></a>
+              {/* </Button> */}
+            </Col>
+          </Row>
+        </div>
 
         <main className="Footer">
           <div>
