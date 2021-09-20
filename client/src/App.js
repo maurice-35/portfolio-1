@@ -14,7 +14,7 @@ const App = () => {
       <Navigation />
       <Switch>
         <Route path="/" component={Home} />
-        <Route path="/#contactForm" component={Contact} />
+        <Route path="/#contact" component={Contact} />
       </Switch>
     </BrowserRouter>
   )
