@@ -217,49 +217,34 @@ const Home = () => {
                 )}
               </Overlay>
             </div>
-
-            <Container id="spareTime">
-              <CardGroup>
-                <Card className="d-block w-50">
-
-                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_350/v1631261773/EOU_pv1mnf.png" /><span />
-                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_brightness_hsb,r_2,w_300/v1631262940/Haven_ei8exo.png" />
-
-                </Card><span />
-                {/* <Card className="d-block w-50">
-                <Col>
-                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_brightness_hsb,r_2,w_300/v1631262940/Haven_ei8exo.png" />
-                </Col>
-              </Card> */}
-              </CardGroup>
-            </Container>
-          </Row><br />
+          </Row>
 
           <Container id="spareTime">
             <CardGroup>
               <Card className="d-block w-50">
+                <p id="description">My first work-place experience in the UK was when I volunteered for a number of charities. The hospitality and compasssion I found here were overwhelming.</p>
+                <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_330/v1631261773/EOU_pv1mnf.png" /><span />
+                <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_brightness_hsb,r_2,w_330/v1631262940/Haven_ei8exo.png" />
 
-                <p id="description">I enjoy painting & cycling during my spare time.</p>
-                <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_300/v1631098527/paint_zxpgdl.jpg" /><span />
-                {/* <p id="description">I enjoy cycling around the town and my neigbourhood.</p> */}
+              </Card><span />
+            </CardGroup>
+
+            <CardGroup>
+              <Card className="d-block w-50">
+                <p id="description">I enjoy painting & designing small objects as well as cycling during my spare time.</p>
+                <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_330/v1631098527/paint_zxpgdl.jpg" /><span />
                 <img src="https://res.cloudinary.com/doe5zwesw/image/upload/w_330/v1627456360/Project%204/cycle1_clsr8b.jpg" />
-
               </Card><br /><span />
-              {/* <Card className="d-block w-50">
-              <p id="description">I enjoy cycling around the town and my neigbourhood.</p>
-              <Col>
-                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_300/v1627456360/Project%204/cycle1_clsr8b.jpg" />
-              </Col>
-            </Card> */}
             </CardGroup>
           </Container>
+
         </Container>
       </div>
 
       <div className="container-fluid">
         <h1 id="cont">Contact</h1>
         <Contact />
-
+        
         <Row className="ICONS2">
           <Col xs={14} md={10}>
             <a id="pro" i className="fa fa-at icon" href="mailto:kollewem.35@gmail.com"></a>
