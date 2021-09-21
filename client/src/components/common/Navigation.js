@@ -43,7 +43,7 @@ const Navigation = () => {
             <Navbar.Collapse id="navbarScroll">
               <Nav
                 className="options"
-                style={{ maxHeight: '110px' }}
+                style={{ maxHeight: '60px' }}
                 navbarScroll
               >
                 <Col xs={4} md={2} id="nav2">
