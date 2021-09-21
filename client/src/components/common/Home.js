@@ -30,22 +30,20 @@ const Home = () => {
             </Container>
           </div>
           <div className="myProfile">
+            <div className="myName">
+              <Col>
+                <div id="myself">
+                  <h1>Maurice Kollewe Tcheungwe</h1>
+                  <h3>Junior Software Engineer</h3>
+                </div><br />
+              </Col>
+            </div>
             <Container>
               <Col>
                 <div>
                   <img id="img" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" />
                 </div>
               </Col>
-
-
-              <div className="myName">
-                <Col>
-                  <div id="myself">
-                    <h1>Maurice Kollewe Tcheungwe</h1>
-                    <h3>Junior Software Engineer</h3>
-                  </div><br />
-                </Col>
-              </div>
             </Container>
           </div>
         </Container>
@@ -69,7 +67,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col>
-              <h3> <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png"></img><span />General Assembly</h3>
+              <h2 id="title"> <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png"></img><span />General Assembly</h2>
             </Col>
           </Row><br />
           <Row className="ICONS">
@@ -77,8 +75,8 @@ const Home = () => {
               <p className="describe">Fundamentals of Web Development from front-end to back-end in an agile environment.</p>
               <p className="describe">Daily stand-ups, lectures, labs (workshops), pair-coding, daily-homework and four projects.</p>
             </Col><br />
-          </Row>
-          <h3>Technologies</h3><br />
+          </Row><br />
+          <h2 id="title">Technologies</h2><br />
           <Row className="ICONS">
             <Col>
               <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale/v1630697355/html_rtvtmb.png" rounded />
@@ -209,7 +207,7 @@ const Home = () => {
               <Button id="big-button" ref={target} onClick={() => setShow(!show)}>
                 Charities
               </Button>
-              <Overlay target={target.current} show={show} placement="right">
+              <Overlay target={target.current} show={show} placement="bottom">
                 {(props) => (
                   <Tooltip id="overlay-example" {...props}>
                     1. Evelynoldfield. This charity is aimed at helping migrants in the UK.<br />
@@ -220,34 +218,41 @@ const Home = () => {
               </Overlay>
             </div>
 
-            <CardGroup>
-              <Card className="d-block w-100">
+            <Container id="spareTime">
+              <CardGroup>
+                <Card className="d-block w-50">
+
+                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_350/v1631261773/EOU_pv1mnf.png" /><span />
+                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_brightness_hsb,r_2,w_300/v1631262940/Haven_ei8exo.png" />
+
+                </Card><span />
+                {/* <Card className="d-block w-50">
                 <Col>
-                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_550/v1631261773/EOU_pv1mnf.png" /><span />
+                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_brightness_hsb,r_2,w_300/v1631262940/Haven_ei8exo.png" />
                 </Col>
-              </Card><span />
-              <Card className="d-block w-100">
-                <Col>
-                  <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_brightness_hsb,r_2,w_550/v1631262940/Haven_ei8exo.png" />
-                </Col>
-              </Card>
-            </CardGroup>
+              </Card> */}
+              </CardGroup>
+            </Container>
           </Row><br />
 
-          <CardGroup>
-            <Card className="d-block w-100">
-              <p id="description">I enjoy painting during my spare time.</p>
-              <Col>
-                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_520/v1631098527/paint_zxpgdl.jpg" /><span />
-              </Col><br />
-            </Card><br /><span />
-            <Card className="d-block w-100">
+          <Container id="spareTime">
+            <CardGroup>
+              <Card className="d-block w-50">
+
+                <p id="description">I enjoy painting & cycling during my spare time.</p>
+                <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_300/v1631098527/paint_zxpgdl.jpg" /><span />
+                {/* <p id="description">I enjoy cycling around the town and my neigbourhood.</p> */}
+                <img src="https://res.cloudinary.com/doe5zwesw/image/upload/w_330/v1627456360/Project%204/cycle1_clsr8b.jpg" />
+
+              </Card><br /><span />
+              {/* <Card className="d-block w-50">
               <p id="description">I enjoy cycling around the town and my neigbourhood.</p>
               <Col>
-                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_560/v1627456360/Project%204/cycle1_clsr8b.jpg" />
+                <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_300/v1627456360/Project%204/cycle1_clsr8b.jpg" />
               </Col>
-            </Card>
-          </CardGroup>
+            </Card> */}
+            </CardGroup>
+          </Container>
         </Container>
       </div>
 

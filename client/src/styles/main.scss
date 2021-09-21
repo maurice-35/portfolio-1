@@ -22,6 +22,8 @@ body {
 #myself {
   font-size: 15px;
   color: white;
+  padding-top: 300px;
+  padding-left: 150px;
 }
 
   #profile {
@@ -32,6 +34,7 @@ body {
     padding-bottom: 50px;
     flex-direction: row-reverse;
     float: top;
+    padding-left: 50px;
   }
 
 #img {
@@ -70,7 +73,7 @@ body {
 #interests {
   background-color: rgb(17, 52, 53);
   padding-top: 80px;
-  height: 1100px;
+  height: 1400px;
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
@@ -116,18 +119,11 @@ body {
   font-size: 15px;
 }
 
-.myName {
-  color: rgb(16, 30, 75); 
-  display: flex;
-  font-family: 'Bungee Shade', cursive;
-  font-size: 20px;
-  justify-content: center;
-  letter-spacing: 6px;
-  text-transform: uppercase;
+#myName {
+ padding-top: 200px;
 }
 
-#myProfile {
-  padding-top:160px;
+.myProfile {
   color: rgb(16, 30, 75); 
   display: flex;
   font-family: 'Bungee Shade', cursive;
@@ -205,6 +201,10 @@ Navbar.Toggle {
   flex-direction: row;
 }
 
+#title {
+  font-size: 20px;
+}
+
 .git {
   display: flex;
   max-width: 50px;
@@ -278,7 +278,6 @@ Navbar.Toggle {
   }
 
 #fa-fa {
-  // background-color: cadetblue;
   background-color: rgb(95, 160, 98);
   font-size: 40px;
   padding-right: 30px;
@@ -346,7 +345,6 @@ Navbar.Toggle {
   
 }
 
-
 #icon {
   max-height: 40px;
   color: #fff;
@@ -354,7 +352,6 @@ Navbar.Toggle {
   margin: 0 auto;
   cursor: pointer;
   border-radius: 10px;
- 
 }
 
  #position1 {
@@ -366,10 +363,6 @@ Navbar.Toggle {
    max-width: 700px;
    justify-content: center;
  }
-
-//  #form {
-//    float: right;
-//  }
 
  #foot {
   height: 50px;
@@ -383,17 +376,15 @@ Navbar.Toggle {
   flex: auto;
   font-size: 50px;
   text-decoration: rgb(0, 255, 149);
-  // color: #298130;
   color: white;
   letter-spacing: 4px;
   border-radius: 2px;
   }
 
 #description {
-  display: inline;
-  font-size: 18px;
+  // display: inline;
+  font-size: 15px;
   justify-content: center;
-  padding-left: 75px;
 }
 
 #proj1, #proj2, #proj3, #proj4 {
@@ -402,10 +393,19 @@ Navbar.Toggle {
 
 .container {
   margin-top: 5px;
+  align-items: center;
 }
 
 #EOU {
   max-width: 700px;
+}
+
+#spareTime {
+  display: flex;
+  max-width: 600px;
+  font-size: 14px;
+  padding-right: 50px;
+  // justify-content: center;
 }
 
 Form {
@@ -413,10 +413,6 @@ Form {
   border-radius: 10px;
   padding: 20px;
   max-width: 800px;
-}
-
-Form.Field {
-  height: 800px;
 }
 
 .describe {
