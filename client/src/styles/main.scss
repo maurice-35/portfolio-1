@@ -2,8 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // background-color: rgb(116, 81, 148);
-  // background-color: gray;
   background-color: rgb(139, 70, 70);
 }
 
@@ -19,17 +17,14 @@ body {
     justify-content: center;
     letter-spacing: 6px;
     text-transform: uppercase;
-    // color: #fff;
   }
 
 #myself {
   font-size: 15px;
+  color: white;
 }
 
   #profile {
-    // max-height: 100vh;
-    // width: 100vw;
-    // height: 800px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -40,11 +35,9 @@ body {
   }
 
 #img {
-  // padding-top: 50px;
   margin-top: 200px;
   border: 2px solid white;
   border-radius: 12px;
-  // float: right;
 }
 
 #aboutMe {
@@ -84,7 +77,6 @@ body {
 }
 
 #contact {
-  // background-color: rgb(48, 75, 105);
   background-image: url("https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg");
   background-size: cover;
   padding-top: 50px;
@@ -105,22 +97,26 @@ body {
   text-align: center; 
   }
 
-    
-// #INFO {
-//   // background-image: url("https://res.cloudinary.com/doe5zwesw/image/upload/v1627457771/Project%204/nature_emfd4k.jpg");
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   position: relative;
-//   background-position: center;
-//   padding: 80px;
-//   border-color: whitesmoke;
-//   display: flex;
-//   justify-content: center;
-//   // float: right;
-// }
+#info-email, #info-last-name, #info-phone, #info-company {
+  width: 350px;
+  font-size: 15px;
+}
+
+#info-message {
+  width: 350px;
+  justify-content: center;
+  display: flex;
+  font-size: 15px;
+}
+
+#contactbutt {
+  width: 100px;
+  color: blue;
+  background-color: #298130;
+  font-size: 15px;
+}
 
 .myName {
-  // padding-top:160px;
   color: rgb(16, 30, 75); 
   display: flex;
   font-family: 'Bungee Shade', cursive;
@@ -286,6 +282,7 @@ Navbar.Toggle {
   background-color: rgb(95, 160, 98);
   font-size: 40px;
   padding-right: 30px;
+  color: white;
 }
 
 #open {
@@ -415,7 +412,11 @@ Form {
   border: 1px solid lightgray;
   border-radius: 10px;
   padding: 20px;
-  max-width: 400px;
+  max-width: 800px;
+}
+
+Form.Field {
+  height: 800px;
 }
 
 .describe {
@@ -437,7 +438,7 @@ Form {
   display: flex;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 // #interests {
 //   height: 2700px;
 //   padding: 150px;
@@ -445,6 +446,10 @@ Form {
 
 #projects {
   max-height: 2300x;
+}
+
+#interests {
+  max-height: 2000px;
 }
 
 // .pic {

@@ -8,7 +8,7 @@ import { Form, Input, TextArea, Button } from 'semantic-ui-react'
 
 const SERVICE_ID = 'service_c20xitn'
 // const TEMPLATE_ID = 'template_djzskr9'
-const TEMPLATE_ID = 'portfolio_contact'
+const TEMPLATE_ID = 'template_djzskr9'
 const USER_ID = 'user_5IYK8PnAJVLxrn8uCB56n'
 
 const ContactForm = () => {
@@ -36,7 +36,7 @@ const ContactForm = () => {
     <div className="ContactForm" id="contact">
       <Form id="form" onSubmit={handleOnSubmit}>
         <Form.Field
-          id='form-input-control-email'
+          id='info-email'
           control={Input}
           label='Email'
           name='user_email'
@@ -46,27 +46,27 @@ const ContactForm = () => {
           iconPosition='left'
         />
         <Form.Field
-          id='form-input-control-last-name'
+          id='info-phone'
           control={Input}
           label='Phone Number'
           name='user_phone_number'
           placeholder='phone number'
           required
-          icon='user number'
+          icon='user'
           iconPosition='left'
         />
         <Form.Field
-          id='form-input-control-last-name'
+          id='info-company'
           control={Input}
           label='Company'
           name='user_company'
           placeholder='company'
           required
-          icon='user house'
+          icon='user'
           iconPosition='left'
         />
         <Form.Field
-          id='form-textarea-control-opinion'
+          id='info-message'
           control={TextArea}
           label='Message'
           name='user_message'

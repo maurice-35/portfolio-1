@@ -9,51 +9,6 @@ const Home = () => {
   const [show, setShow] = useState(false)
   const target = useRef(null)
 
-  // const [contactForm, setContactForm] = useState({ user_email: '', user_phone_number: '', user_company: '', user_message: '' })
-  // const [success, setSuccess] = useState('')
-
-  // const ContactForm = ({ handleChange, handleSubmit, contactForm }) 
-  // const { user_email, user_phone_number, user_company, user_message } = contactForm
-
-
-  // function handleChange(e) {
-  //   const { name, value } = e.target
-  //   const data = { ...contactForm, [name]: value }
-  //   setContactForm(data)
-  // }
-
-  // function handleSubmit() {
-  //   console.log('Hello')
-
-  //   const serviceId = 'service_c20xitn'
-  //   const templateId = 'portfolio_contactForm'
-
-
-  //   EmailJS.sendForm(serviceId, templateId, event.target, 'user_5IYK8PnAJVLxrn8uCB56n')
-  //     .then((res) => {
-  //       setSuccess(res.text)
-  //     })
-  //     .catch((Err) => {
-  //       alert(err.text)
-  //     })
-  // }
-
-  // const ContactForm = ({ handleChange, handleSubmit, contactForm }) => {
-  //   const { userEmail, userPhoneNumber, userCompany, userMessage } = contactForm
-  // }
-  // // const ContactForm = () => {
-  //   const [formdata, setFormdata] = useState([])
-
-  // }
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault()
-  // }
-
-  // const handleChange = (event) => {
-  //   const newForm = { ...formData, [event.target.name]: event.target.value }
-  //   setFormData()
-  //   console.log(newForm)
-  // }
 
   return (
     <section data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -84,7 +39,6 @@ const Home = () => {
 
 
               <div className="myName">
-
                 <Col>
                   <div id="myself">
                     <h1>Maurice Kollewe Tcheungwe</h1>
@@ -267,12 +221,12 @@ const Home = () => {
             </div>
 
             <CardGroup>
-              <Card className="d-block w-50">
+              <Card className="d-block w-100">
                 <Col>
                   <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_550/v1631261773/EOU_pv1mnf.png" /><span />
                 </Col>
               </Card><span />
-              <Card className="d-block w-50">
+              <Card className="d-block w-100">
                 <Col>
                   <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_brightness_hsb,r_2,w_550/v1631262940/Haven_ei8exo.png" />
                 </Col>
@@ -281,14 +235,13 @@ const Home = () => {
           </Row><br />
 
           <CardGroup>
-            {/* <Row className="tools" id="paint"> */}
-            <Card className="d-block w-50">
+            <Card className="d-block w-100">
               <p id="description">I enjoy painting during my spare time.</p>
               <Col>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,w_520/v1631098527/paint_zxpgdl.jpg" /><span />
               </Col><br />
             </Card><br /><span />
-            <Card className="d-block w-50">
+            <Card className="d-block w-100">
               <p id="description">I enjoy cycling around the town and my neigbourhood.</p>
               <Col>
                 <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/w_560/v1627456360/Project%204/cycle1_clsr8b.jpg" />
@@ -301,58 +254,12 @@ const Home = () => {
       <div className="container-fluid">
         <h1 id="cont">Contact</h1>
         <Contact />
-        {/* <Card className="d-block w-100" id="INFO">
-            <Container fluid="lg" className="mr-auto my-4 my-md-5">
-              <Row className="justify-content-md-center">
-                <Col>
-                  <Form onSubmit={handleSubmit} className="function">
-                    <Form.Group className="info">
-
-                      <Form.Label>Name</Form.Label>
-                      <Form.Control name="email" type="email" placeholder="Enter email" required name="user-email" onChange={handleChange} value={user_email || ''} />
-                    </Form.Group>
-                    <Form.Group className="info">
-                      <Form.Label>Phone Number</Form.Label>
-                      <Form.Control name="phone-number" type="phone-number" placeholder="Phone Number" required name="user_phone_number" onChange={handleChange} value={user_phone_number || ''} />
-                    </Form.Group>
-                    <Form.Group className="info">
-                      <Form.Label>Company</Form.Label>
-                      <Form.Control name="company" type="company" placeholder="company" required name="user_company" onChange={handleChange} value={user_company || ''} />
-                    </Form.Group>
-                    <Form.Group className="info">
-                    </Form.Group><br />
-                    <div className="form-field">
-                      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Message</Form.Label>
-                        <Form.Control as="textarea" name="user-message" rows={3} required value={user_message || ''} />
-                      </Form.Group>
-                    </div>
-                    <Link to='/#contactForm'><button type="submit" className="btn" id="butt" onClick={(e) => handleSubmit(e)}>Send Message</button></Link>
-                  </Form>
-                </Col>
-              </Row>
-            </Container>
-          </Card> */}
-        {/* <div className="icon">
-            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/maurice-kollewe/"></a>
-          </div> */}
-
-        {/* </div> */}
 
         <Row className="ICONS2">
           <Col xs={14} md={10}>
-            {/* <i className="fa fa-at icon"></i> */}
-            {/* <Button> */}
             <a id="pro" i className="fa fa-at icon" href="mailto:kollewem.35@gmail.com"></a>
-            {/* </Button><span /><span /> */}
-            {/* <i className="fa fa-linkedin icon"></i> */}
-            {/* <Button><span /> */}
             <a id="pro" i className="fa fa-linkedin icon" href="https://www.linkedin.com/in/maurice-kollewe/"></a>
-            {/* </Button><span /> */}
-            {/* <i className="fa fa-github-square icon"></i> */}
-            {/* <Button> */}
             <a id="pro" i className="fa fa-github-square icon" href="https://github.com/maurice-35"></a>
-            {/* </Button> */}
           </Col>
         </Row>
       </div>
