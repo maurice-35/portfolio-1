@@ -49,8 +49,8 @@ const Home = () => {
         </Container>
       </div>
 
-      <div className="container-fluid" id="aboutMe" width="100">
-        <h1 id="about">About</h1><br />
+      <div className="container-fluid" id="aboutMe">
+        <h1 id="about">About Me</h1><br />
         <Container>
           <Row className="ICONS">
             <Col xs={8} md={6}>
@@ -176,7 +176,7 @@ const Home = () => {
             <Col xs={8} md={6} id="proj1">
               <h2 className="title">Project1:</h2>
               <p className="describe">I built a number-guessing grid-game using JavaScript, HTML and CSS. It is a JavaScript random selection of numbers to match that of the user.</p>
-              <Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_860,w_1200/v1631034515/P_jel8al.png" thumbnail />
+              <Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_800,w_1200/v1631034515/P_jel8al.png" thumbnail />
               <Card.Link><a href="https://maurice-35.github.io/number-guessing-game/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
             </Col>
             <Col xs={8} md={6} id="proj2">
@@ -189,7 +189,7 @@ const Home = () => {
               <h2 className="title">Project3:</h2>
               <p className="describe">Full-Stack MongoDB, Express, React, Node app with CRUD functionality from our own RESTful API. As a group, we created an e-commerce app to sell meals and treats for dogs and cats.
                 We all worked full-stack and styled using Bootstrap and Sass. I later had the responsibility to work on the register and login pages.</p>
-              <Image id="proImage3" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_860,w_1200/v1631033371/P3_xxby5y.png" thumbnail />
+              <Image id="proImage3" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1200/v1631033371/P3_xxby5y.png" thumbnail />
               <Card.Link><a href="https://tails-whiskers.herokuapp.com/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
             </Col>
             <Col xs={8} md={6} id="proj4">

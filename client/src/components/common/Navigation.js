@@ -31,7 +31,7 @@ const Navigation = () => {
               <h4>The  love  for  cats!</h4><br />
               <p>In The Kindom Of Love, Every Life Counts</p>
             </div>
-            <Card className="pic">
+            <Card className="catPic">
               <img src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" />
             </Card>
             <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
@@ -47,7 +47,7 @@ const Navigation = () => {
                 navbarScroll
               >
                 <Col xs={4} md={2} id="nav2">
-                  <Nav.Link href="#aboutMe" id="option">About</Nav.Link>
+                  <Nav.Link href="#aboutMe" id="option">AboutMe</Nav.Link>
                   <Nav.Link href="#projects" id="option">Projects</Nav.Link>
                   <Nav.Link href="#experience" id="option">Experience</Nav.Link><span />
                   <Nav.Link href="#interests" id="option">Interests</Nav.Link>

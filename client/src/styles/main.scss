@@ -16,15 +16,29 @@ body {
     justify-content: center;
     letter-spacing: 6px;
     text-transform: uppercase;
+    @media (max-width: 600px) {
+      padding-top: 180px;
+      padding-right: 140px;
+      font-size: 10px;
+    }
   }
 
 #myself {
   font-size: 18px;
   color: white;
   font-weight: bold;
-  padding-top: 300px;
-  padding-left: 300px;
+  padding-top: 250px;
+  // padding-left: 300px;
   font-style: italic;
+  @media (max-width: 600px) {
+    padding-top: 25;
+    padding-left: 20px;
+    // padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    max-width: 180px;
+    
+  }
 }
 
   #profile {
@@ -36,13 +50,34 @@ body {
     flex-direction: row-reverse;
     float: top;
     padding-left: 50px;
+    @media (max-width: 600px) {
+      // padding-top: 25;
+      padding-left: 120px;
+      // padding-right: 100px;
+      // display: flex;
+      // flex-direction: column;
+      // max-width: 200px;
+      
+    }
+    
   }
 
 #img {
   margin-top: 200px;
   border: 2px solid white;
   border-radius: 12px;
+  @media (max-width: 600px) {
+    width: 180px;
+  }
 }
+
+// #profile, #myIcon, #img {
+//   @media (max-width: 600px) {
+//     width: 200px;
+//     font-size: 10px;
+   
+//   }
+// }
 
 #aboutMe {
   background-color: rgb(45, 12, 75);
@@ -51,6 +86,10 @@ body {
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
+  @media (max-width: 600px) {
+    height: 1100px;
+    display: inline-block;
+   }
 }
 
 #experience {
@@ -60,6 +99,11 @@ body {
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
+  @media (max-width: 600px) {
+    max-height: 1100px;
+    display: inline-block;
+   
+  }
 }
 
 #projects {
@@ -69,6 +113,10 @@ body {
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
+  @media (max-width: 600px) {
+    height: 2400px;
+    display: inline-block;
+   }
 }
 
 #interests {
@@ -79,8 +127,9 @@ body {
   display: flex;
   letter-spacing: 2px;
   @media (max-width: 600px) {
-    height: 1600px;
-  }
+    height: 1500px;
+    display: inline-block;
+   }
 }
 
 #contact {
@@ -189,12 +238,18 @@ img {
   justify-content: center;
 }
 
-.pic {
+.catPic {
   max-width: 50px;
   height: 50px;
   padding: 5px;
   justify-content: center;
   margin: 0 auto;
+  @media (max-width: 600px) {
+    max-width: 50px;
+    height: 50px;
+    padding: 5px;
+    justify-content: center;
+  }
 }
 
 .navbar-wrapper {
@@ -242,7 +297,7 @@ Navbar.Toggle {
   font-size: 10px;
   flex: auto;
   font-size: 50px;
-  padding: 0px;
+  padding-left: 50px;
   border-right: 60px;
 }
 
@@ -321,6 +376,7 @@ Navbar.Toggle {
   text-transform: uppercase;
   color: #fff; 
   padding-top: 30px;
+  padding-left: 10px;
 }
 
 #container2 {
@@ -332,7 +388,7 @@ Navbar.Toggle {
   width: 100px;
   color: rgba(17, 15, 15, 0.966);
   background-color: #a4ccc8;
-  cursor: pointer;
+  // cursor: pointer;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 2px;
@@ -420,7 +476,11 @@ Navbar.Toggle {
 }
 
 #proj1, #proj3 {
-  padding-left: 50px;
+  padding-left: 25px;
+}
+
+#proj2, #proj4 {
+  padding-right: 25px;
 }
 
 .container {
