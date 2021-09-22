@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(139, 70, 70);
+  background-color: rgb(194, 94, 94);
 }
 
 body {
@@ -13,17 +13,18 @@ body {
     padding-top: 60px; 
     display: flex;
     flex-direction: column;
-    font-family: 'Bungee Shade', cursive;
     justify-content: center;
     letter-spacing: 6px;
     text-transform: uppercase;
   }
 
 #myself {
-  font-size: 15px;
+  font-size: 18px;
   color: white;
+  font-weight: bold;
   padding-top: 300px;
   padding-left: 300px;
+  font-style: italic;
 }
 
   #profile {
@@ -64,7 +65,7 @@ body {
 #projects {
   background-color: rgb(37, 18, 54);
   padding-top: 80px;
-  max-height: 2450px;
+  max-height: 2550px;
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
@@ -77,6 +78,9 @@ body {
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
+  @media (max-width: 600px) {
+    height: 1600px;
+  }
 }
 
 #contact {
@@ -98,11 +102,17 @@ body {
   border: 4px solid white;
   border-radius: 20px;
   text-align: center; 
+  @media (max-width: 600px) {
+    max-width: 300px;
+  }
   }
 
 #info-email, #info-last-name, #info-phone, #info-company {
   width: 350px;
   font-size: 15px;
+  @media (max-width: 600px) {
+    width: 200px;
+  }
 }
 
 #info-message {
@@ -110,6 +120,9 @@ body {
   justify-content: center;
   display: flex;
   font-size: 15px;
+  @media (max-width: 600px) {
+    max-width: 200px;
+  }
 }
 
 #contactbutt {
@@ -126,7 +139,6 @@ body {
 .myProfile {
   color: rgb(16, 30, 75); 
   display: flex;
-  font-family: 'Bungee Shade', cursive;
   font-size: 20px;
   justify-content: center;
   letter-spacing: 6px;
@@ -156,9 +168,12 @@ img {
 
 .teal {
   width: 100%;
-  font-family: 'Monoton', cursive;
+  font-family: 'Playfair Display SC', serif;
   display: flex;
   letter-spacing: 2px;
+  font-size: 10px;
+  font-weight: bold;
+  
 }
 
 .navbar {
@@ -177,7 +192,6 @@ img {
 .pic {
   max-width: 50px;
   height: 50px;
-  margin-top: 20px;
   padding: 5px;
   justify-content: center;
   margin: 0 auto;
@@ -299,6 +313,8 @@ Navbar.Toggle {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-right: 20px;
+  font-size: 15px;
   }
 #about, #exp, #proj, #inter, #cont {
   font-family: 'Bungee';
@@ -386,12 +402,25 @@ Navbar.Toggle {
   justify-content: center;
 }
 
-#proImage {
-  max-width: 500px;
+#proImage1, #proImage2, #proImage3, #proImage4 {
+  border: none;
+}
+
+#proImage4 {
+  padding-top: 55px;
+  background-color: rgb(194, 94, 94);
 }
 
 #proj1, #proj2, #proj3, #proj4 {
   padding-bottom: 40px;
+}
+
+#proj1, #proj2 {
+  padding-top: 20px;
+}
+
+#proj1, #proj3 {
+  padding-left: 50px;
 }
 
 .container {
@@ -404,10 +433,12 @@ Navbar.Toggle {
 }
 
 #spareTime {
-  display: flex;
-  max-width: 600px;
-  font-size: 14px;
-  padding-right: 50px;
+border: none;
+padding-left: 300px;
+@media (max-width: 600px) {
+  display: inline-block;
+  padding-left: unset;
+}
 }
 
 Form {
@@ -415,6 +446,9 @@ Form {
   border-radius: 10px;
   padding: 20px;
   max-width: 800px;
+  @media (max-width: 600px) {
+    max-width: 400px;
+  }
 }
 
 .describe {
@@ -435,6 +469,5 @@ Form {
   letter-spacing:2px;
   display: flex;
 }
-
 
 @import "~bootstrap/scss/bootstrap";

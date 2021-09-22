@@ -47,7 +47,7 @@ const Navigation = () => {
                 navbarScroll
               >
                 <Col xs={4} md={2} id="nav2">
-                  <Nav.Link href="#aboutMe" id="option">About Me</Nav.Link>
+                  <Nav.Link href="#aboutMe" id="option">About</Nav.Link>
                   <Nav.Link href="#projects" id="option">Projects</Nav.Link>
                   <Nav.Link href="#experience" id="option">Experience</Nav.Link><span />
                   <Nav.Link href="#interests" id="option">Interests</Nav.Link>
