@@ -55,8 +55,11 @@ const Home = () => {
           <Row className="ICONS">
             <Col xs={8} md={6}>
               <p className="describe"> I am Maurice, a Software Engineer based in Greater London.</p>
-              <p className="describe">During my volunteering role behind the till at a charity shop, I was curious about the technology used to process receipts, and I became passionate about the impact of computing and technology on the modern world. After online searches, I developed more of an interest and started taking self learning online and writing some codes. I later enrolled in a full time Software Engineering course in order to acquire new skills and develop the passion and curiosity to solve problems.</p>
-              <p className="describe">I thrive when building on my new skills and excel when collaborating and working as a team. With my new engineering and customer service skills, and a strong desire to learn, I am looking to progress in the tech industry as a Junior Software Engineer.</p>
+              <p className="describe">During my volunteering role behind the till at a charity shop, I became curious about the technology used to process receipts, 
+              and became passionate about the impact of computing and technology in the modern world. After searching online, I developed more of an interest and started self learning online and writing some code. 
+              I later enrolled in a full time Software Engineering course in order to acquire new skills and develop my passion and curiosity to solve problems.</p>
+              <p className="describe">I thrive when building on my new skills and excel when collaborating and working as a team. With my new engineering skills, 
+              and a strong desire to learn, I am looking forward to progressing into a new career in the tech industry as a Junior Software Engineer.</p>
             </Col>
           </Row>
         </Container>
@@ -173,26 +176,26 @@ const Home = () => {
             <Col xs={8} md={6} id="proj1">
               <h2 className="title">Project1:</h2>
               <p className="describe">I built a number-guessing grid-game using JavaScript, HTML and CSS. It is a JavaScript random selection of numbers to match that of the user.</p>
-              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034515/P_jel8al.png" thumbnail />
+              <Image id="proImage" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034515/P_jel8al.png" thumbnail />
               <Card.Link><a href="https://maurice-35.github.io/number-guessing-game/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
             </Col>
             <Col xs={8} md={6} id="proj2">
               <h2 className="title">Project2:</h2>
               <p className="describe">I built a React app which used an external API from ‘thecatapi.com’ to display cats of various categories and origins. Styled using Bulma, it is a good spot for cat lovers.</p>
-              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034365/cat2_fwshks.png" thumbnail />
+              <Image id="proImage" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631034365/cat2_fwshks.png" thumbnail />
               <Card.Link><a href="https://maurice-cats-app-project2.netlify.app/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
             </Col>
             <Col xs={8} md={6} id="proj3">
               <h2 className="title">Project3:</h2>
               <p className="describe">Full-Stack MongoDB, Express, React, Node app with CRUD functionality from our own RESTful API. As a group, we created an e-commerce app to sell meals and treats for dogs and cats.
                 We all worked full-stack and styled using Bootstrap and Sass. I later had the responsibility to work on the register and login pages.</p>
-              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631033371/P3_xxby5y.png" thumbnail />
+              <Image id="proImage" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631033371/P3_xxby5y.png" thumbnail />
               <Card.Link><a href="https://tails-whiskers.herokuapp.com/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
             </Col>
             <Col xs={8} md={6} id="proj4">
               <h2 className="title">Project4:</h2>
               <p className="describe">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
-              <Image src="https://res.cloudinary.com/doe5zwesw/image/upload/v1630996394/P4_ezajhp.png" thumbnail />
+              <Image id="proImage" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_792,w_1174/v1630996394/P4_ezajhp.png" thumbnail />
               <Card.Link><a href="https://movie-app-project4.herokuapp.com/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
             </Col>
           </Row>
@@ -244,7 +247,7 @@ const Home = () => {
       <div className="container-fluid">
         <h1 id="cont">Contact</h1>
         <Contact />
-        
+
         <Row className="ICONS2">
           <Col xs={14} md={10}>
             <a id="pro" i className="fa fa-at icon" href="mailto:kollewem.35@gmail.com"></a>
