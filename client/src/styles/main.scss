@@ -350,7 +350,11 @@ Navbar.Toggle {
   justify-content: space-between;
   padding-right: 20px;
   font-size: 15px;
+  @media (max-width: 600px) {
+    font-size: 12px;
   }
+  }
+
 #about, #exp, #proj, #inter, #cont {
   font-family: 'Bungee';
   text-transform: uppercase;
