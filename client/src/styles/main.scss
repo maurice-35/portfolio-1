@@ -222,11 +222,12 @@ img {
   justify-content: center;
 }
 
-.catPic {
-  max-width: 50px;
-  max-height: 50px;
-  padding: 5px;
+.catPic img {
+  max-width: 40px;
   justify-content: center;
+  display: flex;
+  border: 1px solid;
+  border-color: rgb(0, 255, 221);
 }
 
 .navbar-wrapper {
