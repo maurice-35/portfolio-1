@@ -95,7 +95,7 @@ body {
   display: flex;
   letter-spacing: 2px;
   @media (max-width: 600px) {
-    max-height: 2500px;
+    max-height: 2700px;
     display: inline-block;
     padding-left: 100px;
    }
@@ -223,10 +223,9 @@ img {
 
 .catPic {
   max-width: 50px;
-  height: 50px;
+  max-height: 50px;
   padding: 5px;
   justify-content: center;
-  margin: 0 auto;
   @media (max-width: 600px) {
     display: none;
   }
@@ -348,12 +347,14 @@ Navbar.Toggle {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 20px;
+  padding-left: 100px;
   font-size: 15px;
   @media (max-width: 600px) {
-    font-size: 12px;
+    font-size: 10px;
+    padding-left: unset;
+    padding-right: 20px;
   }
-  }
+}
 
 #about, #exp, #proj, #inter, #cont {
   font-family: 'Bungee';
