@@ -228,9 +228,9 @@ img {
   display: flex;
   border: 1px solid;
   border-color: rgb(79, 99, 7);
-  @media (max-width: 600px) {
-    display: none;
-  }
+  // @media (max-width: 600px) {
+  //   display: none;
+  // }
 }
 
 .navbar-wrapper {
