@@ -53,7 +53,7 @@ const Home = () => {
         <h1 id="about">About Me</h1><br />
         <Container>
           <Row className="ICONS">
-            <Col xs={8} md={6}>
+            <Col>
               <p className="describe1"> I am Maurice, a Software Engineer based in Greater London.</p>
               <p className="describe1">During my volunteering role behind the till at a charity shop, I became curious about the technology used to process receipts,
                 and became passionate about the impact of computing and technology in the modern world. After searching online, I developed more of an interest and started self learning online and writing some code.
@@ -122,7 +122,7 @@ const Home = () => {
               <h3>Express</h3>
             </Col>
             <Col>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_70/v1630708045/psql_nolbul.png" thumbnail />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_65/v1630708045/psql_nolbul.png" thumbnail />
               <h3>PosgreSQL</h3>
             </Col>
             <Col>
@@ -130,7 +130,7 @@ const Home = () => {
               <h3>React</h3>
             </Col>
             <Col>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale,w_70/v1631004003/jg3_q75wjm.png" thumbnail />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/e_grayscale,w_68/v1631004003/jg3_q75wjm.png" thumbnail />
               <h3>Django</h3>
             </Col>
             <Col>
@@ -138,7 +138,7 @@ const Home = () => {
               <h3>JSON Web Token</h3>
             </Col>
             <Col>
-              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_70/v1630708004/herok_xjwyiq.png" thumbnail />
+              <Image className="boot" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_grayscale,w_68/v1630708004/herok_xjwyiq.png" thumbnail />
               <h3>Heroku</h3>
             </Col>
             <Col>
