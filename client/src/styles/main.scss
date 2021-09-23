@@ -95,8 +95,8 @@ body {
   display: flex;
   letter-spacing: 2px;
   @media (max-width: 600px) {
-    max-height: 3000px;
-    display: inline-block;
+    max-height: 3300px;
+    display: inline;
     padding-left: 100px;
    }
 }
@@ -460,16 +460,32 @@ Navbar.Toggle {
 #proImage4 {
   padding-top: 50px;
   background-color: rgb(194, 94, 94);
+  @media (max-width: 600px) {
+    padding-top: 20px;
+  }
+}
+
+#proImage3 {
+  @media (max-width: 600px) {
+    padding-top: 20px;
+    background-color: rgb(194, 94, 94);
+  }
 }
 
 #proImage2 {
   padding-top: 80px;
   background-color: rgb(194, 94, 94);
+  @media (max-width: 600px) {
+    padding-top: 20px;
+  }
 }
 
 #proImage1 {
   padding-top: 80px;
   background-color: rgb(194, 94, 94);
+  @media (max-width: 600px) {
+    padding-top: 20px;
+  }
 }
 
 #proj1, #proj2, #proj3, #proj4 {
