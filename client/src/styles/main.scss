@@ -104,14 +104,16 @@ body {
 #interests {
   background-color: rgb(17, 52, 53);
   padding-top: 80px;
-  max-height: 1100px;
+  padding-bottom: 80px;
+  max-height: 1900px;
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
-  @media (max-width: 600px) {
-    max-height: 1500px;
+  @media (max-width: 800px) {
+    max-height: 2000px;
     display: inline-block;
     padding-left: 100px;
+   
    }
 }
 
@@ -476,7 +478,7 @@ Navbar.Toggle {
 #spareTime {
 border: none;
 padding-left: 300px;
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   display: inline-block;
   padding-left: unset;
 }
