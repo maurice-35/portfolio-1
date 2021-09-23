@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Navbar, Nav, Button, Col, Toast, Card } from 'react-bootstrap'
+import { Navbar, Nav, Button, Col, Toast } from 'react-bootstrap'
 
 
 const Navigation = () => {
@@ -31,9 +31,9 @@ const Navigation = () => {
               <h4>The  love  for  cats!</h4><br />
               <p>In The Kindom Of Love, Every Life Counts</p>
             </div>
-            <Card className="catPic">
-              <img src="https://res.cloudinary.com/doe5zwesw/image/upload/v1626729161/cat-1_lg8pro.jpg" />
-            </Card>
+            <div className="catPic">
+              <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_33,w_50/v1625747303/project_3_work/cat-1_dljiga.jpg" />
+            </div>
             <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
             <div className="navbar-wrapper">
               <h4>Kind  minds  never  hide!</h4><br />

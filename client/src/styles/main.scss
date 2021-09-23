@@ -82,7 +82,7 @@ body {
   display: flex;
   letter-spacing: 2px;
   @media (max-width: 600px) {
-    max-height: 1200px;
+    max-height: 1500px;
     display: inline-block;
   }
 }
@@ -95,7 +95,7 @@ body {
   display: flex;
   letter-spacing: 2px;
   @media (max-width: 600px) {
-    max-height: 2700px;
+    max-height: 3000px;
     display: inline-block;
     padding-left: 100px;
    }
@@ -227,9 +227,6 @@ img {
   max-height: 50px;
   padding: 5px;
   justify-content: center;
-  @media (max-width: 600px) {
-    display: none;
-  }
 }
 
 .navbar-wrapper {
@@ -455,9 +452,6 @@ Navbar.Toggle {
 #proImage4 {
   padding-top: 50px;
   background-color: rgb(194, 94, 94);
-  // @media (max-width: 800px) {
-  //   padding-top: 190px;
-  // }
 }
 
 #proImage2 {
