@@ -223,11 +223,14 @@ img {
 }
 
 .catPic img {
-  max-width: 40px;
+  max-width: 50px;
   justify-content: center;
   display: flex;
   border: 1px solid;
-  border-color: rgb(153, 175, 71);
+  border-color: rgb(79, 99, 7);
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .navbar-wrapper {
