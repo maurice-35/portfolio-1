@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState, React } from 'react'
 import emailjs from 'emailjs-com'
 import Swal from 'sweetalert2'
 import { Form, Input, TextArea, Button } from 'semantic-ui-react'
@@ -11,11 +11,20 @@ const TEMPLATE_ID = 'template_djzskr9'
 const USER_ID = 'user_5IYK8PnAJVLxrn8uCB56n'
 
 const ContactForm = () => {
-  const handleOnSubmit = (e) => {
+
+  const [toSend, setToSend] = useState({
+    user_email: '',
+    user_phone_number: '',
+    from_name: '',
+    message: '',
+    // reply_to: '',
+  })
+
+  const onSubmit = (e) => {
     e.preventDefault()
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-      .then((result) => {
-        console.log(result.text)
+      .then((response) => {
+        console.log(response.status, response.text)
         Swal.fire({
           icon: 'success',
           title: 'Message Sent Successfully',
@@ -31,46 +40,58 @@ const ContactForm = () => {
     e.target.reset()
   }
 
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value })
+  }
+
   return (
     <div className="ContactForm" id="contact">
-      <Form id="form" onSubmit={handleOnSubmit}>
+      <Form id="form" onSubmit={onSubmit}>
         <Form.Field
           id='info-email'
           control={Input}
+          type='text'
           label='Email'
           name='user_email'
           placeholder='email'
           required
+          value={toSend.user_email}
           icon='mail'
           iconPosition='left'
+          onChange={handleChange}
         />
         <Form.Field
           id='info-phone'
           control={Input}
+          type='number'
           label='Phone Number'
           name='user_phone_number'
           placeholder='phone number'
           required
-          icon='user'
-          iconPosition='left'
+          value={toSend.user_phone_number}
+          onChange={handleChange}
         />
         <Form.Field
           id='info-company'
           control={Input}
+          type='text'
           label='Company'
-          name='user_company'
+          name='from_name'
           placeholder='company'
           required
-          icon='user'
-          iconPosition='left'
+          value={toSend.from_name}
+          onChange={handleChange}
         />
         <Form.Field
           id='info-message'
           control={TextArea}
+          type='text'
           label='Message'
-          name='user_message'
+          name='message'
           placeholder='message'
           required
+          value={toSend.message}
+          onChange={handleChange}
         />
         <Button id="contactbutt" type='submit' color='blue'>Send</Button>
       </Form>
