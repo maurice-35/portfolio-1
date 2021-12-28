@@ -1,3 +1,4 @@
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -73,13 +74,7 @@ body {
   @media (max-width: 600px) {
     max-height: 1200px;
     display: inline-block;
-<<<<<<< HEAD
   }
-=======
-    position: relative;
-    left: 90px
-   }
->>>>>>> 73de51ec5bb458d80bfa63c1a8311c8e160148c7
 }
 
 #experience {
@@ -108,14 +103,7 @@ body {
     max-height: 3300px;
     display: inline;
     padding-left: 100px;
-<<<<<<< HEAD
   }
-=======
-    position: relative;
-    left: 90px;
-    background-color: rgb(194, 94, 94);
-   }
->>>>>>> 73de51ec5bb458d80bfa63c1a8311c8e160148c7
 }
 
 #interests {
@@ -130,14 +118,7 @@ body {
     max-height: 2100px;
     display: inline;
     padding-left: 100px;
-<<<<<<< HEAD
   }
-=======
-    position: relative;
-    left: 90px;
-    background-color: rgb(194, 94, 94);
-   }
->>>>>>> 73de51ec5bb458d80bfa63c1a8311c8e160148c7
 }
 
 #contact {
@@ -563,7 +544,6 @@ Form ::placeholder {
   color: rgba(232, 235, 229, 0.534);
 }
 
-<<<<<<< HEAD
 .side {
   padding-top: 10px;
   }
@@ -572,13 +552,6 @@ Form ::placeholder {
   display: inline-block;
   font-size: 18px;
   padding-left: 50px;
-=======
-.col-md-10 {
-  @media (Max-width: 600px) {
-    position: relative;
-    left: 90px
-  }
->>>>>>> 73de51ec5bb458d80bfa63c1a8311c8e160148c7
 }
 
 .describe1 {
