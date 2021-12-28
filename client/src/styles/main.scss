@@ -53,11 +53,12 @@ body {
   }
 
 #img {
+  display: flex;
   margin-top: 200px;
   border: 2px solid white;
   border-radius: 15px;
   @media (max-width: 800px) {
-    max-width: 200px;
+    max-width: 150px;
   }
 }
 
@@ -68,10 +69,17 @@ body {
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
+  position: relative;;
   @media (max-width: 600px) {
     max-height: 1200px;
     display: inline-block;
+<<<<<<< HEAD
   }
+=======
+    position: relative;
+    left: 90px
+   }
+>>>>>>> 73de51ec5bb458d80bfa63c1a8311c8e160148c7
 }
 
 #experience {
@@ -84,6 +92,8 @@ body {
   @media (max-width: 600px) {
     max-height: 1500px;
     display: inline-block;
+    position: relative;
+    left: 90px
   }
 }
 
@@ -98,7 +108,14 @@ body {
     max-height: 3300px;
     display: inline;
     padding-left: 100px;
+<<<<<<< HEAD
   }
+=======
+    position: relative;
+    left: 90px;
+    background-color: rgb(194, 94, 94);
+   }
+>>>>>>> 73de51ec5bb458d80bfa63c1a8311c8e160148c7
 }
 
 #interests {
@@ -111,9 +128,16 @@ body {
   letter-spacing: 2px;
   @media (max-width: 800px) {
     max-height: 2100px;
-    display: inline-block;
+    display: inline;
     padding-left: 100px;
+<<<<<<< HEAD
   }
+=======
+    position: relative;
+    left: 90px;
+    background-color: rgb(194, 94, 94);
+   }
+>>>>>>> 73de51ec5bb458d80bfa63c1a8311c8e160148c7
 }
 
 #contact {
@@ -123,9 +147,9 @@ body {
   padding-bottom: 50px;
   max-height: 1200px;
   color: #fff; 
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  display: flex;
   flex: auto;
   position: relative;
   letter-spacing: 2px; 
@@ -137,8 +161,10 @@ body {
   font-size: 12px;
   @media (max-width: 600px) {
     max-width: 400px;
+    position: relative;
+    left: 90px;
   }
-  }
+}
 
 #info-email, #info-last-name, #info-phone, #info-company {
   width: 350px;
@@ -442,6 +468,10 @@ Navbar.Toggle {
   color: white;
   letter-spacing: 4px;
   border-radius: 2px;
+  @media (max-width:600px) {
+    position: relative;
+    left: 90px
+  }
   }
 
 #description {
@@ -486,6 +516,7 @@ Navbar.Toggle {
 
 #proj1, #proj2, #proj3, #proj4 {
   padding-bottom: 40px;
+  float: left;
 }
 
 #proj1, #proj2 {
@@ -532,6 +563,7 @@ Form ::placeholder {
   color: rgba(232, 235, 229, 0.534);
 }
 
+<<<<<<< HEAD
 .side {
   padding-top: 10px;
   }
@@ -540,6 +572,13 @@ Form ::placeholder {
   display: inline-block;
   font-size: 18px;
   padding-left: 50px;
+=======
+.col-md-10 {
+  @media (Max-width: 600px) {
+    position: relative;
+    left: 90px
+  }
+>>>>>>> 73de51ec5bb458d80bfa63c1a8311c8e160148c7
 }
 
 .describe1 {
@@ -559,6 +598,8 @@ Form ::placeholder {
   justify-content: center;
   display: flex;
   padding: 20px;
+  position: relative;
+  left: 90px
 }
 
 .github {
