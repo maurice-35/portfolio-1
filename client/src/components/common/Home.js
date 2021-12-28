@@ -70,6 +70,17 @@ const Home = () => {
         <Container>
           <Row>
             <Col>
+              <h2 id="title">💼 Side Projects</h2>
+            </Col><br />
+            <Row className="side">
+              <Col>
+                <p className="side1">I just completed some Virtual Software Engineering Experience tasks with JP Morgan Chase & Co.</p>
+                <p className="side1">Created a Tic-Tac-Toe-Game using React.</p>
+              </Col><br />
+            </Row><br />
+          </Row><br />
+          <Row>
+            <Col>
               <h2 id="title"> <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png"></img><span />General Assembly</h2>
             </Col>
           </Row><br />
