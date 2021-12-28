@@ -10,7 +10,7 @@ const SERVICE_ID = 'service_c20xitn'
 const TEMPLATE_ID = 'template_djzskr9'
 const USER_ID = 'user_5IYK8PnAJVLxrn8uCB56n'
 
-const ContactForm = () => {
+const Contact = () => {
 
   const [toSend, setToSend] = useState({
     user_email: '',
@@ -45,7 +45,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="ContactForm" id="contact">
+    <div className="ContactForm">
       <Form id="form" onSubmit={onSubmit}>
         <Form.Field
           id='info-email'
@@ -99,4 +99,4 @@ const ContactForm = () => {
   )
 }
 
-export default ContactForm
+export default Contact

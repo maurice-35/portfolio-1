@@ -70,10 +70,12 @@ body {
   color: #fff; 
   display: flex;
   letter-spacing: 2px;
-  position: relative;;
+  // position: relative;;
   @media (max-width: 600px) {
     max-height: 1200px;
     display: inline-block;
+    position: relative;
+    left: 90px;
   }
 }
 
@@ -88,7 +90,7 @@ body {
     max-height: 1500px;
     display: inline-block;
     position: relative;
-    left: 90px
+    left: 90px;
   }
 }
 
@@ -565,6 +567,10 @@ Form ::placeholder {
   @media (max-width: 600px) {
     display: inline-block; 
   }
+}
+
+.ContactForm {
+  padding-left: 180px;
 }
 
 .image {
