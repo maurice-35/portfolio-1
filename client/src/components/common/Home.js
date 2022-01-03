@@ -72,6 +72,12 @@ const Home = () => {
             <Col>
               <h2 id="title">💼 Side Projects</h2>
             </Col><br />
+            <Col xs={8} md={6} id="side1">
+              <h2 className="title">Side Project1:</h2>
+              <p className="describe2">I built a tic-tac-toe-game using using React.</p>
+              <Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1641250482/Screenshot_2022-01-03_at_22.51.01_e1amge.png" thumbnail />
+              <Card.Link><a href="https://tic-tac-toe-frenzy.netlify.app"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
+            </Col>
             <Row className="side">
               <Col>
                 <p className="side1">I just completed some Virtual Software Engineering Experience tasks with JP Morgan Chase & Co.</p>
