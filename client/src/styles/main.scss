@@ -458,9 +458,6 @@ Navbar.Toggle {
 }
 
 #side1 {
-  // display: flex;
-  // justify-content: center;
-  // right: 100px;
   border: none;
 }
 
@@ -484,16 +481,12 @@ Navbar.Toggle {
 }
 
 #proImage2 {
-  // padding-top: 80px;
-  // background-color: #111311;
   @media (max-width: 600px) {
     padding-top: 20px;
   }
 }
 
 #proImage1 {
-  // padding-top: 80px;
-  // background-color: #111311;
   @media (max-width: 600px) {
     padding-top: 20px;
   }
