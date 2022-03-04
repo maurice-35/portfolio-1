@@ -42,6 +42,7 @@ const Contact = () => {
 
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value })
+    console.log(e)
   }
 
   return (

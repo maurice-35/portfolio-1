@@ -32,7 +32,7 @@ const Navigation = () => {
               <p>In The Kindom Of Love, Every Life Counts</p>
             </div>
             <div className="catPic">
-              <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_33,w_50/v1625747303/project_3_work/cat-1_dljiga.jpg" />
+              <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_33,w_50/v1625747303/project_3_work/cat-1_dljiga.jpg" alt="img" />
             </div>
             <Navbar.Brand id="icon" href="#">♻︎</Navbar.Brand>
             <div className="navbar-wrapper">

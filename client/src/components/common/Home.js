@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import { useState, React, useRef } from 'react'
 import { Card, Button, Container, Row, Col, Image, Tooltip, Overlay } from 'react-bootstrap'
 import Contact from './Contact'
@@ -11,7 +12,7 @@ const Home = () => {
 
 
   return (
-    <section data-spy="scroll" data-target=".navbar" data-offset="50">
+    <section id="section" data-spy="scroll" data-target=".navbar" data-offset="50">
       <div className="myProfile" >
         <Container id="profile">
           <div>
@@ -41,7 +42,7 @@ const Home = () => {
             <Container>
               <Col>
                 <div>
-                  <img id="img" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" />
+                  <img id="img"  src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" alt="img" />
                 </div>
               </Col>
             </Container>
@@ -55,9 +56,13 @@ const Home = () => {
           <Row className="ICONS">
             <Col>
               <p className="describe1"> I am Maurice, a Software Engineer based in Greater London.</p>
-              <p className="describe1">During my volunteering role behind the till at a charity shop, I became curious about the technology used to process receipts,
-                and became passionate about the impact of computing and technology in the modern world. After searching online, I developed more of an interest and started self learning online and writing some code.
-                I later enrolled in a full time Software Engineering course in order to acquire new skills and develop my passion and curiosity to solve problems.</p>
+              <p className="describe1">A degree educated, ambitious Junior Software Developer/Front
+              End Software Developer, looking for an entry level role to utilise a broad skill gained 
+              through both voluntary work, customer service focused opportunities and technical studies. 
+              Skills have been developed through completing a full time Software Engineering course, 
+              acquiring new skills and developing a passion and love of problem solving. Experience has 
+              been enhanced further still by completing a JP Morgan Chase & Co professional work experience 
+              course.</p>
               <p className="describe1">I thrive when building on my new skills and excel when collaborating and working as a team. With my new engineering skills,
                 and a strong desire to learn, I am looking forward to progressing into a new career in the tech industry as a Junior Software Engineer.</p>
             </Col>
@@ -72,22 +77,29 @@ const Home = () => {
             <Col>
               <h2 id="title">💼 Side Projects</h2>
             </Col><br />
-            <Col xs={8} md={6} id="side1">
-              <h2 className="title">Side Project1:</h2>
-              <p className="describe2">I built a tic-tac-toe-game using using React.</p>
-              <Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1641250482/Screenshot_2022-01-03_at_22.51.01_e1amge.png" thumbnail />
-              <Card.Link><a href="https://tic-tac-toe-frenzy.netlify.app"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
-            </Col>
-            <Row className="side">
+            <Row>
+              <Col xs={8} md={6} id="side1">
+                <h2 className="title">Side Project1:</h2>
+                <p className="describe2">I built a tic-tac-toe-game using using React.</p>
+                <Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1641250482/Screenshot_2022-01-03_at_22.51.01_e1amge.png" thumbnail />
+                <Card.Link><a href="https://tic-tac-toe-frenzy.netlify.app"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
+              </Col>
+              <Col xs={8} md={6} id="side1">
+                <h2 className="title">Side Project2:</h2>
+                <p className="describe2">I built a simple clothe-app using React.</p>
+                <Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1644471239/Screenshot_2022-02-10_at_05.29.56_v0zcb2.png" thumbnail />
+                <Card.Link><a href="https://fashion-clothe.netlify.app"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
+              </Col>
+            </Row>
+            <Row className="side2">
               <Col>
-                <p className="side1">I just completed some Virtual Software Engineering Experience tasks with JP Morgan Chase & Co.</p>
-                <p className="side1">Created a Tic-Tac-Toe-Game using React.</p>
-              </Col><br />
-            </Row><br />
-          </Row><br />
+                <p className="side1">I completed a Software Engineering Virtual Professional Experience with JP Morgan Chase & Co in December 2021.</p>
+              </Col>
+            </Row>
+          </Row>
           <Row>
             <Col>
-              <h2 id="title"> <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png"></img><span />General Assembly</h2>
+              <h2 id="title"> <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png" alt="img"></img><span />General Assembly</h2>
             </Col>
           </Row><br />
           <Row className="ICONS">
@@ -241,18 +253,18 @@ const Home = () => {
 
           <Container id="spareTime">
             <p id="description">My first work-place experience in the UK was when I volunteered for a number of charities. The hospitality and compasssion I found here were overwhelming.</p>
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_250,w_330/v1631261773/EOU_pv1mnf.png" /><span />
-            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_250,w_330/v1632232765/Haven-h_c7fubt.png" />
+            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_250,w_330/v1631261773/EOU_pv1mnf.png" alt="img" /><span />
+            <img className="image-border animate__animated animate__zoomIn" variant="top" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_250,w_330/v1632232765/Haven-h_c7fubt.png" alt="img" />
             <br />
             <p id="description">I enjoy painting & designing small objects as well as cycling during my spare time.</p>
-            <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_250,w_330/v1631098527/paint_zxpgdl.jpg" /><span />
-            <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_250,w_330/v1627456360/Project%204/cycle1_clsr8b.jpg" />
+            <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_250,w_330/v1631098527/paint_zxpgdl.jpg" alt="img" /><span />
+            <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_250,w_330/v1627456360/Project%204/cycle1_clsr8b.jpg" alt="img" />
           </Container>
         </Container>
       </div>
 
       <div className="container-fluid">
-        <h1 id="cont">Contact</h1>
+        <h1 id="contact">Contact</h1>
         <Contact />
 
         <Row className="ICONS2">
@@ -278,8 +290,8 @@ const Home = () => {
           <Container>
             <Row id="foot">
               <Col>
-                <h4>Made With Much Hope<span /><img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_25,w_20/v1631216473/think_fzgsji.png"></img>
-                  <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_green:0,h_25,w_30/v1631217039/lapton_vk9nqa.png"></img><span />By MKT</h4>
+                <h4>Made With Much Hope<span /><img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_25,w_20/v1631216473/think_fzgsji.png" alt="img"></img>
+                  <img src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_green:0,h_25,w_30/v1631217039/lapton_vk9nqa.png" alt="img"></img><span />By MKT</h4>
               </Col>
             </Row>
           </Container>
