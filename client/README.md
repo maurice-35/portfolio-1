@@ -6,7 +6,7 @@
 
 # Top repositories
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kevinfengcs88&repo=kahoot-monkey&theme=github_dark)](https://github.com/maurice-35/cats-app)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=maurice-35&repo=cats-app&theme=github_dark)](https://github.com/maurice-35/cats-app)
 
 ## Update the Proxy Server
 
