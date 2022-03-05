@@ -4,9 +4,11 @@
 
 [![Linkedin](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&labelColor=blue&link=https://www.linkedin.com/in/maurice-kollewe/)](https://www.linkedin.com/in/maurice-kollewe/)
 
+| <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=maurice-35=github_dark&hide=contribs,issues&show_icons=true&hide_border=true" alt="Maurice’s github stats" /></a> | <a href='https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=maurice-35=github_dark&layout=compact&hide_border=true" /></a> |
+
 # Top repositories
 
-
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=maurice-35&repo=cats-app&theme=github_dark)](https://github.com/maurice-35/cats-app)
 
 ## Update the Proxy Server
 
