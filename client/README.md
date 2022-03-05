@@ -2,11 +2,11 @@
 
 # 👋🏽 Hi there, my name is Maurice.
 
-[![Linkedin](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&labelColor=blue&link=https://www.linkedin.com/in/maurice-kollewe/)](https://www.linkedin.com/in/maurice-kollewe/) This is me
+[![Linkedin](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&labelColor=blue&link=https://www.linkedin.com/in/maurice-kollewe/)](https://www.linkedin.com/in/maurice-kollewe/) 
 
 # Top repositories
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=maurice-35&repo=cats-app&theme=github_dark)](https://github.com/maurice-35/cats-app)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=maurice-35&repo=cats-app&theme=github_dark)](https://github.com/maurice-35/cats-app)([This is me])
 
 ## Update the Proxy Server
 
