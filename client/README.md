@@ -1,6 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Courier+new&color=%23808080&size=40&width=800&duration=6969&lines=Welcome+to+my+profile!)](https://git.io/typing-svg)
 
-# <img src=“![image](https://user-images.githubusercontent.com/84001897/156884480-0605f168-cf27-4c63-8ee6-49e888dce566.png)” width=“30px”> 👋🏽 Hi there, my name is Maurice.
+# <img src=“![image](https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif)” width=“30px”> 👋🏽 Hi there, my name is Maurice.
 
 ## Update the Proxy Server
 
