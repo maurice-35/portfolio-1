@@ -2,7 +2,7 @@
 
 # 👋🏽 Hi there, my name is Maurice.
 
-[![Linkedin](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&labelColor=blue&link=https://www.linkedin.com/in/maurice-kollewe/)](https://www.linkedin.com/in/maurice-kollewe/)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&labelColor=blue&link=https://www.linkedin.com/in/maurice-kollewe/)](https://www.linkedin.com/in/maurice-kollewe/) This is me
 
 # Top repositories
 
