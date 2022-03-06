@@ -1,4 +1,12 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) GA London React Template
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Courier+new&color=%23808080&size=40&width=800&duration=6969&lines=Welcome+to+my+profile!)](https://git.io/typing-svg)
+
+# 👋🏽 Hi there, my name is Maurice.
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&labelColor=blue&link=https://www.linkedin.com/in/maurice-kollewe/)](https://www.linkedin.com/in/maurice-kollewe/) 
+
+# Top repositories
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=maurice-35&repo=cats-app&theme=github_dark)](https://github.com/maurice-35/cats-app)
 
 ## Update the Proxy Server
 
