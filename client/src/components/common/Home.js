@@ -239,7 +239,7 @@ const Home = () => {
               <Button id="big-button" ref={target} onClick={() => setShow(!show)}>
                 Charities
               </Button>
-              <Overlay target={target.current} show={show} placement="bottom">
+              <Overlay target={target.current} show={show} placement="right">
                 {(props) => (
                   <Tooltip id="overlay-example" {...props}>
                     1. Evelynoldfield. This charity is aimed at helping migrants in the UK.<br />
