@@ -90,6 +90,12 @@ const Home = () => {
                 <Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1644471239/Screenshot_2022-02-10_at_05.29.56_v0zcb2.png" thumbnail />
                 <Card.Link><a href="https://fashion-clothe.netlify.app"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
               </Col>
+              <Col xs={8} md={6} id="side1">
+                <h2 className="title">Side Project3:</h2>
+                <p className="describe2">I built a simple covid-19-app using React to display COVID-19 cases of various countries in the world.</p>
+                <Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1649542179/Screenshot_2022-04-09_at_23.07.35_vjxop6.png" thumbnail />
+                <Card.Link><a href="https://simple-covid-19-app.netlify.app"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
+              </Col>
             </Row>
             <Row className="side2">
               <Col>
