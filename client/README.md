@@ -6,7 +6,9 @@
 
 # Top repositories
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=maurice-35&repo=cats-app&theme=github_dark)](https://github.com/maurice-35/cats-app)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=maurice-35&repo=clothes-app&theme=github_dark)](https://github.com/maurice-35/clothes-app)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=maurice-35&repo=movie-data-base&theme=github_dark)](https://github.com/maurice-35/movie-data-base)
+
 
 ## Update the Proxy Server
 
