@@ -3,12 +3,22 @@
   margin: 0;
   padding: 0;
   background-color: #5c8b8f;
+  animation: pulse 5s infinite;
 }
 
 body {
   position: relative;
   width: 100vw;
   cursor: pointer;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #5c8b8f;
+  }
+  100% {
+    background-color: #5F2136;
+  }
 }
 
 #section {
@@ -44,8 +54,13 @@ body {
 #img {
   width: 40vw;
   margin-top: 30vh;
+  margin-bottom: 30vh;
   border: 1rem solid white;
   border-radius: 1em;
+  padding: 8px;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 
 #fa-fa {
@@ -57,6 +72,18 @@ h1 {
   padding-top: 40vh;
 }
 
+#option.nav-link {
+  color: #8395f1;
+  background-image: linear-gradient(#83f1d9, #ce83f1);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: .4s;
+
+}
+#option.nav-link:hover {
+	transform: scale(1.1);
+  background-size: 100% 100%;
+}
 #aboutMe {
   color: #fff;
   display: flex;
@@ -100,8 +127,21 @@ h1 {
   padding-top: 5%;
 }
 
+button#big-button {
+  background-image: linear-gradient(#83f1d9, #ce83f1);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: .4s;
+}
+
 button#big-button:hover {
   color: #fff;
+  transform: scale(1.1);
+  background-size: 100% 100%;
+}
+
+.tooltip-inner {
+  font-size: 18px;
 }
 
 #info-email,
@@ -436,6 +476,10 @@ Form {
 
 .rounded-circle {
   margin-left: 30%;
+  padding: 8px;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 
 .image {
@@ -472,6 +516,12 @@ Form {
 }
 
 @media (max-width: 600px) {
+  #img {
+    margin-left: -10%;
+  }
+  #myIcons {
+    padding-top: 10px;
+  }
   #aboutMe {
     height: 100vh;
     display: inline-block;
@@ -551,6 +601,9 @@ Form {
     letter-spacing: 3px;
     justify-content: none;
     text-align-last: none;
+  }
+  .rounded-circle {
+    margin-left: 40%;
   }
 }
 

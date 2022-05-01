@@ -42,7 +42,7 @@ const Home = () => {
             <Container>
               <Col>
                 <div>
-                  <img id="img"  src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" alt="img" />
+                  <img id="img" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1631217534/profile_ijyamh.jpg" alt="img" />
                 </div>
               </Col>
             </Container>
@@ -57,12 +57,12 @@ const Home = () => {
             <Col>
               <p className="describe1"> I am Maurice, a Software Engineer based in Greater London.</p>
               <p className="describe1">A degree educated, ambitious Junior Software Developer/Front
-              End Software Developer, looking for an entry level role to utilise a broad skill gained 
-              through both voluntary work, customer service focused opportunities and technical studies. 
-              Skills have been developed through completing a full time Software Engineering course, 
-              acquiring new skills and developing a passion and love of problem solving. Experience has 
-              been enhanced further still by completing a JP Morgan Chase & Co professional work experience 
-              course.</p>
+                End Software Developer, looking for an entry level role to utilise a broad skill gained
+                through both voluntary work, customer service focused opportunities and technical studies.
+                Skills have been developed through completing a full time Software Engineering course,
+                acquiring new skills and developing a passion and love of problem solving. Experience has
+                been enhanced further still by completing a JP Morgan Chase & Co professional work experience
+                course.</p>
               <p className="describe1">I thrive when building on my new skills and excel when collaborating and working as a team. With my new engineering skills,
                 and a strong desire to learn, I am looking forward to progressing into a new career in the tech industry as a Junior Software Engineer.</p>
             </Col>
@@ -248,9 +248,9 @@ const Home = () => {
               <Overlay target={target.current} show={show} placement="right">
                 {(props) => (
                   <Tooltip id="overlay-example" {...props}>
-                    1. Evelynoldfield. This charity is aimed at helping migrants in the UK.<br />
-                    2. Haven House Children Hospice. This charity raises funds to help children with terminal illnesses and to give them some hope to life.<br />
-                    3. Richard House Children Hospice. Same objectives as Haven House above.
+                    1. Evelynoldfield: This charity is aimed at helping migrants and disadvantaged people in the UK.<br />
+                    2. Haven House Children Hospice: This charity raises funds to help children with terminal illnesses and to give them some hope to life.<br />
+                    3. Richard House Children Hospice: Same objectives as Haven House above.
                   </Tooltip>
                 )}
               </Overlay>
