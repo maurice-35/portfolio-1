@@ -2,13 +2,14 @@ import { useState, React } from 'react'
 import emailjs from 'emailjs-com'
 import Swal from 'sweetalert2'
 import { Form, Input, TextArea, Button } from 'semantic-ui-react'
+// import { serviceId, template, userId } from '.evn'
 
 
 
 
-const SERVICE_ID = 'service_c20xitn'
-const TEMPLATE_ID = 'template_djzskr9'
-const USER_ID = 'user_5IYK8PnAJVLxrn8uCB56n'
+const SERVICE_ID = 'serviceId'
+const TEMPLATE_ID = 'template'
+const USER_ID = 'userId'
 
 const Contact = () => {
 
