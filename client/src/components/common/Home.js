@@ -81,20 +81,19 @@ const Home = () => {
               <Col xs={8} md={6} id="side1">
                 <h2 className="title">Side Project1:</h2>
                 <p className="describe2">I built a tic-tac-toe-game using using React.</p>
-                <Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1641250482/Screenshot_2022-01-03_at_22.51.01_e1amge.png" thumbnail />
+                <Card.Link><a href="https://tic-tac-toe-frenzy.netlify.app"><Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1641250482/Screenshot_2022-01-03_at_22.51.01_e1amge.png" thumbnail /></a>
+                </Card.Link>
                 <Card.Link><a href="https://tic-tac-toe-frenzy.netlify.app"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
               </Col>
               <Col xs={8} md={6} id="side1">
                 <h2 className="title">Side Project2:</h2>
                 <p className="describe2">I built a simple clothe-app using React.</p>
-                <Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1644471239/Screenshot_2022-02-10_at_05.29.56_v0zcb2.png" thumbnail />
-                <Card.Link><a href="https://fashion-clothe.netlify.app"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
+                <Card.Link><a href="https://fashion-clothe.netlify.app"><Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1644471239/Screenshot_2022-02-10_at_05.29.56_v0zcb2.png" thumbnail /><i className="fa fa-play icon" id="open"></i></a></Card.Link>
               </Col>
               <Col xs={8} md={6} id="side1">
                 <h2 className="title">Side Project3:</h2>
                 <p className="describe2">I built a simple covid-19-app using React to display COVID-19 cases of various countries in the world.</p>
-                <Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1649542179/Screenshot_2022-04-09_at_23.07.35_vjxop6.png" thumbnail />
-                <Card.Link><a href="https://simple-covid-19-app.netlify.app"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
+                <Card.Link><a href="https://simple-covid-19-app.netlify.app"> <Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/v1649542179/Screenshot_2022-04-09_at_23.07.35_vjxop6.png" thumbnail /><i className="fa fa-play icon" id="open"></i></a></Card.Link>
               </Col>
             </Row>
             <Row className="side2">
@@ -211,27 +210,23 @@ const Home = () => {
             <Col xs={8} md={6} id="proj1">
               <h2 className="title">Project1:</h2>
               <p className="describe2">I built a number-guessing grid-game using JavaScript, HTML and CSS. It is a JavaScript random selection of numbers to match that of the user.</p>
-              <Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_800,w_1200/v1631034515/P_jel8al.png" thumbnail />
-              <Card.Link><a href="https://maurice-35.github.io/number-guessing-game/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
+              <Card.Link><a href="https://maurice-35.github.io/number-guessing-game/"><Image id="proImage1" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_800,w_1200/v1631034515/P_jel8al.png" thumbnail /><i className="fa fa-play icon" id="open"></i></a></Card.Link>
             </Col>
             <Col xs={8} md={6} id="proj2">
               <h2 className="title">Project2:</h2>
               <p className="describe2">I built a React app which used an external API from ‘thecatapi.com’ to display cats of various categories and origins. Styled using Bulma, it is a good spot for cat lovers.</p>
-              <Image id="proImage2" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1631034365/cat2_fwshks.png" thumbnail />
-              <Card.Link><a href="https://maurice-cats-app-project2.netlify.app/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
+              <Card.Link><a href="https://maurice-cats-app-project2.netlify.app/"><Image id="proImage2" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1631034365/cat2_fwshks.png" thumbnail /><i className="fa fa-play icon" id="open"></i></a></Card.Link>
             </Col>
             <Col xs={8} md={6} id="proj3">
               <h2 className="title">Project3:</h2>
               <p className="describe2">Full-Stack MongoDB, Express, React, Node app with CRUD functionality from our own RESTful API. As a group, we created an e-commerce app to sell meals and treats for dogs and cats.
                 We all worked full-stack and styled using Bootstrap and Sass. I later had the responsibility to work on the register and login pages.</p>
-              <Image id="proImage3" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1200/v1631033371/P3_xxby5y.png" thumbnail />
-              <Card.Link><a href="https://tails-whiskers.herokuapp.com/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
+              <Card.Link><a href="https://tails-whiskers.herokuapp.com/"><Image id="proImage3" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1200/v1631033371/P3_xxby5y.png" thumbnail /><i className="fa fa-play icon" id="open"></i></a></Card.Link>
             </Col>
             <Col xs={8} md={6} id="proj4">
               <h2 className="title">Project4:</h2>
               <p className="describe2">I created a full-stack Django, React, Python app with CRUD functionality from my own RESTful API.  I created a movie-database where you can stream a collection of trailing movies. This was styled using Bootstrap and Bulma.</p>
-              <Image id="proImage4" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1631033669/P4-1_zngixv.png" thumbnail />
-              <Card.Link><a href="https://movie-app-project4.herokuapp.com/"><i className="fa fa-play icon" id="open"></i></a></Card.Link>
+              <Card.Link><a href="https://movie-app-project4.herokuapp.com/"><Image id="proImage4" src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1631033669/P4-1_zngixv.png" thumbnail /><i className="fa fa-play icon" id="open"></i></a></Card.Link>
             </Col>
           </Row>
         </Container>
