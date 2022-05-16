@@ -17,7 +17,7 @@ body {
     background-color: #5c8b8f;
   }
   100% {
-    background-color: #5F2136;
+    background-color: #5f2136;
   }
 }
 
@@ -77,11 +77,10 @@ h1 {
   background-image: linear-gradient(#83f1d9, #ce83f1);
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: .4s;
-
+  transition: 0.4s;
 }
 #option.nav-link:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
   background-size: 100% 100%;
 }
 #aboutMe {
@@ -131,7 +130,7 @@ button#big-button {
   background-image: linear-gradient(#83f1d9, #ce83f1);
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 button#big-button:hover {
@@ -294,7 +293,7 @@ Navbar.Toggle {
 }
 
 .title {
-  text-decoration: underline;;
+  text-decoration: underline;
 }
 
 #open {
