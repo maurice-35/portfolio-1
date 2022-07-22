@@ -334,7 +334,7 @@ Navbar.Toggle {
   font-family: "Bungee";
   text-transform: uppercase;
   color: #fff;
-  padding-top: 0%;
+  padding-top: 10%;
   padding-left: 5%;
   writing-mode: vertical-rl;
 }
@@ -454,6 +454,7 @@ Form {
   padding: 2%;
   color: #fff;
   font-size: 18px;
+  margin-left: -5%;
 }
 
 Form ::placeholder {
@@ -640,12 +641,21 @@ Form ::placeholder {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width:700px) {
   .rounded-circle {
     margin-left: 5%;
   }
   h4 {
     margin-left: -25%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .rounded-circle {
+    margin-left: 35%;
+  }
+  h4 {
+    margin-left: 10%;
   }
 }
 
