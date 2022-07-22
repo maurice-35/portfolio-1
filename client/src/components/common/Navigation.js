@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Button, Col, Toast } from "react-bootstrap";
+import Marquee from "react-fast-marquee";
 
 const Navigation = () => {
   const [iconA, setIconA] = useState(false);
@@ -30,9 +31,11 @@ const Navigation = () => {
               </Button>
             </Navbar.Brand>
             <div className="navbar-wrapper">
+              <Marquee>
               <h4>The love for cats!</h4>
-              <br />
+              <span /> <span />
               <p>In The Kindom Of Love, Every Life Counts</p>
+              </Marquee>
             </div>
             <div className="catPic">
               <img

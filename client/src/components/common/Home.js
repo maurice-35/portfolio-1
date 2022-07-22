@@ -1,15 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
+
 import { useState, React, useRef } from "react";
-import {
-  Card,
-  Button,
-  Container,
-  Row,
-  Col,
-  Image,
-  Tooltip,
-  Overlay,
-} from "react-bootstrap";
+import {Card, Button, Container, Row,Col, Image, Tooltip, Overlay} from "react-bootstrap";
 import Contact from "./Contact";
 
 const Home = () => {
@@ -87,7 +78,7 @@ const Home = () => {
                 {" "}
                 I am Maurice, a Software Engineer based in Greater London.
               </p>
-              <p className="describe1">
+              <p className="describe1" id="describe">
                 A degree educated, ambitious Junior Software Developer/Front End
                 Software Developer, looking for an entry level role to utilise a
                 broad skill gained through both voluntary work, customer service
@@ -97,8 +88,8 @@ const Home = () => {
                 of problem solving. Experience has been enhanced further still
                 by completing a JP Morgan Chase & Co professional work
                 experience course.
-              </p>
-              <p className="describe1">
+              </p><br />
+              <p className="describe1" id="describe">
                 I thrive when building on my new skills and excel when
                 collaborating and working as a team. With my new engineering
                 skills, and a strong desire to learn, I am looking forward to
@@ -108,7 +99,7 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-      </div>
+      </div><br />
 
       <div id="experience" className="container-fluid" width="100">
         <h1 id="exp">Experience</h1>
@@ -144,7 +135,6 @@ const Home = () => {
               <Col xs={8} md={6} id="side1">
                 <h2 className="title">Side Project2:</h2>
                 <p className="describe2">
-                  I built a simple clothe-app using React.
                 </p>
                 <Card.Link>
                   <a href="https://fashion-clothe.netlify.app">
@@ -153,6 +143,11 @@ const Home = () => {
                       src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1644471239/Screenshot_2022-02-10_at_05.29.56_v0zcb2.png"
                       thumbnail
                     />
+                    {/* <i className="fa fa-play icon" id="open"></i> */}
+                  </a>
+                </Card.Link>
+                <Card.Link>
+                  <a href="https://fashion-clothe.netlify.app">
                     <i className="fa fa-play icon" id="open"></i>
                   </a>
                 </Card.Link>
@@ -171,19 +166,45 @@ const Home = () => {
                       src="https://res.cloudinary.com/doe5zwesw/image/upload/v1649542179/Screenshot_2022-04-09_at_23.07.35_vjxop6.png"
                       thumbnail
                     />
+                    {/* <i className="fa fa-play icon" id="open"></i> */}
+                  </a>
+                </Card.Link>
+                <Card.Link>
+                  <a href="https://simple-covid-19-app.netlify.app">
+                    <i className="fa fa-play icon" id="open"></i>
+                  </a>
+                </Card.Link>
+                </Col>
+                <Col xs={8} md={6} id="side1">
+                <h2 className="title">Side Project4:</h2>
+                <p className="describe2">
+                I buit this project from a third party API I had used in order to consolidate my understanding of the data structure, how it is displayed, and how it can be manipulated.It was pretty nice revisiting my previous work.
+                </p>
+                <Card.Link>
+                  <a href="https://cat-app-plus.netlify.app">
+                    {" "}
+                    <Image
+                      id="proImage1"
+                      src="https://res.cloudinary.com/doe5zwesw/image/upload/v1658485983/Cat_ogowjg.png"
+                      thumbnail
+                    />
+                    {/* <i className="fa fa-play icon" id="open"></i> */}
+                  </a>
+                </Card.Link>
+                <Card.Link>
+                  <a href="https://cat-app-plus.netlify.app">
                     <i className="fa fa-play icon" id="open"></i>
                   </a>
                 </Card.Link>
               </Col>
             </Row>
-            <Row className="side2">
+            {/* <Row className="side2">
               <Col>
                 <p className="side1">
-                  I completed a Software Engineering Virtual Professional
-                  Experience with JP Morgan Chase & Co in December 2021.
+                  I buit this project from a third party API I had used in order to consolidate my understanding of the data structure, how it id displayed, and how it can be manipulated.It was pretty nice revisiting my previous work.
                 </p>
               </Col>
-            </Row>
+            </Row> */}
           </Row>
           <Row>
             <Col>
@@ -544,26 +565,32 @@ const Home = () => {
         <h1 id="contact">Contact</h1>
         <Contact />
 
-        <Row className="ICONS2">
+        <Row id="ICONS2">
           <Col xs={14} md={10}>
+            <div>
             <a
               id="pro"
               i
               className="fa fa-at icon"
               href="mailto:kollewem.35@gmail.com"
-            ></a>
+            >Email</a>
+            </div><br />
+            <div>
             <a
               id="pro"
               i
               className="fa fa-linkedin icon"
               href="https://www.linkedin.com/in/maurice-kollewe/"
-            ></a>
+            >LinkedIn</a>
+            </div><br />
+            <div>
             <a
               id="pro"
               i
               className="fa fa-github-square icon"
               href="https://github.com/maurice-35"
-            ></a>
+            >GitHub</a>
+            </div>
           </Col>
         </Row>
       </div>
@@ -587,17 +614,17 @@ const Home = () => {
             <Row id="foot">
               <Col>
                 <h4>
-                  Made With Much Hope
-                  <span />
-                  <img
+                  Made With Much Hope 
+                  <span /><span />
+                  <img 
                     src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_25,w_20/v1631216473/think_fzgsji.png"
                     alt="img"
                   ></img>
-                  <img
+                  <img 
                     src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_green:0,h_25,w_30/v1631217039/lapton_vk9nqa.png"
                     alt="img"
                   ></img>
-                  <span />
+                  <span /><span />
                   By MKT
                 </h4>
               </Col>
