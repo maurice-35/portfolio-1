@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
 import { useState, React, useRef } from "react";
 import {
   Card,
@@ -31,21 +30,21 @@ const Home = () => {
                 <div id="fa-fa">
                   <Card.Link>
                     <a href="mailto:kollewem.35@gmail.com">
-                      <i className="fa fa-at icon"></i>
+                      <i className="fa fa-at icon" />
                     </a>
                   </Card.Link>
                 </div>
                 <div id="fa-fa">
                   <Card.Link>
                     <a href="https://www.linkedin.com/in/maurice-kollewe/">
-                      <i className="fa fa-linkedin-square icon"></i>
+                      <i className="fa fa-linkedin-square icon" />
                     </a>
                   </Card.Link>
                 </div>
                 <div id="fa-fa">
                   <Card.Link>
                     <a href="https://github.com/maurice-35">
-                      <i className="fa fa-github-square icon"></i>
+                      <i className="fa fa-github-square icon" />
                     </a>
                   </Card.Link>
                 </div>
@@ -84,10 +83,9 @@ const Home = () => {
           <Row className="ICONS">
             <Col>
               <p className="describe1">
-                {" "}
                 I am Maurice, a Software Engineer based in Greater London.
               </p>
-              <p className="describe1">
+              <p className="describe1" id="describe">
                 A degree educated, ambitious Junior Software Developer/Front End
                 Software Developer, looking for an entry level role to utilise a
                 broad skill gained through both voluntary work, customer service
@@ -98,7 +96,8 @@ const Home = () => {
                 by completing a JP Morgan Chase & Co professional work
                 experience course.
               </p>
-              <p className="describe1">
+              <br />
+              <p className="describe1" id="describe">
                 I thrive when building on my new skills and excel when
                 collaborating and working as a team. With my new engineering
                 skills, and a strong desire to learn, I am looking forward to
@@ -109,6 +108,7 @@ const Home = () => {
           </Row>
         </Container>
       </div>
+      <br />
 
       <div id="experience" className="container-fluid" width="100">
         <h1 id="exp">Experience</h1>
@@ -122,9 +122,9 @@ const Home = () => {
             <br />
             <Row>
               <Col xs={8} md={6} id="side1">
-                <h2 className="title">Side Project1:</h2>
+                <h2 className="title">Side Project 1 🎰:</h2>
                 <p className="describe2">
-                  I built a tic-tac-toe-game using using React.
+                  I built a tic-tac-toe-game using React where the player has to align their letter on the vertical, horizontal or diagonal axis in order to win.
                 </p>
                 <Card.Link>
                   <a href="https://tic-tac-toe-frenzy.netlify.app">
@@ -137,15 +137,16 @@ const Home = () => {
                 </Card.Link>
                 <Card.Link>
                   <a href="https://tic-tac-toe-frenzy.netlify.app">
-                    <i className="fa fa-play icon" id="open"></i>
+                    <i className="fa fa-play icon" id="open" />
                   </a>
                 </Card.Link>
               </Col>
               <Col xs={8} md={6} id="side1">
-                <h2 className="title">Side Project2:</h2>
+                <h2 className="title">Side Project 2 👘:</h2>
                 <p className="describe2">
-                  I built a simple clothe-app using React.
-                </p>
+                  This is an app I built to display some fashion clothes in a commercially appealing way using a third party API.
+                  You can also search clothes listed on the API.
+                </p> 
                 <Card.Link>
                   <a href="https://fashion-clothe.netlify.app">
                     <Image
@@ -153,12 +154,20 @@ const Home = () => {
                       src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1644471239/Screenshot_2022-02-10_at_05.29.56_v0zcb2.png"
                       thumbnail
                     />
-                    <i className="fa fa-play icon" id="open"></i>
+                  </a>
+                </Card.Link>
+                <Card.Link>
+                  <a href="https://fashion-clothe.netlify.app">
+                    <i className="fa fa-play icon" id="open" />
                   </a>
                 </Card.Link>
               </Col>
               <Col xs={8} md={6} id="side1">
-                <h2 className="title">Side Project3:</h2>
+                <h2 className="title">Side Project 3 <img Style={"width: 1.5em"}
+              src="https://phil.cdc.gov//PHIL_Images/23312/23312_lores.jpg"
+              alt="img"
+                />:
+            </h2>
                 <p className="describe2">
                   I built a simple covid-19-app using React to display COVID-19
                   cases of various countries in the world.
@@ -171,7 +180,33 @@ const Home = () => {
                       src="https://res.cloudinary.com/doe5zwesw/image/upload/v1649542179/Screenshot_2022-04-09_at_23.07.35_vjxop6.png"
                       thumbnail
                     />
-                    <i className="fa fa-play icon" id="open"></i>
+                  </a>
+                </Card.Link>
+                <Card.Link>
+                  <a href="https://simple-covid-19-app.netlify.app">
+                    <i className="fa fa-play icon" id="open" />
+                  </a>
+                </Card.Link>
+              </Col>
+              <Col xs={8} md={6} id="side1">
+                <h2 className="title">Side Project 4 🐈:</h2>
+                <p className="describe2">
+                I buit this project from a third party API I had earlier used in order to consolidate my understanding of the data structure, 
+                how it is displayed, and how it can be manipulated.It was pretty nice revisiting my previous work.
+                </p>
+                <Card.Link>
+                  <a href="https://cat-app-plus.netlify.app">
+                    {" "}
+                    <Image
+                      id="proImage1"
+                      src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1658485983/Cat_ogowjg.png"
+                      thumbnail
+                    />
+                  </a>
+                </Card.Link>
+                <Card.Link>
+                  <a href="https://cat-app-plus.netlify.app">
+                    <i className="fa fa-play icon" id="open" />
                   </a>
                 </Card.Link>
               </Col>
@@ -192,7 +227,7 @@ const Home = () => {
                 <img
                   src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png"
                   alt="img"
-                ></img>
+                />
                 <span />
                 General Assembly
               </h2>
@@ -407,7 +442,7 @@ const Home = () => {
                     src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_800,w_1200/v1631034515/P_jel8al.png"
                     thumbnail
                   />
-                  <i className="fa fa-play icon" id="open"></i>
+                  <i className="fa fa-play icon" id="open" />
                 </a>
               </Card.Link>
             </Col>
@@ -425,7 +460,7 @@ const Home = () => {
                     src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1631034365/cat2_fwshks.png"
                     thumbnail
                   />
-                  <i className="fa fa-play icon" id="open"></i>
+                  <i className="fa fa-play icon" id="open" />
                 </a>
               </Card.Link>
             </Col>
@@ -446,7 +481,7 @@ const Home = () => {
                     src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1200/v1631033371/P3_xxby5y.png"
                     thumbnail
                   />
-                  <i className="fa fa-play icon" id="open"></i>
+                  <i className="fa fa-play icon" id="open" />
                 </a>
               </Card.Link>
             </Col>
@@ -465,7 +500,7 @@ const Home = () => {
                     src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1631033669/P4-1_zngixv.png"
                     thumbnail
                   />
-                  <i className="fa fa-play icon" id="open"></i>
+                  <i className="fa fa-play icon" id="open" />
                 </a>
               </Card.Link>
             </Col>
@@ -546,24 +581,36 @@ const Home = () => {
 
         <Row className="ICONS2">
           <Col xs={14} md={10}>
-            <a
-              id="pro"
-              i
-              className="fa fa-at icon"
-              href="mailto:kollewem.35@gmail.com"
-            ></a>
-            <a
-              id="pro"
-              i
-              className="fa fa-linkedin icon"
-              href="https://www.linkedin.com/in/maurice-kollewe/"
-            ></a>
-            <a
-              id="pro"
-              i
-              className="fa fa-github-square icon"
-              href="https://github.com/maurice-35"
-            ></a>
+            <div>
+              <a
+                id="pro"
+                i
+                className="fa fa-at icon"
+                href="mailto:kollewem.35@gmail.com"
+              >
+                {" "}
+              </a>
+            </div>
+            <div>
+              <a
+                id="pro"
+                i
+                className="fa fa-linkedin icon"
+                href="https://www.linkedin.com/in/maurice-kollewe/"
+              >
+                {" "}
+              </a>
+            </div>
+            <div>
+              <a
+                id="pro"
+                i
+                className="fa fa-github-square icon"
+                href="https://github.com/maurice-35"
+              >
+                {" "}
+              </a>
+            </div>
           </Col>
         </Row>
       </div>
@@ -589,14 +636,16 @@ const Home = () => {
                 <h4>
                   Made With Much Hope
                   <span />
+                  <span />
                   <img
                     src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_25,w_20/v1631216473/think_fzgsji.png"
                     alt="img"
-                  ></img>
+                  />
                   <img
                     src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,e_green:0,h_25,w_30/v1631217039/lapton_vk9nqa.png"
                     alt="img"
-                  ></img>
+                  />
+                  <span />
                   <span />
                   By MKT
                 </h4>

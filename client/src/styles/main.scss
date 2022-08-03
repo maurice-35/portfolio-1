@@ -3,22 +3,11 @@
   margin: 0;
   padding: 0;
   background-color: #5c8b8f;
-  animation: pulse 5s infinite;
 }
 
 body {
   position: relative;
   width: 100vw;
-  cursor: pointer;
-}
-
-@keyframes pulse {
-  0% {
-    background-color: #5c8b8f;
-  }
-  100% {
-    background-color: #5f2136;
-  }
 }
 
 #section {
@@ -52,15 +41,16 @@ body {
 }
 
 #img {
-  width: 40vw;
+  width: 20vw;
   margin-top: 30vh;
   margin-bottom: 30vh;
   border: 1rem solid white;
   border-radius: 1em;
   padding: 8px;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
+}
+
+#img:hover {
+  width: 40vw;
 }
 
 #fa-fa {
@@ -73,7 +63,7 @@ h1 {
 }
 
 #option.nav-link {
-  color: #8395f1;
+  color: skyblue;
   background-image: linear-gradient(#83f1d9, #ce83f1);
   background-size: 0 100%;
   background-repeat: no-repeat;
@@ -120,20 +110,19 @@ h1 {
   border: 4px solid white;
   border-radius: 20px;
   text-align: center;
-  font-size: 12px;
 }
 #contact {
   padding-top: 5%;
 }
 
-button#big-button {
+#big-button {
   background-image: linear-gradient(#83f1d9, #ce83f1);
   background-size: 0 100%;
   background-repeat: no-repeat;
   transition: 0.4s;
 }
 
-button#big-button:hover {
+#big-button:hover {
   color: #fff;
   transform: scale(1.1);
   background-size: 100%;
@@ -155,14 +144,18 @@ button#big-button:hover {
   width: 350px;
   justify-content: center;
   display: flex;
-  font-size: 15px;
 }
 
 #contactbutt {
   width: 100px;
-  color: blue;
+  color: #fff;
   background-color: #298130;
-  font-size: 15px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#pro {
+  font-size: 20px;
 }
 
 .myProfile {
@@ -247,6 +240,14 @@ Navbar.Toggle {
   text-decoration: underline;
 }
 
+#describe {
+  column-count: 2;
+  column-rule-style: solid;
+  column-rule-width: 2px;
+  column-rule: 1px solid green;
+  column-span: all;
+}
+
 .git {
   display: flex;
   max-width: 50px;
@@ -269,6 +270,7 @@ Navbar.Toggle {
   font-size: 10px;
   flex: auto;
   font-size: 50px;
+  padding-bottom: 2em;
 }
 
 .ICONS2 {
@@ -323,8 +325,9 @@ Navbar.Toggle {
   font-family: "Bungee";
   text-transform: uppercase;
   color: #fff;
-  padding-top: 0%;
+  padding-top: 10%;
   padding-left: 5%;
+  writing-mode: vertical-rl;
 }
 
 #container2 {
@@ -345,8 +348,12 @@ Navbar.Toggle {
 #pro {
   color: white;
   font-weight: bold;
-  text-decoration-color: yellow;
+  text-decoration: none;
+  // text-decoration-color: yellow;
   margin-left: 20%;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: skyblue;
 }
 
 #butt {
@@ -433,7 +440,7 @@ Navbar.Toggle {
   border: none;
 }
 
-Form {
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -441,9 +448,11 @@ Form {
   border-radius: 10px;
   padding: 2%;
   color: #fff;
+  font-size: 18px;
+  margin-left: -5%;
 }
 
-Form ::placeholder {
+form ::placeholder {
   color: rgba(232, 235, 229, 0.534);
 }
 
@@ -513,50 +522,73 @@ Form ::placeholder {
 
 @media (max-width: 600px) {
   #img {
-    margin-left: -10%;
+    width: 10em;
+    margin-left: 8%;
   }
   #myIcons {
     padding-top: 10px;
   }
+
+  #about,
+  #exp,
+  #proj,
+  #inter,
+  #contact {
+    writing-mode: initial;
+    padding-left: 25%;
+  }
+
+  #myself {
+    padding-left: 15%;
+  }
+
   #aboutMe {
     height: 100vh;
     display: inline-block;
     position: relative;
-    width: 100vw;
+    width: 60em;
     margin-left: 30%;
-    margin-bottom: 30%;
+    margin-top: -20%;
+    padding-right: 20%;
   }
-  #aboutMe.container-fluid {
-    margin-left: 36%;
-  }
+
   #projects {
-    height: 100vh;
+    height: 150%;
     display: inline-block;
     position: relative;
-    width: 100vw;
+    width: 60em;
     margin-left: 40%;
     margin-bottom: 100%;
-    margin-top: 10%;
+    margin-top: 10;
+    margin-bottom: 100%;
   }
   #interests {
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
-    margin-top: 380%;
+    margin-left: 40%;
+    margin-top: 100%;
+    padding-top: 100%;
   }
 
-  #experience.container-fluid {
+  #experience {
     display: flex;
     flex-direction: column;
     margin-left: 40%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   #contact {
-    margin-top: 10%;
-    margin-left: 20%;
+    margin-top: 20%;
+    margin-left: 40%;
   }
 
-  .ICONS.row {
-    margin-left: -35%;
+  #pro {
+    font-size: 15px;
+  }
+
+  #form {
+    font-size: 15px;
+    margin-left: 100%;
   }
 
   #open {
@@ -574,11 +606,7 @@ Form ::placeholder {
   #profile {
     margin-left: 30%;
   }
-  #about,
-  #exp,
-  #proj,
-  #inter,
-  #contact {
+  h1 {
     font-size: 2em;
     margin-right: 0.5rem;
   }
@@ -589,21 +617,44 @@ Form ::placeholder {
     border: 3px solid #eee;
     padding: 0 4px 0 4px;
   }
-  .ContactForm {
-    width: 30%;
-    margin-left: 55%;
-    padding-top: 5%;
+
+  #describe {
+    column-count: initial;
   }
-  .row #foot {
+
+  #foot {
     display: flex;
     flex-direction: flex;
     font-size: 15px;
     letter-spacing: 3px;
     justify-content: none;
     text-align-last: none;
+    margin-left: 90%;
   }
   .rounded-circle {
-    margin-left: 40%;
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 650px) {
+  .rounded-circle {
+    margin-left: 5%;
+  }
+  h4 {
+    margin-left: -25%;
+  }
+
+  .myProfile {
+    padding-top: 3em;
+  }
+}
+
+@media (min-width: 1100px) {
+  .rounded-circle {
+    margin-left: 35%;
+  }
+  h4 {
+    margin-left: 10%;
   }
 }
 
