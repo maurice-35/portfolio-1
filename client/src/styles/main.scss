@@ -58,6 +58,7 @@ body {
   font-size: 40px;
   color: white;
 }
+
 h1 {
   padding-top: 40vh;
 }
@@ -69,10 +70,12 @@ h1 {
   background-repeat: no-repeat;
   transition: 0.4s;
 }
+
 #option.nav-link:hover {
   transform: scale(1.1);
   background-size: 100% 100%;
 }
+
 #aboutMe {
   color: #fff;
   display: flex;
@@ -111,6 +114,7 @@ h1 {
   border-radius: 20px;
   text-align: center;
 }
+
 #contact {
   padding-top: 5%;
 }
@@ -378,6 +382,7 @@ Navbar.Toggle {
   max-width: 100px;
   font-size: 10px;
 }
+
 #paint {
   max-width: 700px;
   justify-content: center;
@@ -525,6 +530,7 @@ form ::placeholder {
     width: 10em;
     margin-left: 8%;
   }
+
   #myIcons {
     padding-top: 10px;
   }
@@ -562,6 +568,7 @@ form ::placeholder {
     margin-top: 10;
     margin-bottom: 100%;
   }
+
   #interests {
     display: flex;
     flex-direction: column;
@@ -577,6 +584,7 @@ form ::placeholder {
     margin-top: 0;
     margin-bottom: 0;
   }
+
   #contact {
     margin-top: 20%;
     margin-left: 40%;
@@ -599,6 +607,7 @@ form ::placeholder {
     margin-top: 10%;
     margin-left: -10%;
   }
+
   #big-button {
     margin-left: 30%;
   }
@@ -606,13 +615,16 @@ form ::placeholder {
   #profile {
     margin-left: 30%;
   }
+
   h1 {
     font-size: 2em;
     margin-right: 0.5rem;
   }
+
   img {
     margin-left: 5%;
   }
+
   .describe1 {
     border: 3px solid #eee;
     padding: 0 4px 0 4px;
@@ -631,6 +643,7 @@ form ::placeholder {
     text-align-last: none;
     margin-left: 90%;
   }
+
   .rounded-circle {
     margin-left: 100%;
   }
@@ -640,6 +653,7 @@ form ::placeholder {
   .rounded-circle {
     margin-left: 5%;
   }
+
   h4 {
     margin-left: -25%;
   }
@@ -653,6 +667,7 @@ form ::placeholder {
   .rounded-circle {
     margin-left: 35%;
   }
+
   h4 {
     margin-left: 10%;
   }

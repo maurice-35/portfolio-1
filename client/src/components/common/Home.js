@@ -1,14 +1,5 @@
 import { useState, React, useRef } from "react";
-import {
-  Card,
-  Button,
-  Container,
-  Row,
-  Col,
-  Image,
-  Tooltip,
-  Overlay,
-} from "react-bootstrap";
+import { Card, Button, Container, Row, Col, Image, Tooltip, Overlay } from "react-bootstrap";
 import Contact from "./Contact";
 
 const Home = () => {
@@ -146,7 +137,7 @@ const Home = () => {
                 <p className="describe2">
                   This is an app I built to display some fashion clothes in a commercially appealing way using a third party API.
                   You can also search clothes listed on the API.
-                </p> 
+                </p>
                 <Card.Link>
                   <a href="https://fashion-clothe.netlify.app">
                     <Image
@@ -164,10 +155,10 @@ const Home = () => {
               </Col>
               <Col xs={8} md={6} id="side1">
                 <h2 className="title">Side Project 3 <img Style={"width: 1.5em"}
-              src="https://phil.cdc.gov//PHIL_Images/23312/23312_lores.jpg"
-              alt="img"
+                  src="https://phil.cdc.gov//PHIL_Images/23312/23312_lores.jpg"
+                  alt="img"
                 />:
-            </h2>
+                </h2>
                 <p className="describe2">
                   I built a simple covid-19-app using React to display COVID-19
                   cases of various countries in the world.
@@ -191,8 +182,8 @@ const Home = () => {
               <Col xs={8} md={6} id="side1">
                 <h2 className="title">Side Project 4 🐈:</h2>
                 <p className="describe2">
-                I buit this project from a third party API I had earlier used in order to consolidate my understanding of the data structure, 
-                how it is displayed, and how it can be manipulated.It was pretty nice revisiting my previous work.
+                  I buit this project from a third party API I had earlier used in order to consolidate my understanding of the data structure,
+                  how it is displayed, and how it can be manipulated.It was pretty nice revisiting my previous work.
                 </p>
                 <Card.Link>
                   <a href="https://cat-app-plus.netlify.app">
@@ -211,14 +202,13 @@ const Home = () => {
                 </Card.Link>
               </Col>
             </Row>
-            <Row className="side2">
+            {/* <Row className="side2">
               <Col>
                 <p className="side1">
-                  I completed a Software Engineering Virtual Professional
-                  Experience with JP Morgan Chase & Co in December 2021.
+                  I buit this project from a third party API I had used in order to consolidate my understanding of the data structure, how it id displayed, and how it can be manipulated.It was pretty nice revisiting my previous work.
                 </p>
               </Col>
-            </Row>
+            </Row> */}
           </Row>
           <Row>
             <Col>
@@ -579,7 +569,7 @@ const Home = () => {
         <h1 id="contact">Contact</h1>
         <Contact />
 
-        <Row className="ICONS2">
+        <Row id="ICONS2">
           <Col xs={14} md={10}>
             <div>
               <a
