@@ -154,10 +154,11 @@ const Home = () => {
                 </Card.Link>
               </Col>
               <Col xs={8} md={6} id="side1">
-                <h2 className="title">Side Project 3 <img Style={"width: 1.5em"}
-                  src="https://phil.cdc.gov//PHIL_Images/23312/23312_lores.jpg"
-                  alt="img"
-                />:
+                <h2 className="title">Side Project 3
+                  <img Style={"width: 1.5em"}
+                    src="https://phil.cdc.gov//PHIL_Images/23312/23312_lores.jpg"
+                    alt="img"
+                  />:
                 </h2>
                 <p className="describe2">
                   I built a simple covid-19-app using React to display COVID-19
