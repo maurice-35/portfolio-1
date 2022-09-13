@@ -1,5 +1,14 @@
 import { useState, React, useRef } from "react";
-import { Card, Button, Container, Row, Col, Image, Tooltip, Overlay } from "react-bootstrap";
+import {
+  Card,
+  Button,
+  Container,
+  Row,
+  Col,
+  Image,
+  Tooltip,
+  Overlay,
+} from "react-bootstrap";
 import Contact from "./Contact";
 
 const Home = () => {
@@ -113,52 +122,61 @@ const Home = () => {
             <br />
             <Row>
               <Col xs={8} md={6} id="side1">
-                <h2 className="title">Side Project 1 🎰:</h2>
+                <h2 className="title">Side Project 5 🍪:</h2>
                 <p className="describe2">
-                  I built a tic-tac-toe-game using React where the player has to align their letter on the vertical, horizontal or diagonal axis in order to win.
+                  This is a simple cookies game. Here you buy as many cookies as
+                  you wish. You save cookies bought (helpers) and improve in
+                  rank. The full functionalities are yet to be implemented.
                 </p>
                 <Card.Link>
-                  <a href="https://tic-tac-toe-frenzy.netlify.app">
+                  <a href="https://awesome-cookies.netlify.app/">
+                    {" "}
                     <Image
                       id="proImage1"
-                      src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1641250482/Screenshot_2022-01-03_at_22.51.01_e1amge.png"
+                      src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_500,w_800/v1663054961/Cookies_x8ajry.png"
                       thumbnail
                     />
                   </a>
                 </Card.Link>
                 <Card.Link>
-                  <a href="https://tic-tac-toe-frenzy.netlify.app">
+                  <a href="https://awesome-cookies.netlify.app/">
                     <i className="fa fa-play icon" id="open" />
                   </a>
                 </Card.Link>
               </Col>
               <Col xs={8} md={6} id="side1">
-                <h2 className="title">Side Project 2 👘:</h2>
+                <h2 className="title">Side Project 4 🐈:</h2>
                 <p className="describe2">
-                  This is an app I built to display some fashion clothes in a commercially appealing way using a third party API.
-                  You can also search clothes listed on the API.
+                  I buit this project from a third party API I had earlier used
+                  in order to consolidate my understanding of the data
+                  structure, how it is displayed, and how it can be
+                  manipulated.It was pretty nice revisiting my previous work.
                 </p>
                 <Card.Link>
-                  <a href="https://fashion-clothe.netlify.app">
+                  <a href="https://cat-app-plus.netlify.app">
+                    {" "}
                     <Image
                       id="proImage1"
-                      src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1644471239/Screenshot_2022-02-10_at_05.29.56_v0zcb2.png"
+                      src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_500,w_800/v1658485983/Cat_ogowjg.png"
                       thumbnail
                     />
                   </a>
                 </Card.Link>
                 <Card.Link>
-                  <a href="https://fashion-clothe.netlify.app">
+                  <a href="https://cat-app-plus.netlify.app">
                     <i className="fa fa-play icon" id="open" />
                   </a>
                 </Card.Link>
               </Col>
               <Col xs={8} md={6} id="side1">
-                <h2 className="title">Side Project 3
-                  <img Style={"width: 1.5em"}
+                <h2 className="title">
+                  Side Project 3
+                  <img
+                    Style={"width: 1.5em"}
                     src="https://phil.cdc.gov//PHIL_Images/23312/23312_lores.jpg"
                     alt="img"
-                  />:
+                  />
+                  :
                 </h2>
                 <p className="describe2">
                   I built a simple covid-19-app using React to display COVID-19
@@ -181,35 +199,50 @@ const Home = () => {
                 </Card.Link>
               </Col>
               <Col xs={8} md={6} id="side1">
-                <h2 className="title">Side Project 4 🐈:</h2>
+                <h2 className="title">Side Project 2 👘:</h2>
                 <p className="describe2">
-                  I buit this project from a third party API I had earlier used in order to consolidate my understanding of the data structure,
-                  how it is displayed, and how it can be manipulated.It was pretty nice revisiting my previous work.
+                  This is an app I built to display some fashion clothes in a
+                  commercially appealing way using a third party API. You can
+                  also search clothes listed on the API.
                 </p>
                 <Card.Link>
-                  <a href="https://cat-app-plus.netlify.app">
-                    {" "}
+                  <a href="https://fashion-clothe.netlify.app">
                     <Image
                       id="proImage1"
-                      src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1658485983/Cat_ogowjg.png"
+                      src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1644471239/Screenshot_2022-02-10_at_05.29.56_v0zcb2.png"
                       thumbnail
                     />
                   </a>
                 </Card.Link>
                 <Card.Link>
-                  <a href="https://cat-app-plus.netlify.app">
+                  <a href="https://fashion-clothe.netlify.app">
+                    <i className="fa fa-play icon" id="open" />
+                  </a>
+                </Card.Link>
+              </Col>
+              <Col xs={8} md={6} id="side1">
+                <h2 className="title">Side Project 1 🎰:</h2>
+                <p className="describe2">
+                  I built a tic-tac-toe-game using React where the player has to
+                  align their letter on the vertical, horizontal or diagonal
+                  axis in order to win.
+                </p>
+                <Card.Link>
+                  <a href="https://tic-tac-toe-frenzy.netlify.app">
+                    <Image
+                      id="proImage1"
+                      src="https://res.cloudinary.com/doe5zwesw/image/upload/c_scale,h_791,w_1176/v1641250482/Screenshot_2022-01-03_at_22.51.01_e1amge.png"
+                      thumbnail
+                    />
+                  </a>
+                </Card.Link>
+                <Card.Link>
+                  <a href="https://tic-tac-toe-frenzy.netlify.app">
                     <i className="fa fa-play icon" id="open" />
                   </a>
                 </Card.Link>
               </Col>
             </Row>
-            {/* <Row className="side2">
-              <Col>
-                <p className="side1">
-                  I buit this project from a third party API I had used in order to consolidate my understanding of the data structure, how it id displayed, and how it can be manipulated.It was pretty nice revisiting my previous work.
-                </p>
-              </Col>
-            </Row> */}
           </Row>
           <Row>
             <Col>
